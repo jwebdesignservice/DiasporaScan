@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Loader2 } from 'lucide-react'
 
 import AfricaMap from '../components/maps/AfricaMap'
 import StatBox from '../components/ui/StatBox'
@@ -10,11 +10,18 @@ import TerminalStats from '../components/ui/TerminalStats'
 import InvestigationCard from '../components/ui/InvestigationCard'
 import Badge from '../components/ui/Badge'
 
-import countriesData from '../data/countries.json'
-import figuresData from '../data/figures.json'
-import cultureData from '../data/culture.json'
-import clansData from '../data/clans.json'
-import diasporaData from '../data/diaspora.json'
+import {
+    useAllCountries,
+    useEthnicGroups,
+    useCultureData,
+} from '../hooks/useApi'
+import { fetchHistoricalFigures } from '../services/api'
+
+// Static data as fallback
+import countriesDataStatic from '../data/countries.json'
+import figuresDataStatic from '../data/figures.json'
+import cultureDataStatic from '../data/culture.json'
+import clansDataStatic from '../data/clans.json'
 
 const filterTabs = [
     { id: 'all', label: 'All Entities' },
@@ -86,17 +93,92 @@ export default function Home() {
     const [email, setEmail] = useState('')
     const navigate = useNavigate()
 
+    // API data
+    const { data: countriesData, loading: countriesLoading } = useAllCountries()
+    const { data: ethnicData, loading: ethnicLoading } = useEthnicGroups(100)
+    const { data: cultureData, loading: cultureLoading } = useCultureData()
+
+    // Figures loaded separately
+    const [figures, setFigures] = useState([])
+    const [figuresLoading, setFiguresLoading] = useState(true)
+
+    // Combined data (API + static fallback)
+    const [allData, setAllData] = useState({
+        countries: countriesDataStatic.countries,
+        figures: figuresDataStatic.figures,
+        clans: clansDataStatic.clans,
+        music: cultureDataStatic.culture.music,
+        food: cultureDataStatic.culture.food,
+        languages: cultureDataStatic.culture.languages,
+    })
+
+    // Load figures
+    useEffect(() => {
+        async function loadFigures() {
+            setFiguresLoading(true)
+            try {
+                const data = await fetchHistoricalFigures('civil_rights', 30)
+                setFigures(data)
+            } catch (error) {
+                console.error('Failed to load figures:', error)
+            }
+            setFiguresLoading(false)
+        }
+        loadFigures()
+    }, [])
+
+    // Merge API data with static data
+    useEffect(() => {
+        const mergedCountries = [
+            ...(countriesData?.all || []),
+            ...countriesDataStatic.countries.filter(
+                static_c => !countriesData?.all?.find(api_c => api_c.code === static_c.code)
+            )
+        ]
+
+        const mergedClans = [
+            ...(ethnicData || []),
+            ...clansDataStatic.clans.filter(
+                static_c => !ethnicData?.find(api_c => api_c.name.toLowerCase() === static_c.name.toLowerCase())
+            )
+        ]
+
+        const mergedFigures = [
+            ...figures,
+            ...figuresDataStatic.figures.filter(
+                static_f => !figures.find(api_f => api_f.name.toLowerCase() === static_f.name.toLowerCase())
+            )
+        ]
+
+        setAllData({
+            countries: mergedCountries,
+            figures: mergedFigures,
+            clans: mergedClans,
+            music: [...(cultureData?.music || []), ...cultureDataStatic.culture.music.filter(
+                m => !cultureData?.music?.find(api_m => api_m.name === m.name)
+            )],
+            food: [...(cultureData?.food || []), ...cultureDataStatic.culture.food.filter(
+                f => !cultureData?.food?.find(api_f => api_f.name === f.name)
+            )],
+            languages: [...(cultureData?.languages || []), ...cultureDataStatic.culture.languages.filter(
+                l => !cultureData?.languages?.find(api_l => api_l.name === l.name)
+            )],
+        })
+    }, [countriesData, ethnicData, cultureData, figures])
+
+    const isLoading = countriesLoading || ethnicLoading || cultureLoading || figuresLoading
+
     // Calculate totals
     const totalEntities =
-        countriesData.countries.length +
-        figuresData.figures.length +
-        clansData.clans.length +
-        cultureData.culture.music.length +
-        cultureData.culture.food.length +
-        cultureData.culture.languages.length
+        allData.countries.length +
+        allData.figures.length +
+        allData.clans.length +
+        allData.music.length +
+        allData.food.length +
+        allData.languages.length
 
-    const totalDiaspora = countriesData.countries.reduce(
-        (sum, c) => sum + (c.diasporaPopulation || 0), 0
+    const totalDiaspora = allData.countries.reduce(
+        (sum, c) => sum + (c.diasporaPopulation || c.population || 0), 0
     )
 
     const handleCountryClick = (country) => {
@@ -117,7 +199,7 @@ export default function Home() {
     }
 
     const handleRegionClick = (regionId) => {
-        const country = countriesData.countries.find(c => c.id === regionId)
+        const country = allData.countries.find(c => c.id === regionId)
         if (country) {
             navigate(`/search?q=${encodeURIComponent(country.name)}&type=country`)
         }
@@ -134,7 +216,7 @@ export default function Home() {
                         <div className="flex flex-wrap gap-8 lg:gap-16">
                             <div>
                                 <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-text-primary)]">
-                                    {totalEntities.toLocaleString()}
+                                    {isLoading ? <Loader2 className="w-10 h-10 animate-spin" /> : totalEntities.toLocaleString()}
                                 </div>
                                 <div className="text-sm text-[var(--color-text-muted)] mt-1">
                                     Entities tracked
@@ -142,7 +224,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-accent-green)]">
-                                    {(totalDiaspora / 1000000).toFixed(0)}M+
+                                    {countriesLoading ? <Loader2 className="w-10 h-10 animate-spin" /> : `${(totalDiaspora / 1000000).toFixed(0)}M+`}
                                 </div>
                                 <div className="text-sm text-[var(--color-text-muted)] mt-1">
                                     Diaspora population documented
@@ -187,8 +269,8 @@ export default function Home() {
                                 key={tab.id}
                                 onClick={() => handleFilterClick(tab.id)}
                                 className={`text-sm transition-colors ${activeFilter === tab.id
-                                        ? 'text-[var(--color-accent-green)]'
-                                        : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
+                                    ? 'text-[var(--color-accent-green)]'
+                                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
                                     }`}
                             >
                                 {tab.label}
@@ -237,10 +319,10 @@ export default function Home() {
 
                     {/* Action Buttons */}
                     <div className="flex flex-wrap items-center gap-3 mb-8 pb-8 border-b border-[var(--color-border)]">
-                        <ActionButton href="/search" variant="green">
+                        <ActionButton href="/database" variant="green">
                             Search All Data
                         </ActionButton>
-                        <ActionButton href="/explore" variant="red">
+                        <ActionButton href="/analysis" variant="red">
                             Migration Analysis
                         </ActionButton>
                         <Link
@@ -256,21 +338,21 @@ export default function Home() {
                         <TerminalStats
                             title="DIASPORA_DATABASE"
                             stats={[
-                                { label: 'total_tracked', value: totalEntities.toLocaleString(), color: 'green' },
-                                { label: 'countries', value: countriesData.countries.length.toString() },
-                                { label: 'historical_figures', value: figuresData.figures.length.toString() },
-                                { label: 'clans_tribes', value: clansData.clans.length.toString() },
+                                { label: 'total_tracked', value: isLoading ? '...' : totalEntities.toLocaleString(), color: 'green' },
+                                { label: 'countries', value: countriesLoading ? '...' : allData.countries.length.toString() },
+                                { label: 'historical_figures', value: figuresLoading ? '...' : allData.figures.length.toString() },
+                                { label: 'clans_tribes', value: ethnicLoading ? '...' : allData.clans.length.toString() },
                                 { label: 'data_sources', value: '12' },
                             ]}
                         />
                         <TerminalStats
                             title="BY_CATEGORY"
                             stats={[
-                                { label: 'african_nations', value: '7', color: 'green', suffix: 'tracked' },
-                                { label: 'diaspora_nations', value: '5', color: 'gold', suffix: 'tracked' },
-                                { label: 'music_genres', value: cultureData.culture.music.length.toString(), suffix: 'genres' },
-                                { label: 'languages', value: cultureData.culture.languages.length.toString(), suffix: 'documented' },
-                                { label: 'traditional_foods', value: cultureData.culture.food.length.toString(), suffix: 'recipes' },
+                                { label: 'african_nations', value: countriesLoading ? '...' : (countriesData?.african?.length || 7).toString(), color: 'green', suffix: 'tracked' },
+                                { label: 'diaspora_nations', value: countriesLoading ? '...' : (countriesData?.diaspora?.length || 5).toString(), color: 'gold', suffix: 'tracked' },
+                                { label: 'music_genres', value: cultureLoading ? '...' : allData.music.length.toString(), suffix: 'genres' },
+                                { label: 'languages', value: cultureLoading ? '...' : allData.languages.length.toString(), suffix: 'documented' },
+                                { label: 'traditional_foods', value: cultureLoading ? '...' : allData.food.length.toString(), suffix: 'recipes' },
                             ]}
                         />
                     </div>
@@ -326,7 +408,7 @@ export default function Home() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {countriesData.countries.slice(0, 10).map((country, index) => (
+                                    {allData.countries.slice(0, 10).map((country, index) => (
                                         <motion.tr
                                             key={country.id}
                                             initial={{ opacity: 0 }}
@@ -373,7 +455,7 @@ export default function Home() {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {figuresData.figures.slice(0, 8).map((figure, index) => (
+                                    {allData.figures.slice(0, 8).map((figure, index) => (
                                         <motion.tr
                                             key={figure.id}
                                             initial={{ opacity: 0 }}
@@ -405,7 +487,7 @@ export default function Home() {
                     <div className="pt-6 border-t border-[var(--color-border)]">
                         <h3 className="text-sm text-[var(--color-text-muted)] mb-3">Data Sources</h3>
                         <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
-                            {countriesData.countries.filter(c => !c.region.includes('Diaspora')).map((country) => (
+                            {allData.countries.filter(c => !c.region?.includes('Diaspora')).map((country) => (
                                 <Link
                                     key={country.id}
                                     to={`/search?q=${encodeURIComponent(country.name)}`}

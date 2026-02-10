@@ -227,7 +227,7 @@ export default function Database() {
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-accent-green)]">
-                {filteredData.countries.length}
+                {countriesLoading ? <Loader2 className="w-10 h-10 animate-spin" /> : filteredData.countries.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
                 Countries {searchQuery && filteredData.countries.length !== allData.countries.length && `(of ${allData.countries.length})`}
@@ -235,7 +235,7 @@ export default function Database() {
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-accent-gold)]">
-                {figuresInitialLoad ? <Loader2 className="w-10 h-10 animate-spin" /> : filteredData.figures.length}
+                {figuresLoading || figuresInitialLoad ? <Loader2 className="w-10 h-10 animate-spin" /> : filteredData.figures.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
                 Figures {searchQuery && filteredData.figures.length !== allData.figures.length && `(of ${allData.figures.length})`}
@@ -243,7 +243,7 @@ export default function Database() {
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-text-secondary)]">
-                {filteredData.clans.length}
+                {ethnicLoading ? <Loader2 className="w-10 h-10 animate-spin" /> : filteredData.clans.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
                 Ethnic Groups {searchQuery && filteredData.clans.length !== allData.clans.length && `(of ${allData.clans.length})`}
@@ -251,7 +251,7 @@ export default function Database() {
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-blue-400">
-                {filteredData.culture.length}
+                {cultureLoading ? <Loader2 className="w-10 h-10 animate-spin" /> : filteredData.culture.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
                 Culture
