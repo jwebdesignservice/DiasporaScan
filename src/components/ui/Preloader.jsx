@@ -1,30 +1,52 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+
+const MIN_DISPLAY_TIME = 2500 // Minimum 2.5 seconds display time
 
 export default function Preloader({ onComplete }) {
   const [progress, setProgress] = useState(0)
   const [phase, setPhase] = useState('loading') // loading, complete, exit
+  const startTime = useRef(Date.now())
 
   useEffect(() => {
-    // Simulate loading progress
+    // Slower, more realistic progress simulation
     const interval = setInterval(() => {
       setProgress(prev => {
         if (prev >= 100) {
           clearInterval(interval)
-          setPhase('complete')
+          
+          // Ensure minimum display time has passed
+          const elapsed = Date.now() - startTime.current
+          const remainingTime = Math.max(0, MIN_DISPLAY_TIME - elapsed)
+          
           setTimeout(() => {
-            setPhase('exit')
+            setPhase('complete')
             setTimeout(() => {
-              onComplete?.()
-            }, 600)
-          }, 400)
+              setPhase('exit')
+              setTimeout(() => {
+                onComplete?.()
+              }, 600)
+            }, 500)
+          }, remainingTime)
+          
           return 100
         }
-        // Accelerating progress
-        const increment = Math.random() * 15 + 5
+        
+        // Slower, variable progress - feels more natural
+        let increment
+        if (prev < 20) {
+          increment = Math.random() * 3 + 1 // Slow start
+        } else if (prev < 50) {
+          increment = Math.random() * 4 + 2 // Medium speed
+        } else if (prev < 80) {
+          increment = Math.random() * 5 + 2 // Faster
+        } else {
+          increment = Math.random() * 2 + 1 // Slow finish
+        }
+        
         return Math.min(prev + increment, 100)
       })
-    }, 100)
+    }, 80)
 
     return () => clearInterval(interval)
   }, [onComplete])
@@ -94,12 +116,6 @@ export default function Preloader({ onComplete }) {
             />
           </div>
 
-          {/* Scanning line effect */}
-          <motion.div
-            animate={{ y: ['-100vh', '100vh'] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-            className="absolute left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[var(--color-accent-green)]/50 to-transparent"
-          />
 
           {/* Main content */}
           <div className="relative z-10 flex flex-col items-center">

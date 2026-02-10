@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Preloader from './components/ui/Preloader'
@@ -16,18 +16,8 @@ function App() {
   const [loading, setLoading] = useState(true)
   const [showPreloader, setShowPreloader] = useState(true)
 
-  useEffect(() => {
-    // Check if this is a fresh page load (not a client-side navigation)
-    const hasVisited = sessionStorage.getItem('diasporascan_loaded')
-    if (hasVisited) {
-      setLoading(false)
-      setShowPreloader(false)
-    }
-  }, [])
-
   const handlePreloaderComplete = () => {
     setLoading(false)
-    sessionStorage.setItem('diasporascan_loaded', 'true')
     // Small delay before hiding to ensure smooth transition
     setTimeout(() => setShowPreloader(false), 100)
   }
