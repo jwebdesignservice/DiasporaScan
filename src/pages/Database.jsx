@@ -377,6 +377,7 @@ export default function Database() {
                       <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Capital</th>
                       <th className="py-2 px-3 text-right text-xs font-medium text-[var(--color-accent-green)]">Population</th>
                       <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Languages</th>
+                      <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Link</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -386,8 +387,7 @@ export default function Database() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: index * 0.02 }}
-                        className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
-                        onClick={() => navigate(`/search?q=${encodeURIComponent(country.name)}&type=country`)}
+                        className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors"
                       >
                         <td className="py-3 px-3">
                           {country.flag && (
@@ -412,6 +412,17 @@ export default function Database() {
                               <Badge key={i} variant="default">{lang}</Badge>
                             ))}
                           </div>
+                        </td>
+                        <td className="py-3 px-3">
+                          <a 
+                            href={`https://en.wikipedia.org/wiki/${encodeURIComponent(country.name)}`}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
                         </td>
                       </motion.tr>
                     ))}
@@ -471,16 +482,14 @@ export default function Database() {
                           {figure.description?.slice(0, 100)}...
                         </td>
                         <td className="py-3 px-3">
-                          {figure.url && (
-                            <a 
-                              href={figure.url} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
-                            >
-                              <ExternalLink className="w-4 h-4" />
-                            </a>
-                          )}
+                          <a 
+                            href={figure.url || `https://en.wikipedia.org/wiki/${encodeURIComponent(figure.name)}`}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
                         </td>
                       </motion.tr>
                     ))}
@@ -504,6 +513,7 @@ export default function Database() {
                       <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Country</th>
                       <th className="py-2 px-3 text-right text-xs font-medium text-[var(--color-accent-green)]">Population</th>
                       <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Language</th>
+                      <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Link</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -513,8 +523,7 @@ export default function Database() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: index * 0.02 }}
-                        className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
-                        onClick={() => navigate(`/search?q=${encodeURIComponent(clan.name)}&type=clan`)}
+                        className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors"
                       >
                         <td className="py-3 px-3 text-sm text-[var(--color-text-primary)]">
                           {clan.name}
@@ -527,6 +536,16 @@ export default function Database() {
                         </td>
                         <td className="py-3 px-3 text-sm">
                           <Badge variant="blue">{clan.language}</Badge>
+                        </td>
+                        <td className="py-3 px-3">
+                          <a 
+                            href={`https://en.wikipedia.org/wiki/${encodeURIComponent(clan.name.replace(/\s*\([^)]*\)/g, ''))}_people`}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
                         </td>
                       </motion.tr>
                     ))}
@@ -584,16 +603,14 @@ export default function Database() {
                           {item.description?.slice(0, 100)}...
                         </td>
                         <td className="py-3 px-3">
-                          {item.url && (
-                            <a 
-                              href={item.url} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
-                            >
-                              <ExternalLink className="w-4 h-4" />
-                            </a>
-                          )}
+                          <a 
+                            href={item.url || `https://en.wikipedia.org/wiki/${encodeURIComponent(item.name.replace(/\s*\([^)]*\)/g, ''))}`}
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
                         </td>
                       </motion.tr>
                     ))}
