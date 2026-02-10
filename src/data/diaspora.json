@@ -1,0 +1,121 @@
+{
+  "diaspora": {
+    "overview": {
+      "totalPopulation": 200000000,
+      "regions": ["Americas", "Europe", "Middle East", "Asia"],
+      "description": "The African diaspora refers to communities throughout the world that are descended from the historic movement of peoples from Africa, predominantly to the Americas, Europe, and other areas around the globe."
+    },
+    "migrations": [
+      {
+        "id": "transatlantic",
+        "name": "Transatlantic Slave Trade",
+        "period": "1500s - 1800s",
+        "origin": "West & Central Africa",
+        "destinations": ["Americas", "Caribbean", "Brazil"],
+        "estimatedPeople": 12500000,
+        "description": "The largest forced migration in history, transporting millions of Africans to the Americas over four centuries.",
+        "majorPorts": {
+          "africa": ["Gorée Island", "Elmina Castle", "Ouidah", "Luanda"],
+          "americas": ["Charleston", "New Orleans", "Salvador", "Havana"]
+        }
+      },
+      {
+        "id": "great-migration",
+        "name": "Great Migration",
+        "period": "1910 - 1970",
+        "origin": "Southern United States",
+        "destinations": ["Northern US", "Western US"],
+        "estimatedPeople": 6000000,
+        "description": "The movement of African Americans from the rural South to cities in the North, Midwest, and West seeking better opportunities.",
+        "majorCities": ["Chicago", "Detroit", "New York", "Los Angeles"]
+      },
+      {
+        "id": "windrush",
+        "name": "Windrush Generation",
+        "period": "1948 - 1971",
+        "origin": "Caribbean",
+        "destinations": ["United Kingdom"],
+        "estimatedPeople": 500000,
+        "description": "Caribbean migrants who came to the UK to help rebuild post-war Britain, named after the ship HMT Empire Windrush.",
+        "majorCities": ["London", "Birmingham", "Manchester", "Bristol"]
+      },
+      {
+        "id": "modern-african",
+        "name": "Modern African Migration",
+        "period": "1980s - Present",
+        "origin": "Various African Nations",
+        "destinations": ["Europe", "North America", "Gulf States"],
+        "estimatedPeople": 17000000,
+        "description": "Contemporary migration for education, employment, and refuge from conflict or economic hardship.",
+        "majorCities": ["London", "Paris", "New York", "Dubai"]
+      }
+    ],
+    "communities": [
+      {
+        "id": "african-american",
+        "name": "African Americans",
+        "location": "United States",
+        "population": 47000000,
+        "origins": ["West Africa", "Central Africa"],
+        "culturalContributions": ["Jazz", "Blues", "Hip-Hop", "Soul Food", "Gospel"],
+        "keyFacts": [
+          "Largest diaspora community in the Americas",
+          "Central to American cultural identity",
+          "Civil Rights Movement transformed global human rights"
+        ]
+      },
+      {
+        "id": "afro-brazilian",
+        "name": "Afro-Brazilians",
+        "location": "Brazil",
+        "population": 97000000,
+        "origins": ["Angola", "Congo", "Nigeria", "Benin"],
+        "culturalContributions": ["Samba", "Capoeira", "Candomblé", "Feijoada"],
+        "keyFacts": [
+          "Largest African diaspora population outside Africa",
+          "Salvador has highest Black population outside Africa",
+          "Strong preservation of African religious traditions"
+        ]
+      },
+      {
+        "id": "afro-caribbean",
+        "name": "Afro-Caribbeans",
+        "location": "Caribbean Islands",
+        "population": 25000000,
+        "origins": ["West Africa", "Central Africa"],
+        "culturalContributions": ["Reggae", "Calypso", "Carnival", "Jerk Cuisine"],
+        "keyFacts": [
+          "Created unique Creole cultures",
+          "Haiti: first free Black republic",
+          "Major influence on global music"
+        ]
+      },
+      {
+        "id": "black-british",
+        "name": "Black British",
+        "location": "United Kingdom",
+        "population": 2000000,
+        "origins": ["Caribbean", "Nigeria", "Ghana", "Somalia"],
+        "culturalContributions": ["Grime", "Notting Hill Carnival", "British Cuisine Fusion"],
+        "keyFacts": [
+          "Windrush generation rebuilt post-war Britain",
+          "Growing Nigerian and Ghanaian communities",
+          "Major influence on British music and culture"
+        ]
+      },
+      {
+        "id": "afro-french",
+        "name": "Afro-French",
+        "location": "France",
+        "population": 5000000,
+        "origins": ["Senegal", "Mali", "Ivory Coast", "Congo", "Caribbean"],
+        "culturalContributions": ["French Rap", "Zouk", "Fashion", "Literature"],
+        "keyFacts": [
+          "Largest Black population in Europe",
+          "Strong connections to Francophone Africa",
+          "Influential in arts and sports"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "culture": {
+    "music": [
+      {
+        "id": "afrobeat",
+        "name": "Afrobeat",
+        "origin": "Nigeria",
+        "description": "A music genre that combines West African musical styles with American funk and jazz, pioneered by Fela Kuti.",
+        "keyArtists": ["Fela Kuti", "Burna Boy", "Wizkid", "Davido"],
+        "instruments": ["Drums", "Horns", "Guitar", "Keyboards"],
+        "influence": "Global influence on pop, hip-hop, and dance music"
+      },
+      {
+        "id": "reggae",
+        "name": "Reggae",
+        "origin": "Jamaica",
+        "description": "A music genre that originated in Jamaica in the late 1960s, characterized by a rhythmic style and socially conscious lyrics.",
+        "keyArtists": ["Bob Marley", "Peter Tosh", "Jimmy Cliff", "Burning Spear"],
+        "instruments": ["Bass", "Drums", "Guitar", "Keyboards"],
+        "influence": "Influenced hip-hop, punk, and world music globally"
+      },
+      {
+        "id": "jazz",
+        "name": "Jazz",
+        "origin": "United States (New Orleans)",
+        "description": "A music genre that originated in African American communities, characterized by swing, improvisation, and complex harmonies.",
+        "keyArtists": ["Louis Armstrong", "Duke Ellington", "Miles Davis", "John Coltrane"],
+        "instruments": ["Saxophone", "Trumpet", "Piano", "Double Bass"],
+        "influence": "Foundation for blues, R&B, rock, and hip-hop"
+      },
+      {
+        "id": "highlife",
+        "name": "Highlife",
+        "origin": "Ghana",
+        "description": "A music genre that originated in Ghana, blending traditional Akan music with Western instruments.",
+        "keyArtists": ["E.T. Mensah", "Osibisa", "Daddy Lumba", "Kojo Antwi"],
+        "instruments": ["Guitars", "Horns", "Drums"],
+        "influence": "Precursor to Afrobeat and influenced West African pop"
+      },
+      {
+        "id": "samba",
+        "name": "Samba",
+        "origin": "Brazil",
+        "description": "A Brazilian music genre with roots in African rhythms brought by enslaved Africans.",
+        "keyArtists": ["Cartola", "Beth Carvalho", "Zeca Pagodinho", "Martinho da Vila"],
+        "instruments": ["Surdo", "Pandeiro", "Tamborim", "Cavaquinho"],
+        "influence": "Central to Brazilian culture and Carnival celebrations"
+      },
+      {
+        "id": "blues",
+        "name": "Blues",
+        "origin": "United States (Mississippi Delta)",
+        "description": "A music genre originating from African American communities in the Deep South, characterized by call-and-response patterns.",
+        "keyArtists": ["B.B. King", "Muddy Waters", "Robert Johnson", "Bessie Smith"],
+        "instruments": ["Guitar", "Harmonica", "Piano", "Voice"],
+        "influence": "Foundation for rock and roll, R&B, and jazz"
+      }
+    ],
+    "food": [
+      {
+        "id": "jollof-rice",
+        "name": "Jollof Rice",
+        "origin": "West Africa",
+        "description": "A one-pot rice dish cooked in a flavorful tomato and pepper base, popular across West Africa.",
+        "countries": ["Nigeria", "Ghana", "Senegal", "Sierra Leone"],
+        "ingredients": ["Rice", "Tomatoes", "Peppers", "Onions", "Spices"]
+      },
+      {
+        "id": "injera",
+        "name": "Injera",
+        "origin": "Ethiopia/Eritrea",
+        "description": "A sourdough flatbread with a spongy texture, used as an edible plate for Ethiopian cuisine.",
+        "countries": ["Ethiopia", "Eritrea", "Somalia"],
+        "ingredients": ["Teff flour", "Water", "Yeast"]
+      },
+      {
+        "id": "gumbo",
+        "name": "Gumbo",
+        "origin": "Louisiana (USA)",
+        "description": "A stew originating from African, French, and Native American influences in Louisiana.",
+        "countries": ["United States"],
+        "ingredients": ["Okra", "Roux", "Meat/Seafood", "Holy Trinity (celery, onion, bell pepper)"]
+      },
+      {
+        "id": "jerk-chicken",
+        "name": "Jerk Chicken",
+        "origin": "Jamaica",
+        "description": "Chicken marinated with spicy jerk seasoning and grilled, a signature Jamaican dish.",
+        "countries": ["Jamaica"],
+        "ingredients": ["Chicken", "Scotch Bonnet Peppers", "Allspice", "Thyme"]
+      },
+      {
+        "id": "fufu",
+        "name": "Fufu",
+        "origin": "West/Central Africa",
+        "description": "A starchy side dish made by pounding cassava, plantains, or yams into a dough-like consistency.",
+        "countries": ["Ghana", "Nigeria", "Cameroon", "Ivory Coast"],
+        "ingredients": ["Cassava", "Plantain", "Yam", "Cocoyam"]
+      },
+      {
+        "id": "feijoada",
+        "name": "Feijoada",
+        "origin": "Brazil",
+        "description": "A black bean stew with pork, considered Brazil's national dish with African slave origins.",
+        "countries": ["Brazil"],
+        "ingredients": ["Black Beans", "Pork", "Sausage", "Garlic", "Bay Leaves"]
+      }
+    ],
+    "languages": [
+      {
+        "id": "swahili",
+        "name": "Swahili (Kiswahili)",
+        "speakers": 100000000,
+        "regions": ["East Africa", "Central Africa"],
+        "countries": ["Tanzania", "Kenya", "Uganda", "DRC", "Rwanda"],
+        "facts": ["Bantu language with Arabic influence", "Lingua franca of East Africa", "Official language of the African Union"],
+        "commonPhrases": {
+          "Hello": "Jambo / Habari",
+          "Thank you": "Asante",
+          "Welcome": "Karibu",
+          "How are you?": "Habari yako?"
+        }
+      },
+      {
+        "id": "yoruba",
+        "name": "Yoruba",
+        "speakers": 45000000,
+        "regions": ["West Africa", "Americas (Diaspora)"],
+        "countries": ["Nigeria", "Benin", "Togo", "Brazil", "Cuba"],
+        "facts": ["Tonal language with three tones", "Rich oral tradition", "Influenced Lucumí in Cuba and Candomblé in Brazil"],
+        "commonPhrases": {
+          "Hello": "Bawo ni",
+          "Thank you": "E se",
+          "Good morning": "E kaaro",
+          "How are you?": "Se daadaa ni?"
+        }
+      },
+      {
+        "id": "hausa",
+        "name": "Hausa",
+        "speakers": 80000000,
+        "regions": ["West Africa", "Central Africa"],
+        "countries": ["Nigeria", "Niger", "Ghana", "Cameroon"],
+        "facts": ["Most widely spoken language in West Africa", "Used as trade language for centuries", "Written in both Latin and Arabic scripts"],
+        "commonPhrases": {
+          "Hello": "Sannu",
+          "Thank you": "Na gode",
+          "Good morning": "Ina kwana",
+          "How are you?": "Yaya kake?"
+        }
+      },
+      {
+        "id": "zulu",
+        "name": "Zulu (isiZulu)",
+        "speakers": 12000000,
+        "regions": ["Southern Africa"],
+        "countries": ["South Africa", "Lesotho", "Eswatini"],
+        "facts": ["Most widely spoken home language in South Africa", "Known for click consonants", "Language of the Zulu Kingdom"],
+        "commonPhrases": {
+          "Hello": "Sawubona",
+          "Thank you": "Ngiyabonga",
+          "I love you": "Ngiyakuthanda",
+          "How are you?": "Unjani?"
+        }
+      },
+      {
+        "id": "amharic",
+        "name": "Amharic",
+        "speakers": 32000000,
+        "regions": ["East Africa"],
+        "countries": ["Ethiopia"],
+        "facts": ["Uses unique Ge'ez script", "Second-most spoken Semitic language after Arabic", "Official language of Ethiopia"],
+        "commonPhrases": {
+          "Hello": "Selam",
+          "Thank you": "Ameseginalehu",
+          "How are you?": "Endemin neh/nesh?",
+          "Peace": "Selam"
+        }
+      },
+      {
+        "id": "patois",
+        "name": "Jamaican Patois",
+        "speakers": 3000000,
+        "regions": ["Caribbean", "Diaspora"],
+        "countries": ["Jamaica", "UK", "USA", "Canada"],
+        "facts": ["English-based creole with West African influences", "Rich in proverbs and wordplay", "Spread globally through reggae music"],
+        "commonPhrases": {
+          "Hello": "Wah gwaan",
+          "No problem": "No problem / Everyting criss",
+          "I understand": "Mi understand",
+          "Goodbye": "Likkle more / Walk good"
+        }
+      }
+    ]
+  }
+}

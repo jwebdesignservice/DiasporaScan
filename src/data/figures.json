@@ -1,0 +1,208 @@
+{
+  "figures": [
+    {
+      "id": "martin-luther-king",
+      "name": "Martin Luther King Jr.",
+      "birth": "1929",
+      "death": "1968",
+      "origin": "United States",
+      "category": "Civil Rights",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Martin_Luther_King%2C_Jr..jpg/440px-Martin_Luther_King%2C_Jr..jpg",
+      "description": "American Baptist minister and activist who became the most visible spokesperson in the civil rights movement.",
+      "achievements": [
+        "Led the Montgomery Bus Boycott",
+        "Delivered 'I Have a Dream' speech",
+        "Youngest Nobel Peace Prize winner at the time",
+        "Championed nonviolent resistance"
+      ],
+      "quote": "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that."
+    },
+    {
+      "id": "nelson-mandela",
+      "name": "Nelson Mandela",
+      "birth": "1918",
+      "death": "2013",
+      "origin": "South Africa",
+      "category": "Political Leader",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/440px-Nelson_Mandela_1994.jpg",
+      "description": "South African anti-apartheid revolutionary and political leader who served as President of South Africa from 1994 to 1999.",
+      "achievements": [
+        "Imprisoned for 27 years for fighting apartheid",
+        "First democratically elected President of South Africa",
+        "Nobel Peace Prize winner (1993)",
+        "Symbol of peace and reconciliation worldwide"
+      ],
+      "quote": "It always seems impossible until it's done."
+    },
+    {
+      "id": "harriet-tubman",
+      "name": "Harriet Tubman",
+      "birth": "1822",
+      "death": "1913",
+      "origin": "United States",
+      "category": "Abolitionist",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Harriet_Tubman_by_Squyer%2C_NPG%2C_c1885.jpg/440px-Harriet_Tubman_by_Squyer%2C_NPG%2C_c1885.jpg",
+      "description": "American abolitionist and political activist who escaped slavery and made 13 missions to rescue enslaved people using the Underground Railroad.",
+      "achievements": [
+        "Rescued approximately 70 enslaved people",
+        "First woman to lead an armed assault during the Civil War",
+        "Worked as a spy for the Union Army",
+        "Dedicated later life to women's suffrage"
+      ],
+      "quote": "I freed a thousand slaves. I could have freed a thousand more if only they knew they were slaves."
+    },
+    {
+      "id": "kwame-nkrumah",
+      "name": "Kwame Nkrumah",
+      "birth": "1909",
+      "death": "1972",
+      "origin": "Ghana",
+      "category": "Political Leader",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Kwame_Nkrumah_%28JFKWHP-AR6409-A%29.jpg/440px-Kwame_Nkrumah_%28JFKWHP-AR6409-A%29.jpg",
+      "description": "Ghanaian politician and revolutionary who became the first Prime Minister and President of Ghana, leading the country to independence.",
+      "achievements": [
+        "Led Ghana to independence from Britain in 1957",
+        "Founder of Pan-Africanism movement",
+        "Established the Organization of African Unity",
+        "Advocated for African unity and socialism"
+      ],
+      "quote": "We face neither East nor West: we face forward."
+    },
+    {
+      "id": "bob-marley",
+      "name": "Bob Marley",
+      "birth": "1945",
+      "death": "1981",
+      "origin": "Jamaica",
+      "category": "Music",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Bob-Marley-in-Concert_Zurich_05-30-80.jpg/440px-Bob-Marley-in-Concert_Zurich_05-30-80.jpg",
+      "description": "Jamaican singer, songwriter, and musician who became an international icon for his reggae music and Rastafari message.",
+      "achievements": [
+        "Pioneer of reggae music worldwide",
+        "Sold over 75 million records globally",
+        "United warring political factions in Jamaica",
+        "Symbol of resistance and peace"
+      ],
+      "quote": "One good thing about music, when it hits you, you feel no pain."
+    },
+    {
+      "id": "maya-angelou",
+      "name": "Maya Angelou",
+      "birth": "1928",
+      "death": "2014",
+      "origin": "United States",
+      "category": "Literature",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Maya_Angelou_visits_YCP_Feb_2013.jpg/440px-Maya_Angelou_visits_YCP_Feb_2013.jpg",
+      "description": "American poet, memoirist, and civil rights activist known for her series of seven autobiographies.",
+      "achievements": [
+        "Author of 'I Know Why the Caged Bird Sings'",
+        "Recited poem at President Clinton's inauguration",
+        "Presidential Medal of Freedom recipient",
+        "Over 50 honorary degrees"
+      ],
+      "quote": "There is no greater agony than bearing an untold story inside you."
+    },
+    {
+      "id": "toussaint-louverture",
+      "name": "Toussaint Louverture",
+      "birth": "1743",
+      "death": "1803",
+      "origin": "Haiti",
+      "category": "Revolutionary",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Toussaint_L%27Ouverture.jpg/440px-Toussaint_L%27Ouverture.jpg",
+      "description": "Haitian general and leader of the Haitian Revolution, the only successful slave revolt in history.",
+      "achievements": [
+        "Led the only successful slave revolution",
+        "Transformed Haiti into a free state",
+        "Defeated French, Spanish, and British forces",
+        "Abolished slavery in Saint-Domingue"
+      ],
+      "quote": "I was born a slave, but nature gave me the soul of a free man."
+    },
+    {
+      "id": "wangari-maathai",
+      "name": "Wangari Maathai",
+      "birth": "1940",
+      "death": "2011",
+      "origin": "Kenya",
+      "category": "Environmental",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Wangari_Maathai_portrait_by_Martin_Rowe.jpg/440px-Wangari_Maathai_portrait_by_Martin_Rowe.jpg",
+      "description": "Kenyan environmental and political activist who founded the Green Belt Movement.",
+      "achievements": [
+        "First African woman to win Nobel Peace Prize",
+        "Planted over 51 million trees in Africa",
+        "Founded the Green Belt Movement",
+        "First woman in East Africa to earn a doctorate"
+      ],
+      "quote": "Until you dig a hole, you plant a tree, you water it and make it survive, you haven't done a thing."
+    },
+    {
+      "id": "marcus-garvey",
+      "name": "Marcus Garvey",
+      "birth": "1887",
+      "death": "1940",
+      "origin": "Jamaica",
+      "category": "Pan-Africanism",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Marcus_Garvey_1924-08-05.jpg/440px-Marcus_Garvey_1924-08-05.jpg",
+      "description": "Jamaican political activist, publisher, journalist, and orator who founded the Universal Negro Improvement Association.",
+      "achievements": [
+        "Founded UNIA with millions of members",
+        "Pioneered the 'Back to Africa' movement",
+        "Created the Black Star Line shipping company",
+        "Inspired future civil rights leaders"
+      ],
+      "quote": "A people without the knowledge of their past history, origin and culture is like a tree without roots."
+    },
+    {
+      "id": "chinua-achebe",
+      "name": "Chinua Achebe",
+      "birth": "1930",
+      "death": "2013",
+      "origin": "Nigeria",
+      "category": "Literature",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Chinua_Achebe_-_Buffalo_25Sep2008.jpg/440px-Chinua_Achebe_-_Buffalo_25Sep2008.jpg",
+      "description": "Nigerian novelist, poet, and critic regarded as the father of African literature in English.",
+      "achievements": [
+        "Author of 'Things Fall Apart'",
+        "Over 20 million copies sold of his works",
+        "Man Booker International Prize winner",
+        "Transformed how the world sees African literature"
+      ],
+      "quote": "The world is like a Mask dancing. If you want to see it well, you do not stand in one place."
+    },
+    {
+      "id": "fela-kuti",
+      "name": "Fela Kuti",
+      "birth": "1938",
+      "death": "1997",
+      "origin": "Nigeria",
+      "category": "Music",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Fela_Kuti_in_1970.jpg/440px-Fela_Kuti_in_1970.jpg",
+      "description": "Nigerian multi-instrumentalist, bandleader, and activist who pioneered Afrobeat music.",
+      "achievements": [
+        "Created the Afrobeat genre",
+        "Recorded over 50 albums",
+        "Used music as political activism",
+        "Influenced countless musicians worldwide"
+      ],
+      "quote": "Music is the weapon of the future."
+    },
+    {
+      "id": "miriam-makeba",
+      "name": "Miriam Makeba",
+      "birth": "1932",
+      "death": "2008",
+      "origin": "South Africa",
+      "category": "Music",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/MiriamMakeba.jpg/440px-MiriamMakeba.jpg",
+      "description": "South African singer and civil rights activist known as 'Mama Africa'.",
+      "achievements": [
+        "First African artist to win a Grammy",
+        "UN delegate and anti-apartheid activist",
+        "Popularized African music worldwide",
+        "Exiled from South Africa for 31 years"
+      ],
+      "quote": "Girls are the future mothers of our society, and it is important that we focus on their well-being."
+    }
+  ]
+}

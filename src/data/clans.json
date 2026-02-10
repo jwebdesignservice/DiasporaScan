@@ -1,0 +1,168 @@
+{
+  "clans": [
+    {
+      "id": "ashanti",
+      "name": "Ashanti (Asante)",
+      "country": "Ghana",
+      "population": 11000000,
+      "language": "Twi (Akan)",
+      "description": "One of the most powerful kingdoms in African history, known for their gold wealth and military prowess.",
+      "traditions": [
+        "The Golden Stool is the sacred symbol of the Ashanti nation",
+        "Kente cloth originated from Ashanti weavers",
+        "Adinkra symbols carry deep philosophical meanings"
+      ],
+      "famousMembers": ["Yaa Asantewaa", "Osei Tutu I", "Kofi Annan"],
+      "commonSurnames": ["Mensah", "Owusu", "Agyemang", "Boateng", "Asante"]
+    },
+    {
+      "id": "yoruba",
+      "name": "Yoruba",
+      "country": "Nigeria",
+      "population": 45000000,
+      "language": "Yoruba",
+      "description": "One of Africa's largest ethnic groups, known for their sophisticated civilization, art, and religious traditions.",
+      "traditions": [
+        "Orisha worship spread to the Americas through the diaspora",
+        "Yoruba bronze sculptures are UNESCO recognized",
+        "Ile-Ife is considered the spiritual homeland"
+      ],
+      "famousMembers": ["Wole Soyinka", "Fela Kuti", "Chimamanda Ngozi Adichie"],
+      "commonSurnames": ["Adeyemi", "Okonkwo", "Olumide", "Adesanya", "Ojo"]
+    },
+    {
+      "id": "zulu",
+      "name": "Zulu",
+      "country": "South Africa",
+      "population": 12000000,
+      "language": "isiZulu",
+      "description": "The largest ethnic group in South Africa, known for their warrior tradition and rich cultural heritage.",
+      "traditions": [
+        "The Zulu Kingdom was founded by King Shaka",
+        "Reed Dance ceremony celebrates womanhood",
+        "Beadwork carries coded messages about relationships"
+      ],
+      "famousMembers": ["Shaka Zulu", "Mangosuthu Buthelezi", "Ladysmith Black Mambazo"],
+      "commonSurnames": ["Zulu", "Nkosi", "Dlamini", "Mkhize", "Ndlovu"]
+    },
+    {
+      "id": "igbo",
+      "name": "Igbo",
+      "country": "Nigeria",
+      "population": 40000000,
+      "language": "Igbo",
+      "description": "Known as one of Africa's most entrepreneurial peoples, with a democratic village-based society.",
+      "traditions": [
+        "Democratic 'Oha' council system governed communities",
+        "New Yam Festival (Iri ji) celebrates harvest",
+        "Igbo art includes elaborate masks and textiles"
+      ],
+      "famousMembers": ["Chinua Achebe", "Nnamdi Azikiwe", "Chimamanda Ngozi Adichie"],
+      "commonSurnames": ["Okafor", "Eze", "Nwosu", "Chukwu", "Obi"]
+    },
+    {
+      "id": "maasai",
+      "name": "Maasai",
+      "country": "Kenya/Tanzania",
+      "population": 2000000,
+      "language": "Maa",
+      "description": "Semi-nomadic pastoralists known for their distinctive customs, dress, and warrior traditions.",
+      "traditions": [
+        "Cattle are central to Maasai life and wealth",
+        "Adumu (jumping dance) is performed by warriors",
+        "Red shuka cloth and beadwork are iconic"
+      ],
+      "famousMembers": ["Eliud Kipchoge (Kalenjin, related)", "Wilson Kipsang"],
+      "commonSurnames": ["Ole", "Sankale", "Tipis", "Loomu"]
+    },
+    {
+      "id": "wolof",
+      "name": "Wolof",
+      "country": "Senegal",
+      "population": 7000000,
+      "language": "Wolof",
+      "description": "The largest ethnic group in Senegal, known for their griots (storytellers) and hospitality traditions.",
+      "traditions": [
+        "Teranga (hospitality) is central to Wolof culture",
+        "Griots preserve history through oral tradition",
+        "Sabar drumming accompanies ceremonies"
+      ],
+      "famousMembers": ["Youssou N'Dour", "Léopold Sédar Senghor", "Sadio Mané"],
+      "commonSurnames": ["Diop", "Ndiaye", "Fall", "Sy", "Gueye"]
+    },
+    {
+      "id": "hausa-fulani",
+      "name": "Hausa-Fulani",
+      "country": "Nigeria/Niger",
+      "population": 80000000,
+      "language": "Hausa",
+      "description": "A major cultural and political force in West Africa, with a long history of trade and Islamic scholarship.",
+      "traditions": [
+        "Durbar festival features horsemen in ceremonial dress",
+        "Islamic scholarship centers like Kano are historic",
+        "Hausa architecture features distinctive mud-brick designs"
+      ],
+      "famousMembers": ["Ahmadu Bello", "Muhammadu Buhari", "Sadiq Daba"],
+      "commonSurnames": ["Mohammed", "Ibrahim", "Abubakar", "Bello", "Usman"]
+    },
+    {
+      "id": "akan",
+      "name": "Akan",
+      "country": "Ghana/Ivory Coast",
+      "population": 20000000,
+      "language": "Akan (Twi, Fante)",
+      "description": "A major ethnic group encompassing Ashanti, Fante, and others, known for their matrilineal society.",
+      "traditions": [
+        "Day names given based on birthday",
+        "Gold weights were used as currency",
+        "Adinkra symbols carry philosophical meanings"
+      ],
+      "famousMembers": ["Kwame Nkrumah", "Kofi Annan", "Michael Essien"],
+      "commonSurnames": ["Mensah", "Appiah", "Acheampong", "Osei", "Asante"]
+    }
+  ],
+  "surnames": [
+    {
+      "surname": "Williams",
+      "origin": "English (given to enslaved Africans)",
+      "commonIn": ["USA", "Jamaica", "UK"],
+      "meaning": "Derived from 'William', commonly assigned during slavery",
+      "famousBearers": ["Serena Williams", "Pharrell Williams"]
+    },
+    {
+      "surname": "Johnson",
+      "origin": "English (given to enslaved Africans)",
+      "commonIn": ["USA", "Caribbean"],
+      "meaning": "Son of John, commonly assigned during slavery",
+      "famousBearers": ["Magic Johnson", "Robert Johnson"]
+    },
+    {
+      "surname": "Okonkwo",
+      "origin": "Igbo (Nigeria)",
+      "commonIn": ["Nigeria", "USA", "UK"],
+      "meaning": "Born on Nkwo market day",
+      "famousBearers": ["Fictional: protagonist of 'Things Fall Apart'"]
+    },
+    {
+      "surname": "Diop",
+      "origin": "Wolof (Senegal)",
+      "commonIn": ["Senegal", "Gambia", "France"],
+      "meaning": "A noble Wolof surname",
+      "famousBearers": ["Cheikh Anta Diop", "Mamadou Diop"]
+    },
+    {
+      "surname": "Mensah",
+      "origin": "Akan (Ghana)",
+      "commonIn": ["Ghana", "UK", "USA"],
+      "meaning": "Third-born son",
+      "famousBearers": ["E.T. Mensah", "Benjamin Mensah"]
+    },
+    {
+      "surname": "Mandela",
+      "origin": "Xhosa (South Africa)",
+      "commonIn": ["South Africa"],
+      "meaning": "From the Mandela clan of the Thembu people",
+      "famousBearers": ["Nelson Mandela", "Winnie Mandela"]
+    }
+  ]
+}

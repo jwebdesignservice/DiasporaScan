@@ -1,0 +1,220 @@
+{
+  "countries": [
+    {
+      "id": "nigeria",
+      "name": "Nigeria",
+      "code": "NG",
+      "region": "West Africa",
+      "population": 223000000,
+      "diasporaPopulation": 17000000,
+      "capital": "Abuja",
+      "languages": ["English", "Hausa", "Yoruba", "Igbo"],
+      "facts": [
+        "Nigeria is Africa's most populous country",
+        "Home to over 250 ethnic groups",
+        "Nollywood is the world's second-largest film industry by volume",
+        "The Igbo, Yoruba, and Hausa are the three largest ethnic groups"
+      ],
+      "famousFigures": ["Chinua Achebe", "Wole Soyinka", "Fela Kuti", "Chimamanda Ngozi Adichie"],
+      "color": "#10b981"
+    },
+    {
+      "id": "ghana",
+      "name": "Ghana",
+      "code": "GH",
+      "region": "West Africa",
+      "population": 33000000,
+      "diasporaPopulation": 3000000,
+      "capital": "Accra",
+      "languages": ["English", "Akan", "Ewe", "Ga"],
+      "facts": [
+        "First sub-Saharan African country to gain independence (1957)",
+        "Known as the 'Gateway to Africa' for diaspora return",
+        "Home to the Ashanti Kingdom, one of Africa's most powerful historical empires",
+        "The 'Year of Return' in 2019 welcomed diaspora members home"
+      ],
+      "famousFigures": ["Kwame Nkrumah", "Kofi Annan", "W.E.B. Du Bois (adopted)", "Maya Angelou (lived there)"],
+      "color": "#10b981"
+    },
+    {
+      "id": "ethiopia",
+      "name": "Ethiopia",
+      "code": "ET",
+      "region": "East Africa",
+      "population": 120000000,
+      "diasporaPopulation": 3000000,
+      "capital": "Addis Ababa",
+      "languages": ["Amharic", "Oromo", "Tigrinya", "Somali"],
+      "facts": [
+        "Never colonized by European powers",
+        "Home to the oldest Christian church in Africa",
+        "Birthplace of coffee",
+        "Has its own unique calendar, 7-8 years behind the Gregorian calendar"
+      ],
+      "famousFigures": ["Haile Selassie", "Abebe Bikila", "Teddy Afro", "The Weeknd (Ethiopian descent)"],
+      "color": "#10b981"
+    },
+    {
+      "id": "kenya",
+      "name": "Kenya",
+      "code": "KE",
+      "region": "East Africa",
+      "population": 54000000,
+      "diasporaPopulation": 3000000,
+      "capital": "Nairobi",
+      "languages": ["English", "Swahili"],
+      "facts": [
+        "Barack Obama's father was from Kenya",
+        "Home to the Maasai Mara, one of the world's most famous wildlife reserves",
+        "Kenyan runners dominate long-distance running globally",
+        "Nairobi is known as the 'Safari Capital of the World'"
+      ],
+      "famousFigures": ["Wangari Maathai", "Lupita Nyong'o", "Eliud Kipchoge", "Ngũgĩ wa Thiong'o"],
+      "color": "#10b981"
+    },
+    {
+      "id": "south-africa",
+      "name": "South Africa",
+      "code": "ZA",
+      "region": "Southern Africa",
+      "population": 60000000,
+      "diasporaPopulation": 1000000,
+      "capital": "Pretoria",
+      "languages": ["English", "Zulu", "Xhosa", "Afrikaans"],
+      "facts": [
+        "Has 11 official languages",
+        "Nelson Mandela led the fight against apartheid",
+        "Home to the world's deepest gold mine",
+        "The Cradle of Humankind contains some of the oldest human fossils"
+      ],
+      "famousFigures": ["Nelson Mandela", "Desmond Tutu", "Trevor Noah", "Miriam Makeba"],
+      "color": "#10b981"
+    },
+    {
+      "id": "senegal",
+      "name": "Senegal",
+      "code": "SN",
+      "region": "West Africa",
+      "population": 17000000,
+      "diasporaPopulation": 700000,
+      "capital": "Dakar",
+      "languages": ["French", "Wolof", "Serer", "Pulaar"],
+      "facts": [
+        "Gorée Island was a major slave trading post",
+        "Known for its vibrant music scene, especially Mbalax",
+        "Home to the African Renaissance Monument, the tallest statue in Africa",
+        "Dakar Rally originally ended here"
+      ],
+      "famousFigures": ["Léopold Sédar Senghor", "Youssou N'Dour", "Akon", "Sadio Mané"],
+      "color": "#10b981"
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "code": "EG",
+      "region": "North Africa",
+      "population": 104000000,
+      "diasporaPopulation": 10000000,
+      "capital": "Cairo",
+      "languages": ["Arabic"],
+      "facts": [
+        "Home to one of the world's oldest civilizations",
+        "The Great Pyramid of Giza is the only remaining ancient wonder",
+        "Cleopatra lived closer in time to the Moon landing than to the building of the pyramids",
+        "The Nile is the longest river in Africa"
+      ],
+      "famousFigures": ["Imhotep", "Cleopatra", "Mohamed Salah", "Omar Sharif"],
+      "color": "#10b981"
+    },
+    {
+      "id": "jamaica",
+      "name": "Jamaica",
+      "code": "JM",
+      "region": "Caribbean (Diaspora)",
+      "population": 2800000,
+      "diasporaPopulation": 3000000,
+      "capital": "Kingston",
+      "languages": ["English", "Jamaican Patois"],
+      "facts": [
+        "Birthplace of reggae music and Bob Marley",
+        "Home to the fastest humans on Earth (Usain Bolt)",
+        "Rastafari movement originated here",
+        "One of the highest number of churches per square mile"
+      ],
+      "famousFigures": ["Bob Marley", "Usain Bolt", "Marcus Garvey", "Louise Bennett-Coverley"],
+      "color": "#f59e0b"
+    },
+    {
+      "id": "brazil",
+      "name": "Brazil",
+      "code": "BR",
+      "region": "South America (Diaspora)",
+      "population": 215000000,
+      "diasporaPopulation": 97000000,
+      "capital": "Brasília",
+      "languages": ["Portuguese"],
+      "facts": [
+        "Largest African diaspora population outside Africa",
+        "Salvador, Bahia has the largest Black population of any city outside Africa",
+        "Capoeira is an Afro-Brazilian martial art developed by enslaved Africans",
+        "Samba and many Brazilian cultural elements have African roots"
+      ],
+      "famousFigures": ["Pelé", "Machado de Assis", "Gilberto Gil", "Marta"],
+      "color": "#f59e0b"
+    },
+    {
+      "id": "usa",
+      "name": "United States",
+      "code": "US",
+      "region": "North America (Diaspora)",
+      "population": 330000000,
+      "diasporaPopulation": 47000000,
+      "capital": "Washington, D.C.",
+      "languages": ["English"],
+      "facts": [
+        "African Americans have shaped every aspect of American culture",
+        "The Civil Rights Movement transformed American society",
+        "Black History Month was established in 1976",
+        "Historically Black Colleges and Universities (HBCUs) are cultural institutions"
+      ],
+      "famousFigures": ["Martin Luther King Jr.", "Harriet Tubman", "Barack Obama", "Maya Angelou"],
+      "color": "#f59e0b"
+    },
+    {
+      "id": "uk",
+      "name": "United Kingdom",
+      "code": "GB",
+      "region": "Europe (Diaspora)",
+      "population": 67000000,
+      "diasporaPopulation": 2000000,
+      "capital": "London",
+      "languages": ["English"],
+      "facts": [
+        "Windrush generation arrived from the Caribbean starting in 1948",
+        "Notting Hill Carnival is Europe's largest street festival",
+        "Black Britons have contributed significantly to music, arts, and sports",
+        "Brixton and Peckham are known for their vibrant Afro-Caribbean communities"
+      ],
+      "famousFigures": ["Mary Seacole", "Stormzy", "Idris Elba", "Naomi Campbell"],
+      "color": "#f59e0b"
+    },
+    {
+      "id": "haiti",
+      "name": "Haiti",
+      "code": "HT",
+      "region": "Caribbean (Diaspora)",
+      "population": 11000000,
+      "diasporaPopulation": 2000000,
+      "capital": "Port-au-Prince",
+      "languages": ["French", "Haitian Creole"],
+      "facts": [
+        "First free Black republic in the world (1804)",
+        "Only successful slave revolution in history",
+        "Vodou originated from West African spiritual traditions",
+        "Paid 'reparations' to France until 1947 for their freedom"
+      ],
+      "famousFigures": ["Toussaint Louverture", "Jean-Jacques Dessalines", "Wyclef Jean", "Edwidge Danticat"],
+      "color": "#f59e0b"
+    }
+  ]
+}
