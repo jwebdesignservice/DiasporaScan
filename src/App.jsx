@@ -27,6 +27,21 @@ import Businesses from './pages/database/Businesses'
 import Officials from './pages/database/Officials'
 import Timeline from './pages/database/Timeline'
 
+// Political sub-pages
+import Senators from './pages/political/Senators'
+import Representatives from './pages/political/Representatives'
+import Mayors from './pages/political/Mayors'
+import HistoricalFirsts from './pages/political/HistoricalFirsts'
+
+// Analysis sub-pages
+import MigrationRoutes from './pages/analysis/MigrationRoutes'
+import DiasporaCommunities from './pages/analysis/DiasporaCommunities'
+
+// Crowdsourcing sub-pages
+import DataRequests from './pages/crowdsourcing/DataRequests'
+import SubmitData from './pages/crowdsourcing/SubmitData'
+import Leaderboard from './pages/crowdsourcing/Leaderboard'
+
 function App() {
   const [loading, setLoading] = useState(true)
   const [showPreloader, setShowPreloader] = useState(true)
@@ -68,11 +83,20 @@ function App() {
           <Route path="/database/officials" element={<Officials />} />
           <Route path="/database/timeline" element={<Timeline />} />
 
-          {/* Political sub-routes (placeholder - redirect to main analysis for now) */}
-          <Route path="/political/*" element={<Analysis />} />
+          {/* Political sub-routes */}
+          <Route path="/political/senators" element={<Senators />} />
+          <Route path="/political/representatives" element={<Representatives />} />
+          <Route path="/political/mayors" element={<Mayors />} />
+          <Route path="/political/firsts" element={<HistoricalFirsts />} />
 
-          {/* Crowdsourcing sub-routes (placeholder - redirect to about for now) */}
-          <Route path="/crowdsourcing/*" element={<About />} />
+          {/* Analysis sub-routes */}
+          <Route path="/analysis/routes" element={<MigrationRoutes />} />
+          <Route path="/analysis/communities" element={<DiasporaCommunities />} />
+
+          {/* Crowdsourcing sub-routes */}
+          <Route path="/crowdsourcing/requests" element={<DataRequests />} />
+          <Route path="/crowdsourcing/submit" element={<SubmitData />} />
+          <Route path="/crowdsourcing/leaderboard" element={<Leaderboard />} />
         </Routes>
       </Layout>
     </>

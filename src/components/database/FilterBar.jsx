@@ -17,14 +17,14 @@ export default function FilterBar({
     const hasActiveFilters = Object.values(activeFilters).some(v => v && v !== 'all')
 
     return (
-        <div className="flex flex-wrap items-center gap-3 mb-6">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
             {filters.map((filter) => (
                 <div key={filter.id} className="relative">
                     <button
                         onClick={() => setOpenDropdown(openDropdown === filter.id ? null : filter.id)}
-                        className={`flex items-center gap-2 px-3 py-2 text-sm rounded-lg border transition-colors ${activeFilters[filter.id] && activeFilters[filter.id] !== 'all'
-                                ? 'bg-[var(--color-accent-green)]/10 border-[var(--color-accent-green)] text-[var(--color-accent-green)]'
-                                : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
+                        className={`flex items-center gap-2 px-3 py-2 text-sm border transition-colors ${activeFilters[filter.id] && activeFilters[filter.id] !== 'all'
+                            ? 'bg-[var(--color-accent-green)]/10 border-[var(--color-accent-green)] text-[var(--color-accent-green)]'
+                            : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
                             }`}
                     >
                         <span>{filter.label}</span>
@@ -37,7 +37,7 @@ export default function FilterBar({
                     </button>
 
                     {openDropdown === filter.id && (
-                        <div className="absolute top-full left-0 mt-1 w-48 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg shadow-xl py-1 z-50 max-h-64 overflow-y-auto">
+                        <div className="absolute top-full left-0 mt-1 w-48 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] shadow-xl py-1 z-50 max-h-64 overflow-y-auto">
                             <button
                                 onClick={() => handleFilterSelect(filter.id, 'all')}
                                 className="w-full text-left px-3 py-2 text-sm text-[var(--color-text-muted)] hover:bg-[var(--color-bg-tertiary)] hover:text-[var(--color-text-primary)]"
@@ -49,8 +49,8 @@ export default function FilterBar({
                                     key={option.value}
                                     onClick={() => handleFilterSelect(filter.id, option.value)}
                                     className={`w-full text-left px-3 py-2 text-sm hover:bg-[var(--color-bg-tertiary)] ${activeFilters[filter.id] === option.value
-                                            ? 'text-[var(--color-accent-green)]'
-                                            : 'text-[var(--color-text-secondary)]'
+                                        ? 'text-[var(--color-accent-green)]'
+                                        : 'text-[var(--color-text-secondary)]'
                                         }`}
                                 >
                                     {option.label}

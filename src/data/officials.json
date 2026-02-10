@@ -56,7 +56,7 @@
                     "Rules"
                 ],
                 "website": "https://www.butler.senate.gov",
-                "image": null
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Laphonza_Butler_official_photo.jpg/440px-Laphonza_Butler_official_photo.jpg"
             },
             {
                 "id": "tim-scott",
@@ -185,7 +185,7 @@
                 "since": 2023,
                 "leadership": null,
                 "website": "https://crockett.house.gov",
-                "image": null
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jasmine_Crockett_118th_Congress_portrait.jpg/440px-Jasmine_Crockett_118th_Congress_portrait.jpg"
             }
         ],
         "mayors": [

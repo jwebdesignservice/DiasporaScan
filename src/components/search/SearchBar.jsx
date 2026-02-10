@@ -157,7 +157,7 @@ export default function SearchBar({ large = false, autoFocus = false }) {
         <div className={`relative ${large ? 'w-full max-w-2xl' : 'w-full'}`}>
             <form onSubmit={handleSubmit}>
                 <div className="relative">
-                    <Search className={`absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-text-muted)] ${large ? 'w-6 h-6' : 'w-5 h-5'}`} />
+                    <Search className={`absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 text-[var(--color-text-muted)] ${large ? 'w-5 h-5 sm:w-6 sm:h-6' : 'w-4 h-4 sm:w-5 sm:h-5'}`} />
                     <input
                         ref={inputRef}
                         type="text"
@@ -166,8 +166,8 @@ export default function SearchBar({ large = false, autoFocus = false }) {
                         onFocus={() => setIsOpen(true)}
                         onBlur={() => setTimeout(() => setIsOpen(false), 200)}
                         autoFocus={autoFocus}
-                        placeholder="Search countries, clans, surnames, figures..."
-                        className={`w-full bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent-green)] transition-all ${large ? 'pl-14 pr-20 py-5 text-lg' : 'pl-12 pr-16 py-3 text-base'
+                        placeholder="Search countries, clans, figures..."
+                        className={`w-full bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-xl text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent-green)] transition-all ${large ? 'pl-12 sm:pl-14 pr-16 sm:pr-20 py-4 sm:py-5 text-base sm:text-lg' : 'pl-10 sm:pl-12 pr-14 sm:pr-16 py-3 text-sm sm:text-base'
                             }`}
                     />
                     {query && (

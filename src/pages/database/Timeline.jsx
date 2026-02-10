@@ -80,7 +80,7 @@ export default function Timeline() {
                 </div>
 
                 {/* Timeline */}
-                <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg p-6">
+                <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] p-4">
                     <h3 className="text-sm text-[var(--color-text-muted)] mb-6">
                         Timeline ({filteredEvents.length} events)
                     </h3>

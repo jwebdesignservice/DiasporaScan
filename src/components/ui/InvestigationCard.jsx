@@ -17,14 +17,15 @@ export default function InvestigationCard({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay }}
+      className="min-w-0"
     >
       <Link
         to={href}
-        className="block bg-[var(--color-bg-secondary)] border border-[var(--color-border)] p-4 hover:border-[var(--color-accent-green)] transition-colors"
+        className="block bg-[var(--color-bg-secondary)] border border-[var(--color-border)] p-4 hover:border-[var(--color-accent-green)] transition-colors overflow-hidden"
       >
-        <div className="flex items-start justify-between gap-4 mb-2">
-          <div className="flex items-center gap-2">
-            <h3 className="text-sm font-medium text-[var(--color-text-primary)]">
+        <div className="flex items-start justify-between gap-2 sm:gap-4 mb-2">
+          <div className="flex items-center gap-2 min-w-0 flex-1">
+            <h3 className="text-sm font-medium text-[var(--color-text-primary)] truncate">
               {title}
             </h3>
             {isNew && (

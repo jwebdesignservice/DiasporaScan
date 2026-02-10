@@ -8,6 +8,7 @@ const megaMenuItems = [
         label: 'Database',
         path: '/database',
         dropdown: [
+            { label: 'All Data', path: '/database', description: 'Search all diaspora data' },
             { label: 'Diaspora Funding', path: '/database/funding', description: 'Grants & donations to African causes' },
             { label: 'Remittances', path: '/database/remittances', description: 'Money sent to Africa by country' },
             { label: 'Organizations', path: '/database/organizations', description: 'NGOs, charities & cultural orgs' },
@@ -19,26 +20,31 @@ const megaMenuItems = [
     },
     {
         label: 'Political',
-        path: '/database/officials',
+        path: '/political/senators',
         dropdown: [
-            { label: 'Elected Officials', path: '/database/officials', description: 'Congress members & mayors' },
-            { label: 'Historical Firsts', path: '/database/officials', description: 'First Black politicians' },
+            { label: 'Senators', path: '/political/senators', description: 'Black U.S. Senators' },
+            { label: 'Representatives', path: '/political/representatives', description: 'Black House members' },
+            { label: 'Mayors', path: '/political/mayors', description: 'Major city mayors' },
+            { label: 'Historical Firsts', path: '/political/firsts', description: 'First Black politicians' },
         ]
     },
     {
         label: 'Analysis',
         path: '/analysis',
         dropdown: [
-            { label: 'Migration Analysis', path: '/analysis', description: 'Migration patterns & routes' },
+            { label: 'Overview', path: '/analysis', description: 'Migration analysis dashboard' },
+            { label: 'Migration Routes', path: '/analysis/routes', description: 'Historical migration patterns' },
+            { label: 'Diaspora Communities', path: '/analysis/communities', description: 'Global community data' },
             { label: 'Historical Timeline', path: '/database/timeline', description: 'Key events from 1619 to present' },
         ]
     },
     {
         label: 'Crowdsourcing',
-        path: '/about',
+        path: '/crowdsourcing/requests',
         dropdown: [
-            { label: 'About DiasporaScan', path: '/about', description: 'Learn about our mission' },
-            { label: 'Submit Data', path: '/about', description: 'Contribute to our database' },
+            { label: 'Data Requests', path: '/crowdsourcing/requests', description: 'Request new data' },
+            { label: 'Submit Data', path: '/crowdsourcing/submit', description: 'Contribute to our database' },
+            { label: 'Leaderboard', path: '/crowdsourcing/leaderboard', description: 'Top contributors' },
         ]
     },
 ]
@@ -130,24 +136,26 @@ export default function Header() {
 
                                     {/* Dropdown */}
                                     {activeDropdown === item.label && (
-                                        <div className="absolute top-full left-0 mt-2 w-64 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg shadow-xl py-2 z-50">
-                                            {item.dropdown.map((subItem) => (
-                                                <button
-                                                    key={subItem.path + subItem.label}
-                                                    onClick={() => {
-                                                        setActiveDropdown(null)
-                                                        navigate(subItem.path)
-                                                    }}
-                                                    className="block w-full text-left px-4 py-2 hover:bg-[var(--color-bg-tertiary)] transition-colors"
-                                                >
-                                                    <div className="text-sm text-[var(--color-text-primary)]">
-                                                        {subItem.label}
-                                                    </div>
-                                                    <div className="text-xs text-[var(--color-text-muted)]">
-                                                        {subItem.description}
-                                                    </div>
-                                                </button>
-                                            ))}
+                                        <div className="absolute top-full left-0 pt-2 w-64 z-50">
+                                            <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg shadow-xl py-2">
+                                                {item.dropdown.map((subItem) => (
+                                                    <button
+                                                        key={subItem.path + subItem.label}
+                                                        onClick={() => {
+                                                            setActiveDropdown(null)
+                                                            navigate(subItem.path)
+                                                        }}
+                                                        className="block w-full text-left px-4 py-2 hover:bg-[var(--color-bg-tertiary)] transition-colors"
+                                                    >
+                                                        <div className="text-sm text-[var(--color-text-primary)]">
+                                                            {subItem.label}
+                                                        </div>
+                                                        <div className="text-xs text-[var(--color-text-muted)]">
+                                                            {subItem.description}
+                                                        </div>
+                                                    </button>
+                                                ))}
+                                            </div>
                                         </div>
                                     )}
                                 </div>
