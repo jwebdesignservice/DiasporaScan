@@ -46,25 +46,87 @@ function AfricaMap({ onCountryClick }) {
     }
 
     const getCountryData = (name) => {
+        // Map TopoJSON names to our data file country names
         const nameMap = {
-            'South Africa': 'South Africa',
-            'Nigeria': 'Nigeria',
-            'Ghana': 'Ghana',
-            'Kenya': 'Kenya',
-            'Ethiopia': 'Ethiopia',
-            'Senegal': 'Senegal',
+            // Direct matches
+            'Algeria': 'Algeria',
+            'Angola': 'Angola',
+            'Benin': 'Benin',
+            'Botswana': 'Botswana',
+            'Burkina Faso': 'Burkina Faso',
+            'Burundi': 'Burundi',
+            'Cameroon': 'Cameroon',
+            'Cape Verde': 'Cape Verde',
+            'Chad': 'Chad',
+            'Comoros': 'Comoros',
+            'Djibouti': 'Djibouti',
             'Egypt': 'Egypt',
+            'Eritrea': 'Eritrea',
+            'Ethiopia': 'Ethiopia',
+            'Gabon': 'Gabon',
+            'Ghana': 'Ghana',
+            'Guinea': 'Guinea',
+            'Guinea-Bissau': 'Guinea-Bissau',
+            'Kenya': 'Kenya',
+            'Lesotho': 'Lesotho',
+            'Liberia': 'Liberia',
+            'Libya': 'Libya',
+            'Madagascar': 'Madagascar',
+            'Malawi': 'Malawi',
+            'Mali': 'Mali',
+            'Mauritania': 'Mauritania',
+            'Mauritius': 'Mauritius',
+            'Morocco': 'Morocco',
+            'Mozambique': 'Mozambique',
+            'Namibia': 'Namibia',
+            'Niger': 'Niger',
+            'Nigeria': 'Nigeria',
+            'Rwanda': 'Rwanda',
+            'Senegal': 'Senegal',
+            'Seychelles': 'Seychelles',
+            'Sierra Leone': 'Sierra Leone',
+            'Somalia': 'Somalia',
+            'South Africa': 'South Africa',
+            'Sudan': 'Sudan',
+            'Tanzania': 'Tanzania',
+            'Togo': 'Togo',
+            'Tunisia': 'Tunisia',
+            'Uganda': 'Uganda',
+            'Zambia': 'Zambia',
+            'Zimbabwe': 'Zimbabwe',
+            // Abbreviations and variations from TopoJSON
+            'Central African Rep.': 'Central African Republic',
+            'Central African Republic': 'Central African Republic',
+            'Côte d\'Ivoire': 'Côte d\'Ivoire',
+            'Ivory Coast': 'Côte d\'Ivoire',
+            'Dem. Rep. Congo': 'Democratic Republic of the Congo',
+            'Democratic Republic of the Congo': 'Democratic Republic of the Congo',
+            'Congo': 'Republic of the Congo',
+            'Republic of the Congo': 'Republic of the Congo',
+            'Eq. Guinea': 'Equatorial Guinea',
+            'Equatorial Guinea': 'Equatorial Guinea',
+            'Eswatini': 'Eswatini',
+            'Swaziland': 'Eswatini',
+            'Gambia': 'The Gambia',
+            'The Gambia': 'The Gambia',
+            'S. Sudan': 'South Sudan',
+            'South Sudan': 'South Sudan',
+            'São Tomé and Príncipe': 'São Tomé and Príncipe',
+            'Sao Tome and Principe': 'São Tomé and Príncipe',
+            'W. Sahara': 'Western Sahara',
+            'Western Sahara': 'Western Sahara',
         }
 
         const mappedName = nameMap[name] || name
-        return countriesData.countries.find(c => c.name === mappedName)
+        return countriesData.countries.find(c => 
+            c.name === mappedName || 
+            c.name.toLowerCase() === name.toLowerCase() ||
+            c.name.toLowerCase().includes(name.toLowerCase()) ||
+            name.toLowerCase().includes(c.name.toLowerCase())
+        )
     }
 
     const getCountryColor = (geo) => {
-        if (!isAfricanCountry(geo)) {
-            return 'transparent'
-        }
-
         const countryData = getCountryData(geo.properties.name)
         if (countryData) {
             // Use diaspora population to determine color intensity
@@ -75,6 +137,7 @@ function AfricaMap({ onCountryClick }) {
             return colorScale.low
         }
 
+        // African country but no data yet - show as lowest tier
         return colorScale.lowest
     }
 
