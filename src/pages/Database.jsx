@@ -54,7 +54,8 @@ export default function Database() {
   
   // Figures loaded separately based on category selection
   const [figures, setFigures] = useState([])
-  const [figuresLoading, setFiguresLoading] = useState(false)
+  const [figuresLoading, setFiguresLoading] = useState(true) // Start as true to prevent flash
+  const [figuresInitialLoad, setFiguresInitialLoad] = useState(true)
   const [selectedFigureCategory, setSelectedFigureCategory] = useState('civil_rights')
 
   // Combined data (API + static fallback)
@@ -107,12 +108,11 @@ export default function Database() {
         console.error('Failed to load figures:', error)
       }
       setFiguresLoading(false)
+      setFiguresInitialLoad(false)
     }
     
-    if (activeFilter === 'figures' || activeFilter === 'all') {
-      loadFigures()
-    }
-  }, [selectedFigureCategory, activeFilter])
+    loadFigures()
+  }, [selectedFigureCategory])
 
   // When clicking a figure category, switch to figures filter
   const handleFigureCategoryClick = (categoryId) => {
@@ -183,7 +183,7 @@ export default function Database() {
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-accent-gold)]">
-                {allData.figures.length}
+                {figuresInitialLoad ? <Loader2 className="w-10 h-10 animate-spin" /> : allData.figures.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
                 Historical Figures
