@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { Loader2 } from 'lucide-react'
 
-export default function PageHeader({ 
-    title, 
-    description, 
+export default function PageHeader({
+    title,
+    description,
     stats = [],
-    loading = false 
+    loading = false
 }) {
     return (
         <div className="mb-8">
@@ -27,13 +27,12 @@ export default function PageHeader({
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}
                         >
-                            <div className={`font-mono text-3xl md:text-4xl font-bold ${
-                                stat.color === 'green' ? 'text-[var(--color-accent-green)]' :
-                                stat.color === 'gold' ? 'text-[var(--color-accent-gold)]' :
-                                stat.color === 'blue' ? 'text-blue-400' :
-                                stat.color === 'red' ? 'text-red-400' :
-                                'text-[var(--color-text-primary)]'
-                            }`}>
+                            <div className={`font-mono text-3xl md:text-4xl font-bold ${stat.color === 'green' ? 'text-[var(--color-accent-green)]' :
+                                    stat.color === 'gold' ? 'text-[var(--color-accent-gold)]' :
+                                        stat.color === 'blue' ? 'text-blue-400' :
+                                            stat.color === 'red' ? 'text-red-400' :
+                                                'text-[var(--color-text-primary)]'
+                                }`}>
                                 {loading ? (
                                     <Loader2 className="w-8 h-8 animate-spin" />
                                 ) : (

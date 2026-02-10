@@ -19,33 +19,26 @@ const megaMenuItems = [
     },
     {
         label: 'Political',
-        path: '/political',
+        path: '/database/officials',
         dropdown: [
-            { label: 'Donations', path: '/political/donations', description: 'Campaign contributions' },
-            { label: 'Politicians', path: '/political/politicians', description: 'Elected officials database' },
-            { label: 'PACs', path: '/political/pacs', description: 'Political action committees' },
-            { label: 'Donor Network', path: '/political/donors', description: 'Major donors & networks' },
-            { label: 'Leaderboard', path: '/political/leaderboard', description: 'Top political contributors' },
+            { label: 'Elected Officials', path: '/database/officials', description: 'Congress members & mayors' },
+            { label: 'Historical Firsts', path: '/database/officials', description: 'First Black politicians' },
         ]
     },
     {
         label: 'Analysis',
         path: '/analysis',
         dropdown: [
-            { label: 'Overview', path: '/analysis', description: 'Migration analysis dashboard' },
-            { label: 'Migration Routes', path: '/analysis#routes', description: 'Historical migration patterns' },
-            { label: 'Diaspora Communities', path: '/analysis#communities', description: 'Global community data' },
-            { label: 'State Comparison', path: '/analysis#compare', description: 'Compare diaspora by state' },
+            { label: 'Migration Analysis', path: '/analysis', description: 'Migration patterns & routes' },
+            { label: 'Historical Timeline', path: '/database/timeline', description: 'Key events from 1619 to present' },
         ]
     },
     {
         label: 'Crowdsourcing',
-        path: '/crowdsourcing',
+        path: '/about',
         dropdown: [
-            { label: 'Data Requests', path: '/crowdsourcing/requests', description: 'Request new data' },
-            { label: 'Bounty Board', path: '/crowdsourcing/bounties', description: 'Earn by contributing' },
-            { label: 'Submit Data', path: '/crowdsourcing/submit', description: 'Add to our database' },
-            { label: 'Leaderboard', path: '/crowdsourcing/leaderboard', description: 'Top contributors' },
+            { label: 'About DiasporaScan', path: '/about', description: 'Learn about our mission' },
+            { label: 'Submit Data', path: '/about', description: 'Contribute to our database' },
         ]
     },
 ]
@@ -139,11 +132,13 @@ export default function Header() {
                                     {activeDropdown === item.label && (
                                         <div className="absolute top-full left-0 mt-2 w-64 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg shadow-xl py-2 z-50">
                                             {item.dropdown.map((subItem) => (
-                                                <Link
-                                                    key={subItem.path}
-                                                    to={subItem.path}
-                                                    onClick={() => setActiveDropdown(null)}
-                                                    className="block px-4 py-2 hover:bg-[var(--color-bg-tertiary)] transition-colors"
+                                                <button
+                                                    key={subItem.path + subItem.label}
+                                                    onClick={() => {
+                                                        setActiveDropdown(null)
+                                                        navigate(subItem.path)
+                                                    }}
+                                                    className="block w-full text-left px-4 py-2 hover:bg-[var(--color-bg-tertiary)] transition-colors"
                                                 >
                                                     <div className="text-sm text-[var(--color-text-primary)]">
                                                         {subItem.label}
@@ -151,7 +146,7 @@ export default function Header() {
                                                     <div className="text-xs text-[var(--color-text-muted)]">
                                                         {subItem.description}
                                                     </div>
-                                                </Link>
+                                                </button>
                                             ))}
                                         </div>
                                     )}
@@ -251,14 +246,16 @@ export default function Header() {
                                     {item.label}
                                 </div>
                                 {item.dropdown.map((subItem) => (
-                                    <Link
-                                        key={subItem.path}
-                                        to={subItem.path}
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className="block px-6 py-2 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent-green)]"
+                                    <button
+                                        key={subItem.path + subItem.label}
+                                        onClick={() => {
+                                            setMobileMenuOpen(false)
+                                            navigate(subItem.path)
+                                        }}
+                                        className="block w-full text-left px-6 py-2 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent-green)]"
                                     >
                                         {subItem.label}
-                                    </Link>
+                                    </button>
                                 ))}
                             </div>
                         ))}

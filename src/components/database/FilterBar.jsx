@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { ChevronDown, X } from 'lucide-react'
 
-export default function FilterBar({ 
-    filters = [], 
-    activeFilters = {}, 
+export default function FilterBar({
+    filters = [],
+    activeFilters = {},
     onFilterChange,
-    onClear 
+    onClear
 }) {
     const [openDropdown, setOpenDropdown] = useState(null)
 
@@ -22,11 +22,10 @@ export default function FilterBar({
                 <div key={filter.id} className="relative">
                     <button
                         onClick={() => setOpenDropdown(openDropdown === filter.id ? null : filter.id)}
-                        className={`flex items-center gap-2 px-3 py-2 text-sm rounded-lg border transition-colors ${
-                            activeFilters[filter.id] && activeFilters[filter.id] !== 'all'
+                        className={`flex items-center gap-2 px-3 py-2 text-sm rounded-lg border transition-colors ${activeFilters[filter.id] && activeFilters[filter.id] !== 'all'
                                 ? 'bg-[var(--color-accent-green)]/10 border-[var(--color-accent-green)] text-[var(--color-accent-green)]'
                                 : 'bg-[var(--color-bg-secondary)] border-[var(--color-border)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <span>{filter.label}</span>
                         {activeFilters[filter.id] && activeFilters[filter.id] !== 'all' && (
@@ -49,11 +48,10 @@ export default function FilterBar({
                                 <button
                                     key={option.value}
                                     onClick={() => handleFilterSelect(filter.id, option.value)}
-                                    className={`w-full text-left px-3 py-2 text-sm hover:bg-[var(--color-bg-tertiary)] ${
-                                        activeFilters[filter.id] === option.value
+                                    className={`w-full text-left px-3 py-2 text-sm hover:bg-[var(--color-bg-tertiary)] ${activeFilters[filter.id] === option.value
                                             ? 'text-[var(--color-accent-green)]'
                                             : 'text-[var(--color-text-secondary)]'
-                                    }`}
+                                        }`}
                                 >
                                     {option.label}
                                     {option.count !== undefined && (

@@ -59,15 +59,15 @@ export default function Officials() {
     const filteredMayors = useMemo(() => {
         if (!searchQuery) return mayors
         const q = searchQuery.toLowerCase()
-        return mayors.filter(m => 
-            m.name.toLowerCase().includes(q) || 
+        return mayors.filter(m =>
+            m.name.toLowerCase().includes(q) ||
             m.city.toLowerCase().includes(q)
         )
     }, [mayors, searchQuery])
 
     const senatorColumns = [
-        { 
-            id: 'name', 
+        {
+            id: 'name',
             label: 'Name',
             render: (val, row) => (
                 <div className="flex items-center gap-2">
@@ -83,15 +83,14 @@ export default function Officials() {
             )
         },
         { id: 'state', label: 'State' },
-        { 
-            id: 'party', 
+        {
+            id: 'party',
             label: 'Party',
             render: (val) => (
-                <span className={`px-2 py-0.5 text-xs rounded ${
-                    val === 'Democrat' ? 'bg-blue-500/20 text-blue-400' :
-                    val === 'Republican' ? 'bg-red-500/20 text-red-400' :
-                    'bg-gray-500/20 text-gray-400'
-                }`}>
+                <span className={`px-2 py-0.5 text-xs rounded ${val === 'Democrat' ? 'bg-blue-500/20 text-blue-400' :
+                        val === 'Republican' ? 'bg-red-500/20 text-red-400' :
+                            'bg-gray-500/20 text-gray-400'
+                    }`}>
                     {val}
                 </span>
             )
@@ -101,8 +100,8 @@ export default function Officials() {
     ]
 
     const repColumns = [
-        { 
-            id: 'name', 
+        {
+            id: 'name',
             label: 'Name',
             render: (val, row) => (
                 <div className="flex items-center gap-2">
@@ -124,15 +123,14 @@ export default function Officials() {
         },
         { id: 'state', label: 'State' },
         { id: 'district', label: 'District', align: 'right', mono: true },
-        { 
-            id: 'party', 
+        {
+            id: 'party',
             label: 'Party',
             render: (val) => (
-                <span className={`px-2 py-0.5 text-xs rounded ${
-                    val === 'Democrat' ? 'bg-blue-500/20 text-blue-400' :
-                    val === 'Republican' ? 'bg-red-500/20 text-red-400' :
-                    'bg-gray-500/20 text-gray-400'
-                }`}>
+                <span className={`px-2 py-0.5 text-xs rounded ${val === 'Democrat' ? 'bg-blue-500/20 text-blue-400' :
+                        val === 'Republican' ? 'bg-red-500/20 text-red-400' :
+                            'bg-gray-500/20 text-gray-400'
+                    }`}>
                     {val}
                 </span>
             )
@@ -146,15 +144,14 @@ export default function Officials() {
         { id: 'city', label: 'City' },
         { id: 'state', label: 'State' },
         { id: 'population', label: 'Population', format: 'number', align: 'right', mono: true },
-        { 
-            id: 'party', 
+        {
+            id: 'party',
             label: 'Party',
             render: (val) => (
-                <span className={`px-2 py-0.5 text-xs rounded ${
-                    val === 'Democrat' ? 'bg-blue-500/20 text-blue-400' :
-                    val === 'Republican' ? 'bg-red-500/20 text-red-400' :
-                    'bg-gray-500/20 text-gray-400'
-                }`}>
+                <span className={`px-2 py-0.5 text-xs rounded ${val === 'Democrat' ? 'bg-blue-500/20 text-blue-400' :
+                        val === 'Republican' ? 'bg-red-500/20 text-red-400' :
+                            'bg-gray-500/20 text-gray-400'
+                    }`}>
                     {val}
                 </span>
             )
@@ -181,33 +178,30 @@ export default function Officials() {
                 <div className="flex flex-wrap gap-2 mb-6">
                     <button
                         onClick={() => { setActiveTab('congress'); setActiveFilters({}) }}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'congress'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'congress'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <Landmark className="w-4 h-4" />
                         Congress
                     </button>
                     <button
                         onClick={() => { setActiveTab('mayors'); setActiveFilters({}) }}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'mayors'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'mayors'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <Building className="w-4 h-4" />
                         Mayors
                     </button>
                     <button
                         onClick={() => { setActiveTab('firsts'); setActiveFilters({}) }}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'firsts'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'firsts'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <Award className="w-4 h-4" />
                         Historical Firsts

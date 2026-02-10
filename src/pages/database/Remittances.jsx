@@ -55,12 +55,12 @@ export default function Remittances() {
     }, [byCountry, activeFilters, selectedYear])
 
     const columns = [
-        { 
-            id: 'country', 
+        {
+            id: 'country',
             label: 'Country',
             render: (val, row) => (
                 <div className="flex items-center gap-2">
-                    <img 
+                    <img
                         src={`https://flagcdn.com/w40/${row.code.toLowerCase()}.png`}
                         alt={val}
                         className="w-6 h-4 object-cover rounded"
@@ -72,9 +72,9 @@ export default function Remittances() {
         { id: 'region', label: 'Region', color: 'muted' },
         { id: 'currentAmount', label: `${selectedYear} Remittances`, format: 'currency', align: 'right', mono: true, color: 'green' },
         { id: 'percentOfGDP', label: '% of GDP', align: 'right', mono: true, render: (val) => `${val}%` },
-        { 
-            id: 'growth', 
-            label: 'YoY Growth', 
+        {
+            id: 'growth',
+            label: 'YoY Growth',
             align: 'right',
             render: (val) => (
                 <span className={`flex items-center justify-end gap-1 ${val >= 0 ? 'text-[var(--color-accent-green)]' : 'text-red-400'}`}>
@@ -83,9 +83,9 @@ export default function Remittances() {
                 </span>
             )
         },
-        { 
-            id: 'mainSources', 
-            label: 'Main Sources', 
+        {
+            id: 'mainSources',
+            label: 'Main Sources',
             render: (val) => (
                 <div className="flex flex-wrap gap-1">
                     {val?.slice(0, 2).map(source => (
@@ -121,11 +121,10 @@ export default function Remittances() {
                         <button
                             key={year}
                             onClick={() => setSelectedYear(year)}
-                            className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
-                                selectedYear === year
+                            className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${selectedYear === year
                                     ? 'bg-[var(--color-accent-green)] text-white'
                                     : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                            }`}
+                                }`}
                         >
                             {year}
                         </button>
@@ -173,7 +172,7 @@ export default function Remittances() {
 
                 {/* Source Attribution */}
                 <div className="mt-6 text-xs text-[var(--color-text-muted)]">
-                    Data source: World Bank Migration and Development Brief. 
+                    Data source: World Bank Migration and Development Brief.
                     <a href="https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues" target="_blank" rel="noopener noreferrer" className="text-[var(--color-accent-green)] ml-1">
                         World Bank <ExternalLink className="w-3 h-3 inline" />
                     </a>

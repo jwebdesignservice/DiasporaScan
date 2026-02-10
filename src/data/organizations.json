@@ -1,260 +1,348 @@
 {
-  "organizations": {
-    "overview": {
-      "total": 50,
-      "categories": ["Civil Rights", "Education", "Health", "Culture", "Economic Development", "Humanitarian"],
-      "description": "Directory of major NGOs, charities, and cultural organizations serving the African diaspora."
-    },
-    "list": [
-      {
-        "id": "naacp",
-        "name": "NAACP",
-        "fullName": "National Association for the Advancement of Colored People",
-        "founded": 1909,
-        "headquarters": "Baltimore, MD",
-        "category": "Civil Rights",
-        "budget": 40000000,
-        "mission": "Ensure the political, educational, social, and economic equality of rights of all persons and to eliminate race-based discrimination.",
-        "website": "https://naacp.org",
-        "focus": ["Advocacy", "Legal", "Voting Rights"]
-      },
-      {
-        "id": "uncf",
-        "name": "UNCF",
-        "fullName": "United Negro College Fund",
-        "founded": 1944,
-        "headquarters": "Washington, DC",
-        "category": "Education",
-        "budget": 200000000,
-        "mission": "Build a robust pipeline of underrepresented students who become college graduates.",
-        "website": "https://uncf.org",
-        "focus": ["Scholarships", "HBCUs", "Higher Education"]
-      },
-      {
-        "id": "urban-league",
-        "name": "National Urban League",
-        "fullName": "National Urban League",
-        "founded": 1910,
-        "headquarters": "New York, NY",
-        "category": "Economic Development",
-        "budget": 130000000,
-        "mission": "Enable African Americans and other underserved communities to secure economic self-reliance.",
-        "website": "https://nul.org",
-        "focus": ["Jobs", "Housing", "Education", "Health"]
-      },
-      {
-        "id": "blm-foundation",
-        "name": "Black Lives Matter Foundation",
-        "fullName": "Black Lives Matter Global Network Foundation",
-        "founded": 2013,
-        "headquarters": "Los Angeles, CA",
-        "category": "Civil Rights",
-        "budget": 90000000,
-        "mission": "Eradicate white supremacy and build local power to intervene in violence inflicted on Black communities.",
-        "website": "https://blacklivesmatter.com",
-        "focus": ["Racial Justice", "Police Reform", "Community Organizing"]
-      },
-      {
-        "id": "eji",
-        "name": "Equal Justice Initiative",
-        "fullName": "Equal Justice Initiative",
-        "founded": 1989,
-        "headquarters": "Montgomery, AL",
-        "category": "Civil Rights",
-        "budget": 45000000,
-        "mission": "End mass incarceration, excessive punishment, and racial inequality.",
-        "website": "https://eji.org",
-        "focus": ["Criminal Justice Reform", "Death Penalty", "Memorialization"]
-      },
-      {
-        "id": "acs",
-        "name": "African Communities Together",
-        "fullName": "African Communities Together",
-        "founded": 2012,
-        "headquarters": "New York, NY",
-        "category": "Humanitarian",
-        "budget": 5000000,
-        "mission": "Defend the rights of African immigrants and build power in African immigrant communities.",
-        "website": "https://africans.us",
-        "focus": ["Immigration", "Advocacy", "Community Building"]
-      },
-      {
-        "id": "one-campaign",
-        "name": "ONE Campaign",
-        "fullName": "ONE Campaign",
-        "founded": 2004,
-        "headquarters": "Washington, DC",
-        "category": "Humanitarian",
-        "budget": 65000000,
-        "mission": "Campaign and advocacy organization fighting extreme poverty and preventable disease in Africa.",
-        "website": "https://one.org",
-        "focus": ["Poverty", "Health", "Advocacy"]
-      },
-      {
-        "id": "africare",
-        "name": "Africare",
-        "fullName": "Africare",
-        "founded": 1970,
-        "headquarters": "Washington, DC",
-        "category": "Humanitarian",
-        "budget": 30000000,
-        "mission": "Improving the quality of life in Africa through development assistance.",
-        "website": "https://africare.org",
-        "focus": ["Agriculture", "Health", "Water"]
-      },
-      {
-        "id": "africa-america-institute",
-        "name": "Africa-America Institute",
-        "fullName": "Africa-America Institute",
-        "founded": 1953,
-        "headquarters": "New York, NY",
-        "category": "Education",
-        "budget": 15000000,
-        "mission": "Promote enlightened engagement between Africa and America through education and training.",
-        "website": "https://aaionline.org",
-        "focus": ["Education", "Leadership", "Policy"]
-      },
-      {
-        "id": "smithsonian-nmaahc",
-        "name": "Smithsonian NMAAHC",
-        "fullName": "National Museum of African American History and Culture",
-        "founded": 2003,
-        "headquarters": "Washington, DC",
-        "category": "Culture",
-        "budget": 55000000,
-        "mission": "Explore African American history and culture through interactive exhibitions.",
-        "website": "https://nmaahc.si.edu",
-        "focus": ["History", "Culture", "Education"]
-      },
-      {
-        "id": "schomburg-center",
-        "name": "Schomburg Center",
-        "fullName": "Schomburg Center for Research in Black Culture",
-        "founded": 1925,
-        "headquarters": "New York, NY",
-        "category": "Culture",
-        "budget": 8000000,
-        "mission": "Collect, preserve, and provide access to materials documenting Black experiences.",
-        "website": "https://www.nypl.org/locations/schomburg",
-        "focus": ["Archives", "Research", "Culture"]
-      },
-      {
-        "id": "cbcf",
-        "name": "Congressional Black Caucus Foundation",
-        "fullName": "Congressional Black Caucus Foundation",
-        "founded": 1976,
-        "headquarters": "Washington, DC",
-        "category": "Education",
-        "budget": 20000000,
-        "mission": "Advance the global Black community by developing leaders and informing policy.",
-        "website": "https://cbcfinc.org",
-        "focus": ["Leadership", "Policy", "Scholarships"]
-      },
-      {
-        "id": "thurgood-marshall",
-        "name": "Thurgood Marshall College Fund",
-        "fullName": "Thurgood Marshall College Fund",
-        "founded": 1987,
-        "headquarters": "Washington, DC",
-        "category": "Education",
-        "budget": 40000000,
-        "mission": "Support and represent public HBCUs and their students.",
-        "website": "https://tmcf.org",
-        "focus": ["HBCUs", "Scholarships", "Career Development"]
-      },
-      {
-        "id": "africa-cdc",
-        "name": "Africa CDC",
-        "fullName": "Africa Centres for Disease Control and Prevention",
-        "founded": 2017,
-        "headquarters": "Addis Ababa, Ethiopia",
-        "category": "Health",
-        "budget": 150000000,
-        "mission": "Strengthen Africa's public health institutions and systems.",
-        "website": "https://africacdc.org",
-        "focus": ["Disease Prevention", "Public Health", "Pandemic Response"]
-      },
-      {
-        "id": "partners-in-health",
-        "name": "Partners In Health",
-        "fullName": "Partners In Health",
-        "founded": 1987,
-        "headquarters": "Boston, MA",
-        "category": "Health",
-        "budget": 300000000,
-        "mission": "Provide quality health care in resource-poor settings.",
-        "website": "https://pih.org",
-        "focus": ["Healthcare", "Training", "Infrastructure"]
-      },
-      {
-        "id": "african-union",
-        "name": "African Union",
-        "fullName": "African Union",
-        "founded": 2002,
-        "headquarters": "Addis Ababa, Ethiopia",
-        "category": "Governance",
-        "budget": 700000000,
-        "mission": "Achieve greater unity and solidarity between African countries and peoples.",
-        "website": "https://au.int",
-        "focus": ["Integration", "Peace", "Development"]
-      },
-      {
-        "id": "tony-elumelu-foundation",
-        "name": "Tony Elumelu Foundation",
-        "fullName": "Tony Elumelu Foundation",
-        "founded": 2010,
-        "headquarters": "Lagos, Nigeria",
-        "category": "Economic Development",
-        "budget": 100000000,
-        "mission": "Catalyze economic growth in Africa by empowering African entrepreneurs.",
-        "website": "https://tonyelumelufoundation.org",
-        "focus": ["Entrepreneurship", "Startups", "Training"]
-      },
-      {
-        "id": "black-girls-code",
-        "name": "Black Girls CODE",
-        "fullName": "Black Girls CODE",
-        "founded": 2011,
-        "headquarters": "Oakland, CA",
-        "category": "Education",
-        "budget": 12000000,
-        "mission": "Introduce programming and technology to young girls from underrepresented communities.",
-        "website": "https://blackgirlscode.com",
-        "focus": ["Technology", "STEM", "Youth"]
-      },
-      {
-        "id": "africa-rising",
-        "name": "Africa Rising Foundation",
-        "fullName": "Africa Rising Foundation",
-        "founded": 2008,
-        "headquarters": "New York, NY",
-        "category": "Culture",
-        "budget": 3000000,
-        "mission": "Promote positive images of Africa and support African artists.",
-        "website": "https://africarising.org",
-        "focus": ["Arts", "Culture", "Media"]
-      },
-      {
-        "id": "amref-health",
-        "name": "Amref Health Africa",
-        "fullName": "Amref Health Africa",
-        "founded": 1957,
-        "headquarters": "Nairobi, Kenya",
-        "category": "Health",
-        "budget": 180000000,
-        "mission": "Increase sustainable health access in Africa through solutions in human resources for health.",
-        "website": "https://amref.org",
-        "focus": ["Healthcare", "Training", "Community Health"]
-      }
-    ],
-    "byCategory": {
-      "Civil Rights": 4,
-      "Education": 6,
-      "Health": 4,
-      "Culture": 3,
-      "Economic Development": 2,
-      "Humanitarian": 3,
-      "Governance": 1
+    "organizations": {
+        "overview": {
+            "total": 50,
+            "categories": [
+                "Civil Rights",
+                "Education",
+                "Health",
+                "Culture",
+                "Economic Development",
+                "Humanitarian"
+            ],
+            "description": "Directory of major NGOs, charities, and cultural organizations serving the African diaspora."
+        },
+        "list": [
+            {
+                "id": "naacp",
+                "name": "NAACP",
+                "fullName": "National Association for the Advancement of Colored People",
+                "founded": 1909,
+                "headquarters": "Baltimore, MD",
+                "category": "Civil Rights",
+                "budget": 40000000,
+                "mission": "Ensure the political, educational, social, and economic equality of rights of all persons and to eliminate race-based discrimination.",
+                "website": "https://naacp.org",
+                "focus": [
+                    "Advocacy",
+                    "Legal",
+                    "Voting Rights"
+                ]
+            },
+            {
+                "id": "uncf",
+                "name": "UNCF",
+                "fullName": "United Negro College Fund",
+                "founded": 1944,
+                "headquarters": "Washington, DC",
+                "category": "Education",
+                "budget": 200000000,
+                "mission": "Build a robust pipeline of underrepresented students who become college graduates.",
+                "website": "https://uncf.org",
+                "focus": [
+                    "Scholarships",
+                    "HBCUs",
+                    "Higher Education"
+                ]
+            },
+            {
+                "id": "urban-league",
+                "name": "National Urban League",
+                "fullName": "National Urban League",
+                "founded": 1910,
+                "headquarters": "New York, NY",
+                "category": "Economic Development",
+                "budget": 130000000,
+                "mission": "Enable African Americans and other underserved communities to secure economic self-reliance.",
+                "website": "https://nul.org",
+                "focus": [
+                    "Jobs",
+                    "Housing",
+                    "Education",
+                    "Health"
+                ]
+            },
+            {
+                "id": "blm-foundation",
+                "name": "Black Lives Matter Foundation",
+                "fullName": "Black Lives Matter Global Network Foundation",
+                "founded": 2013,
+                "headquarters": "Los Angeles, CA",
+                "category": "Civil Rights",
+                "budget": 90000000,
+                "mission": "Eradicate white supremacy and build local power to intervene in violence inflicted on Black communities.",
+                "website": "https://blacklivesmatter.com",
+                "focus": [
+                    "Racial Justice",
+                    "Police Reform",
+                    "Community Organizing"
+                ]
+            },
+            {
+                "id": "eji",
+                "name": "Equal Justice Initiative",
+                "fullName": "Equal Justice Initiative",
+                "founded": 1989,
+                "headquarters": "Montgomery, AL",
+                "category": "Civil Rights",
+                "budget": 45000000,
+                "mission": "End mass incarceration, excessive punishment, and racial inequality.",
+                "website": "https://eji.org",
+                "focus": [
+                    "Criminal Justice Reform",
+                    "Death Penalty",
+                    "Memorialization"
+                ]
+            },
+            {
+                "id": "acs",
+                "name": "African Communities Together",
+                "fullName": "African Communities Together",
+                "founded": 2012,
+                "headquarters": "New York, NY",
+                "category": "Humanitarian",
+                "budget": 5000000,
+                "mission": "Defend the rights of African immigrants and build power in African immigrant communities.",
+                "website": "https://africans.us",
+                "focus": [
+                    "Immigration",
+                    "Advocacy",
+                    "Community Building"
+                ]
+            },
+            {
+                "id": "one-campaign",
+                "name": "ONE Campaign",
+                "fullName": "ONE Campaign",
+                "founded": 2004,
+                "headquarters": "Washington, DC",
+                "category": "Humanitarian",
+                "budget": 65000000,
+                "mission": "Campaign and advocacy organization fighting extreme poverty and preventable disease in Africa.",
+                "website": "https://one.org",
+                "focus": [
+                    "Poverty",
+                    "Health",
+                    "Advocacy"
+                ]
+            },
+            {
+                "id": "africare",
+                "name": "Africare",
+                "fullName": "Africare",
+                "founded": 1970,
+                "headquarters": "Washington, DC",
+                "category": "Humanitarian",
+                "budget": 30000000,
+                "mission": "Improving the quality of life in Africa through development assistance.",
+                "website": "https://africare.org",
+                "focus": [
+                    "Agriculture",
+                    "Health",
+                    "Water"
+                ]
+            },
+            {
+                "id": "africa-america-institute",
+                "name": "Africa-America Institute",
+                "fullName": "Africa-America Institute",
+                "founded": 1953,
+                "headquarters": "New York, NY",
+                "category": "Education",
+                "budget": 15000000,
+                "mission": "Promote enlightened engagement between Africa and America through education and training.",
+                "website": "https://aaionline.org",
+                "focus": [
+                    "Education",
+                    "Leadership",
+                    "Policy"
+                ]
+            },
+            {
+                "id": "smithsonian-nmaahc",
+                "name": "Smithsonian NMAAHC",
+                "fullName": "National Museum of African American History and Culture",
+                "founded": 2003,
+                "headquarters": "Washington, DC",
+                "category": "Culture",
+                "budget": 55000000,
+                "mission": "Explore African American history and culture through interactive exhibitions.",
+                "website": "https://nmaahc.si.edu",
+                "focus": [
+                    "History",
+                    "Culture",
+                    "Education"
+                ]
+            },
+            {
+                "id": "schomburg-center",
+                "name": "Schomburg Center",
+                "fullName": "Schomburg Center for Research in Black Culture",
+                "founded": 1925,
+                "headquarters": "New York, NY",
+                "category": "Culture",
+                "budget": 8000000,
+                "mission": "Collect, preserve, and provide access to materials documenting Black experiences.",
+                "website": "https://www.nypl.org/locations/schomburg",
+                "focus": [
+                    "Archives",
+                    "Research",
+                    "Culture"
+                ]
+            },
+            {
+                "id": "cbcf",
+                "name": "Congressional Black Caucus Foundation",
+                "fullName": "Congressional Black Caucus Foundation",
+                "founded": 1976,
+                "headquarters": "Washington, DC",
+                "category": "Education",
+                "budget": 20000000,
+                "mission": "Advance the global Black community by developing leaders and informing policy.",
+                "website": "https://cbcfinc.org",
+                "focus": [
+                    "Leadership",
+                    "Policy",
+                    "Scholarships"
+                ]
+            },
+            {
+                "id": "thurgood-marshall",
+                "name": "Thurgood Marshall College Fund",
+                "fullName": "Thurgood Marshall College Fund",
+                "founded": 1987,
+                "headquarters": "Washington, DC",
+                "category": "Education",
+                "budget": 40000000,
+                "mission": "Support and represent public HBCUs and their students.",
+                "website": "https://tmcf.org",
+                "focus": [
+                    "HBCUs",
+                    "Scholarships",
+                    "Career Development"
+                ]
+            },
+            {
+                "id": "africa-cdc",
+                "name": "Africa CDC",
+                "fullName": "Africa Centres for Disease Control and Prevention",
+                "founded": 2017,
+                "headquarters": "Addis Ababa, Ethiopia",
+                "category": "Health",
+                "budget": 150000000,
+                "mission": "Strengthen Africa's public health institutions and systems.",
+                "website": "https://africacdc.org",
+                "focus": [
+                    "Disease Prevention",
+                    "Public Health",
+                    "Pandemic Response"
+                ]
+            },
+            {
+                "id": "partners-in-health",
+                "name": "Partners In Health",
+                "fullName": "Partners In Health",
+                "founded": 1987,
+                "headquarters": "Boston, MA",
+                "category": "Health",
+                "budget": 300000000,
+                "mission": "Provide quality health care in resource-poor settings.",
+                "website": "https://pih.org",
+                "focus": [
+                    "Healthcare",
+                    "Training",
+                    "Infrastructure"
+                ]
+            },
+            {
+                "id": "african-union",
+                "name": "African Union",
+                "fullName": "African Union",
+                "founded": 2002,
+                "headquarters": "Addis Ababa, Ethiopia",
+                "category": "Governance",
+                "budget": 700000000,
+                "mission": "Achieve greater unity and solidarity between African countries and peoples.",
+                "website": "https://au.int",
+                "focus": [
+                    "Integration",
+                    "Peace",
+                    "Development"
+                ]
+            },
+            {
+                "id": "tony-elumelu-foundation",
+                "name": "Tony Elumelu Foundation",
+                "fullName": "Tony Elumelu Foundation",
+                "founded": 2010,
+                "headquarters": "Lagos, Nigeria",
+                "category": "Economic Development",
+                "budget": 100000000,
+                "mission": "Catalyze economic growth in Africa by empowering African entrepreneurs.",
+                "website": "https://tonyelumelufoundation.org",
+                "focus": [
+                    "Entrepreneurship",
+                    "Startups",
+                    "Training"
+                ]
+            },
+            {
+                "id": "black-girls-code",
+                "name": "Black Girls CODE",
+                "fullName": "Black Girls CODE",
+                "founded": 2011,
+                "headquarters": "Oakland, CA",
+                "category": "Education",
+                "budget": 12000000,
+                "mission": "Introduce programming and technology to young girls from underrepresented communities.",
+                "website": "https://blackgirlscode.com",
+                "focus": [
+                    "Technology",
+                    "STEM",
+                    "Youth"
+                ]
+            },
+            {
+                "id": "africa-rising",
+                "name": "Africa Rising Foundation",
+                "fullName": "Africa Rising Foundation",
+                "founded": 2008,
+                "headquarters": "New York, NY",
+                "category": "Culture",
+                "budget": 3000000,
+                "mission": "Promote positive images of Africa and support African artists.",
+                "website": "https://africarising.org",
+                "focus": [
+                    "Arts",
+                    "Culture",
+                    "Media"
+                ]
+            },
+            {
+                "id": "amref-health",
+                "name": "Amref Health Africa",
+                "fullName": "Amref Health Africa",
+                "founded": 1957,
+                "headquarters": "Nairobi, Kenya",
+                "category": "Health",
+                "budget": 180000000,
+                "mission": "Increase sustainable health access in Africa through solutions in human resources for health.",
+                "website": "https://amref.org",
+                "focus": [
+                    "Healthcare",
+                    "Training",
+                    "Community Health"
+                ]
+            }
+        ],
+        "byCategory": {
+            "Civil Rights": 4,
+            "Education": 6,
+            "Health": 4,
+            "Culture": 3,
+            "Economic Development": 2,
+            "Humanitarian": 3,
+            "Governance": 1
+        }
     }
-  }
 }

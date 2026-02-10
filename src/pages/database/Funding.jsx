@@ -67,9 +67,11 @@ export default function Funding() {
         { id: 'recipient', label: 'Recipient', color: 'muted' },
         { id: 'amount', label: 'Amount', format: 'currency', align: 'right', mono: true, color: 'green' },
         { id: 'year', label: 'Year', align: 'right', mono: true },
-        { id: 'category', label: 'Category', render: (val) => (
-            <span className="px-2 py-0.5 text-xs bg-[var(--color-bg-tertiary)] rounded">{val}</span>
-        )},
+        {
+            id: 'category', label: 'Category', render: (val) => (
+                <span className="px-2 py-0.5 text-xs bg-[var(--color-bg-tertiary)] rounded">{val}</span>
+            )
+        },
         { id: 'source', label: 'Source', link: 'source', sortable: false }
     ]
 
@@ -138,7 +140,7 @@ export default function Funding() {
 
                 {/* Source Attribution */}
                 <div className="mt-6 text-xs text-[var(--color-text-muted)]">
-                    Data sources: Foundation websites, GuideStar, Charity Navigator. 
+                    Data sources: Foundation websites, GuideStar, Charity Navigator.
                     <a href="https://www.gatesfoundation.org" target="_blank" rel="noopener noreferrer" className="text-[var(--color-accent-green)] ml-1">
                         Gates Foundation <ExternalLink className="w-3 h-3 inline" />
                     </a>

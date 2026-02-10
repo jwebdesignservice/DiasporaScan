@@ -26,21 +26,21 @@ export default function DataTableNew({
         if (!sortColumn) return 0
         const aVal = a[sortColumn]
         const bVal = b[sortColumn]
-        
+
         if (typeof aVal === 'number' && typeof bVal === 'number') {
             return sortDirection === 'asc' ? aVal - bVal : bVal - aVal
         }
-        
+
         const aStr = String(aVal || '').toLowerCase()
         const bStr = String(bVal || '').toLowerCase()
-        return sortDirection === 'asc' 
-            ? aStr.localeCompare(bStr) 
+        return sortDirection === 'asc'
+            ? aStr.localeCompare(bStr)
             : bStr.localeCompare(aStr)
     })
 
     const formatValue = (value, format) => {
         if (value === null || value === undefined) return 'N/A'
-        
+
         switch (format) {
             case 'currency':
                 if (value >= 1000000000) return `$${(value / 1000000000).toFixed(1)}B`
@@ -77,9 +77,8 @@ export default function DataTableNew({
                             <th
                                 key={column.id}
                                 onClick={() => column.sortable !== false && handleSort(column.id)}
-                                className={`py-3 px-3 text-left text-xs font-medium text-[var(--color-accent-green)] ${
-                                    column.sortable !== false && sortable ? 'cursor-pointer hover:text-[var(--color-accent-green-light)]' : ''
-                                } ${column.align === 'right' ? 'text-right' : ''}`}
+                                className={`py-3 px-3 text-left text-xs font-medium text-[var(--color-accent-green)] ${column.sortable !== false && sortable ? 'cursor-pointer hover:text-[var(--color-accent-green-light)]' : ''
+                                    } ${column.align === 'right' ? 'text-right' : ''}`}
                             >
                                 <div className={`flex items-center gap-1 ${column.align === 'right' ? 'justify-end' : ''}`}>
                                     {column.label}
@@ -107,21 +106,18 @@ export default function DataTableNew({
                             animate={{ opacity: 1 }}
                             transition={{ delay: index * 0.02 }}
                             onClick={() => onRowClick && onRowClick(row)}
-                            className={`border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors ${
-                                onRowClick ? 'cursor-pointer' : ''
-                            }`}
+                            className={`border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors ${onRowClick ? 'cursor-pointer' : ''
+                                }`}
                         >
                             {columns.map((column) => (
                                 <td
                                     key={column.id}
-                                    className={`py-3 px-3 text-sm ${
-                                        column.align === 'right' ? 'text-right' : ''
-                                    } ${column.mono ? 'font-mono' : ''} ${
-                                        column.color === 'green' ? 'text-[var(--color-accent-green)]' :
-                                        column.color === 'gold' ? 'text-[var(--color-accent-gold)]' :
-                                        column.color === 'muted' ? 'text-[var(--color-text-muted)]' :
-                                        'text-[var(--color-text-primary)]'
-                                    }`}
+                                    className={`py-3 px-3 text-sm ${column.align === 'right' ? 'text-right' : ''
+                                        } ${column.mono ? 'font-mono' : ''} ${column.color === 'green' ? 'text-[var(--color-accent-green)]' :
+                                            column.color === 'gold' ? 'text-[var(--color-accent-gold)]' :
+                                                column.color === 'muted' ? 'text-[var(--color-text-muted)]' :
+                                                    'text-[var(--color-text-primary)]'
+                                        }`}
                                 >
                                     {column.render ? (
                                         column.render(row[column.id], row)

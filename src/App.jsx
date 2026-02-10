@@ -70,7 +70,7 @@ function App() {
 
           {/* Political sub-routes (placeholder - redirect to main analysis for now) */}
           <Route path="/political/*" element={<Analysis />} />
-          
+
           {/* Crowdsourcing sub-routes (placeholder - redirect to about for now) */}
           <Route path="/crowdsourcing/*" element={<About />} />
         </Routes>

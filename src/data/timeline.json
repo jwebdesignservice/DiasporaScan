@@ -1,333 +1,364 @@
 {
-  "timeline": {
-    "overview": {
-      "startYear": 1619,
-      "endYear": 2024,
-      "totalEvents": 50,
-      "categories": ["Slavery & Abolition", "Civil Rights", "Politics", "Culture", "Sports", "Science"],
-      "description": "Key events in African American and diaspora history from 1619 to present."
-    },
-    "events": [
-      {
-        "id": "1619-first-africans",
-        "year": 1619,
-        "title": "First Africans Arrive in Virginia",
-        "category": "Slavery & Abolition",
-        "description": "The first recorded Africans arrive in the English colonies at Point Comfort, Virginia, marking the beginning of slavery in British North America.",
-        "source": "https://en.wikipedia.org/wiki/1619_in_North_America"
-      },
-      {
-        "id": "1793-fugitive-slave-act",
-        "year": 1793,
-        "title": "Fugitive Slave Act",
-        "category": "Slavery & Abolition",
-        "description": "Congress passes the Fugitive Slave Act, requiring the return of escaped enslaved people.",
-        "source": "https://en.wikipedia.org/wiki/Fugitive_Slave_Act_of_1793"
-      },
-      {
-        "id": "1804-haiti-independence",
-        "year": 1804,
-        "title": "Haiti Declares Independence",
-        "category": "Slavery & Abolition",
-        "description": "Haiti becomes the first free Black republic after a successful slave revolution led by Toussaint Louverture.",
-        "source": "https://en.wikipedia.org/wiki/Haitian_Revolution"
-      },
-      {
-        "id": "1831-nat-turner",
-        "year": 1831,
-        "title": "Nat Turner's Rebellion",
-        "category": "Slavery & Abolition",
-        "description": "Nat Turner leads one of the most significant slave rebellions in American history in Virginia.",
-        "source": "https://en.wikipedia.org/wiki/Nat_Turner%27s_slave_rebellion"
-      },
-      {
-        "id": "1849-tubman-escapes",
-        "year": 1849,
-        "title": "Harriet Tubman Escapes Slavery",
-        "category": "Slavery & Abolition",
-        "description": "Harriet Tubman escapes slavery and later becomes a conductor on the Underground Railroad.",
-        "source": "https://en.wikipedia.org/wiki/Harriet_Tubman"
-      },
-      {
-        "id": "1863-emancipation",
-        "year": 1863,
-        "title": "Emancipation Proclamation",
-        "category": "Civil Rights",
-        "description": "President Lincoln issues the Emancipation Proclamation, freeing enslaved people in Confederate states.",
-        "source": "https://en.wikipedia.org/wiki/Emancipation_Proclamation"
-      },
-      {
-        "id": "1865-13th-amendment",
-        "year": 1865,
-        "title": "13th Amendment Ratified",
-        "category": "Civil Rights",
-        "description": "The 13th Amendment abolishes slavery throughout the United States.",
-        "source": "https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution"
-      },
-      {
-        "id": "1868-14th-amendment",
-        "year": 1868,
-        "title": "14th Amendment Ratified",
-        "category": "Civil Rights",
-        "description": "The 14th Amendment grants citizenship and equal protection under the law.",
-        "source": "https://en.wikipedia.org/wiki/Fourteenth_Amendment_to_the_United_States_Constitution"
-      },
-      {
-        "id": "1870-15th-amendment",
-        "year": 1870,
-        "title": "15th Amendment Ratified",
-        "category": "Civil Rights",
-        "description": "The 15th Amendment prohibits denying the right to vote based on race.",
-        "source": "https://en.wikipedia.org/wiki/Fifteenth_Amendment_to_the_United_States_Constitution"
-      },
-      {
-        "id": "1909-naacp-founded",
-        "year": 1909,
-        "title": "NAACP Founded",
-        "category": "Civil Rights",
-        "description": "The National Association for the Advancement of Colored People is founded in New York.",
-        "source": "https://en.wikipedia.org/wiki/NAACP"
-      },
-      {
-        "id": "1910-great-migration-begins",
-        "year": 1910,
-        "title": "Great Migration Begins",
-        "category": "Civil Rights",
-        "description": "Millions of African Americans begin migrating from the rural South to Northern cities.",
-        "source": "https://en.wikipedia.org/wiki/Great_Migration_(African_American)"
-      },
-      {
-        "id": "1920-negro-leagues",
-        "year": 1920,
-        "title": "Negro National League Founded",
-        "category": "Sports",
-        "description": "The Negro National League, a professional Black baseball league, is founded.",
-        "source": "https://en.wikipedia.org/wiki/Negro_National_League_(1920%E2%80%931931)"
-      },
-      {
-        "id": "1925-harlem-renaissance",
-        "year": 1925,
-        "title": "Harlem Renaissance Peak",
-        "category": "Culture",
-        "description": "The Harlem Renaissance flourishes with artists like Langston Hughes, Zora Neale Hurston, and Duke Ellington.",
-        "source": "https://en.wikipedia.org/wiki/Harlem_Renaissance"
-      },
-      {
-        "id": "1936-jesse-owens",
-        "year": 1936,
-        "title": "Jesse Owens Wins 4 Gold Medals",
-        "category": "Sports",
-        "description": "Jesse Owens wins four gold medals at the Berlin Olympics, defying Nazi ideology.",
-        "source": "https://en.wikipedia.org/wiki/Jesse_Owens"
-      },
-      {
-        "id": "1947-jackie-robinson",
-        "year": 1947,
-        "title": "Jackie Robinson Breaks Baseball Color Barrier",
-        "category": "Sports",
-        "description": "Jackie Robinson becomes the first African American to play in Major League Baseball.",
-        "source": "https://en.wikipedia.org/wiki/Jackie_Robinson"
-      },
-      {
-        "id": "1948-windrush",
-        "year": 1948,
-        "title": "HMT Empire Windrush Arrives",
-        "category": "Civil Rights",
-        "description": "The HMT Empire Windrush brings Caribbean migrants to the UK, beginning the Windrush generation.",
-        "source": "https://en.wikipedia.org/wiki/HMT_Empire_Windrush"
-      },
-      {
-        "id": "1954-brown-v-board",
-        "year": 1954,
-        "title": "Brown v. Board of Education",
-        "category": "Civil Rights",
-        "description": "Supreme Court rules school segregation unconstitutional, overturning 'separate but equal'.",
-        "source": "https://en.wikipedia.org/wiki/Brown_v._Board_of_Education"
-      },
-      {
-        "id": "1955-montgomery-boycott",
-        "year": 1955,
-        "title": "Montgomery Bus Boycott",
-        "category": "Civil Rights",
-        "description": "Rosa Parks' arrest sparks the Montgomery Bus Boycott, led by Martin Luther King Jr.",
-        "source": "https://en.wikipedia.org/wiki/Montgomery_bus_boycott"
-      },
-      {
-        "id": "1957-ghana-independence",
-        "year": 1957,
-        "title": "Ghana Gains Independence",
-        "category": "Politics",
-        "description": "Ghana becomes the first sub-Saharan African country to gain independence from colonial rule.",
-        "source": "https://en.wikipedia.org/wiki/Ghana#Independence"
-      },
-      {
-        "id": "1963-march-washington",
-        "year": 1963,
-        "title": "March on Washington",
-        "category": "Civil Rights",
-        "description": "250,000 people attend the March on Washington where MLK delivers 'I Have a Dream' speech.",
-        "source": "https://en.wikipedia.org/wiki/March_on_Washington_for_Jobs_and_Freedom"
-      },
-      {
-        "id": "1964-civil-rights-act",
-        "year": 1964,
-        "title": "Civil Rights Act Passed",
-        "category": "Civil Rights",
-        "description": "President Johnson signs the Civil Rights Act, outlawing discrimination based on race, color, religion, sex, or national origin.",
-        "source": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964"
-      },
-      {
-        "id": "1965-voting-rights-act",
-        "year": 1965,
-        "title": "Voting Rights Act Passed",
-        "category": "Civil Rights",
-        "description": "The Voting Rights Act prohibits racial discrimination in voting.",
-        "source": "https://en.wikipedia.org/wiki/Voting_Rights_Act_of_1965"
-      },
-      {
-        "id": "1966-black-panther-party",
-        "year": 1966,
-        "title": "Black Panther Party Founded",
-        "category": "Civil Rights",
-        "description": "Huey Newton and Bobby Seale found the Black Panther Party in Oakland, California.",
-        "source": "https://en.wikipedia.org/wiki/Black_Panther_Party"
-      },
-      {
-        "id": "1967-loving-v-virginia",
-        "year": 1967,
-        "title": "Loving v. Virginia",
-        "category": "Civil Rights",
-        "description": "Supreme Court strikes down laws banning interracial marriage.",
-        "source": "https://en.wikipedia.org/wiki/Loving_v._Virginia"
-      },
-      {
-        "id": "1968-mlk-assassination",
-        "year": 1968,
-        "title": "Martin Luther King Jr. Assassinated",
-        "category": "Civil Rights",
-        "description": "Dr. Martin Luther King Jr. is assassinated in Memphis, Tennessee.",
-        "source": "https://en.wikipedia.org/wiki/Assassination_of_Martin_Luther_King_Jr."
-      },
-      {
-        "id": "1977-roots",
-        "year": 1977,
-        "title": "Roots Airs on Television",
-        "category": "Culture",
-        "description": "The miniseries 'Roots' airs, becoming one of the most-watched television events in history.",
-        "source": "https://en.wikipedia.org/wiki/Roots_(1977_miniseries)"
-      },
-      {
-        "id": "1983-mlk-day",
-        "year": 1983,
-        "title": "MLK Day Becomes Federal Holiday",
-        "category": "Civil Rights",
-        "description": "President Reagan signs legislation making Martin Luther King Jr. Day a federal holiday.",
-        "source": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr._Day"
-      },
-      {
-        "id": "1986-oprah",
-        "year": 1986,
-        "title": "The Oprah Winfrey Show Premieres",
-        "category": "Culture",
-        "description": "The Oprah Winfrey Show begins national syndication, becoming the highest-rated talk show.",
-        "source": "https://en.wikipedia.org/wiki/The_Oprah_Winfrey_Show"
-      },
-      {
-        "id": "1992-rodney-king",
-        "year": 1992,
-        "title": "LA Riots",
-        "category": "Civil Rights",
-        "description": "The acquittal of officers in the Rodney King beating sparks widespread civil unrest.",
-        "source": "https://en.wikipedia.org/wiki/1992_Los_Angeles_riots"
-      },
-      {
-        "id": "1994-mandela-president",
-        "year": 1994,
-        "title": "Nelson Mandela Elected President",
-        "category": "Politics",
-        "description": "Nelson Mandela becomes South Africa's first Black president after the end of apartheid.",
-        "source": "https://en.wikipedia.org/wiki/Nelson_Mandela"
-      },
-      {
-        "id": "2008-obama-elected",
-        "year": 2008,
-        "title": "Barack Obama Elected President",
-        "category": "Politics",
-        "description": "Barack Obama becomes the first African American President of the United States.",
-        "source": "https://en.wikipedia.org/wiki/Barack_Obama"
-      },
-      {
-        "id": "2012-trayvon-martin",
-        "year": 2012,
-        "title": "Trayvon Martin Shooting",
-        "category": "Civil Rights",
-        "description": "The shooting of Trayvon Martin leads to the founding of Black Lives Matter movement.",
-        "source": "https://en.wikipedia.org/wiki/Shooting_of_Trayvon_Martin"
-      },
-      {
-        "id": "2013-blm-founded",
-        "year": 2013,
-        "title": "Black Lives Matter Founded",
-        "category": "Civil Rights",
-        "description": "Alicia Garza, Patrisse Cullors, and Opal Tometi found the Black Lives Matter movement.",
-        "source": "https://en.wikipedia.org/wiki/Black_Lives_Matter"
-      },
-      {
-        "id": "2016-nmaahc-opens",
-        "year": 2016,
-        "title": "NMAAHC Opens",
-        "category": "Culture",
-        "description": "The National Museum of African American History and Culture opens on the National Mall.",
-        "source": "https://en.wikipedia.org/wiki/National_Museum_of_African_American_History_and_Culture"
-      },
-      {
-        "id": "2018-black-panther",
-        "year": 2018,
-        "title": "Black Panther Released",
-        "category": "Culture",
-        "description": "Marvel's Black Panther becomes a cultural phenomenon, grossing $1.3 billion worldwide.",
-        "source": "https://en.wikipedia.org/wiki/Black_Panther_(film)"
-      },
-      {
-        "id": "2020-george-floyd",
-        "year": 2020,
-        "title": "George Floyd Protests",
-        "category": "Civil Rights",
-        "description": "The murder of George Floyd sparks worldwide protests against police brutality.",
-        "source": "https://en.wikipedia.org/wiki/Murder_of_George_Floyd"
-      },
-      {
-        "id": "2020-kamala-vp",
-        "year": 2020,
-        "title": "Kamala Harris Elected VP",
-        "category": "Politics",
-        "description": "Kamala Harris becomes the first Black and South Asian American Vice President.",
-        "source": "https://en.wikipedia.org/wiki/Kamala_Harris"
-      },
-      {
-        "id": "2022-kbj-scotus",
-        "year": 2022,
-        "title": "Ketanji Brown Jackson Confirmed",
-        "category": "Politics",
-        "description": "Ketanji Brown Jackson becomes the first Black woman on the Supreme Court.",
-        "source": "https://en.wikipedia.org/wiki/Ketanji_Brown_Jackson"
-      },
-      {
-        "id": "2023-warnock-reelected",
-        "year": 2023,
-        "title": "Warnock Wins Full Term",
-        "category": "Politics",
-        "description": "Raphael Warnock wins a full Senate term, the first Black senator elected in Georgia.",
-        "source": "https://en.wikipedia.org/wiki/Raphael_Warnock"
-      }
-    ],
-    "eras": [
-      { "name": "Colonial & Slavery", "start": 1619, "end": 1865 },
-      { "name": "Reconstruction", "start": 1865, "end": 1877 },
-      { "name": "Jim Crow Era", "start": 1877, "end": 1954 },
-      { "name": "Civil Rights Movement", "start": 1954, "end": 1968 },
-      { "name": "Post-Civil Rights", "start": 1968, "end": 2008 },
-      { "name": "Modern Era", "start": 2008, "end": 2024 }
-    ]
-  }
+    "timeline": {
+        "overview": {
+            "startYear": 1619,
+            "endYear": 2024,
+            "totalEvents": 50,
+            "categories": [
+                "Slavery & Abolition",
+                "Civil Rights",
+                "Politics",
+                "Culture",
+                "Sports",
+                "Science"
+            ],
+            "description": "Key events in African American and diaspora history from 1619 to present."
+        },
+        "events": [
+            {
+                "id": "1619-first-africans",
+                "year": 1619,
+                "title": "First Africans Arrive in Virginia",
+                "category": "Slavery & Abolition",
+                "description": "The first recorded Africans arrive in the English colonies at Point Comfort, Virginia, marking the beginning of slavery in British North America.",
+                "source": "https://en.wikipedia.org/wiki/1619_in_North_America"
+            },
+            {
+                "id": "1793-fugitive-slave-act",
+                "year": 1793,
+                "title": "Fugitive Slave Act",
+                "category": "Slavery & Abolition",
+                "description": "Congress passes the Fugitive Slave Act, requiring the return of escaped enslaved people.",
+                "source": "https://en.wikipedia.org/wiki/Fugitive_Slave_Act_of_1793"
+            },
+            {
+                "id": "1804-haiti-independence",
+                "year": 1804,
+                "title": "Haiti Declares Independence",
+                "category": "Slavery & Abolition",
+                "description": "Haiti becomes the first free Black republic after a successful slave revolution led by Toussaint Louverture.",
+                "source": "https://en.wikipedia.org/wiki/Haitian_Revolution"
+            },
+            {
+                "id": "1831-nat-turner",
+                "year": 1831,
+                "title": "Nat Turner's Rebellion",
+                "category": "Slavery & Abolition",
+                "description": "Nat Turner leads one of the most significant slave rebellions in American history in Virginia.",
+                "source": "https://en.wikipedia.org/wiki/Nat_Turner%27s_slave_rebellion"
+            },
+            {
+                "id": "1849-tubman-escapes",
+                "year": 1849,
+                "title": "Harriet Tubman Escapes Slavery",
+                "category": "Slavery & Abolition",
+                "description": "Harriet Tubman escapes slavery and later becomes a conductor on the Underground Railroad.",
+                "source": "https://en.wikipedia.org/wiki/Harriet_Tubman"
+            },
+            {
+                "id": "1863-emancipation",
+                "year": 1863,
+                "title": "Emancipation Proclamation",
+                "category": "Civil Rights",
+                "description": "President Lincoln issues the Emancipation Proclamation, freeing enslaved people in Confederate states.",
+                "source": "https://en.wikipedia.org/wiki/Emancipation_Proclamation"
+            },
+            {
+                "id": "1865-13th-amendment",
+                "year": 1865,
+                "title": "13th Amendment Ratified",
+                "category": "Civil Rights",
+                "description": "The 13th Amendment abolishes slavery throughout the United States.",
+                "source": "https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution"
+            },
+            {
+                "id": "1868-14th-amendment",
+                "year": 1868,
+                "title": "14th Amendment Ratified",
+                "category": "Civil Rights",
+                "description": "The 14th Amendment grants citizenship and equal protection under the law.",
+                "source": "https://en.wikipedia.org/wiki/Fourteenth_Amendment_to_the_United_States_Constitution"
+            },
+            {
+                "id": "1870-15th-amendment",
+                "year": 1870,
+                "title": "15th Amendment Ratified",
+                "category": "Civil Rights",
+                "description": "The 15th Amendment prohibits denying the right to vote based on race.",
+                "source": "https://en.wikipedia.org/wiki/Fifteenth_Amendment_to_the_United_States_Constitution"
+            },
+            {
+                "id": "1909-naacp-founded",
+                "year": 1909,
+                "title": "NAACP Founded",
+                "category": "Civil Rights",
+                "description": "The National Association for the Advancement of Colored People is founded in New York.",
+                "source": "https://en.wikipedia.org/wiki/NAACP"
+            },
+            {
+                "id": "1910-great-migration-begins",
+                "year": 1910,
+                "title": "Great Migration Begins",
+                "category": "Civil Rights",
+                "description": "Millions of African Americans begin migrating from the rural South to Northern cities.",
+                "source": "https://en.wikipedia.org/wiki/Great_Migration_(African_American)"
+            },
+            {
+                "id": "1920-negro-leagues",
+                "year": 1920,
+                "title": "Negro National League Founded",
+                "category": "Sports",
+                "description": "The Negro National League, a professional Black baseball league, is founded.",
+                "source": "https://en.wikipedia.org/wiki/Negro_National_League_(1920%E2%80%931931)"
+            },
+            {
+                "id": "1925-harlem-renaissance",
+                "year": 1925,
+                "title": "Harlem Renaissance Peak",
+                "category": "Culture",
+                "description": "The Harlem Renaissance flourishes with artists like Langston Hughes, Zora Neale Hurston, and Duke Ellington.",
+                "source": "https://en.wikipedia.org/wiki/Harlem_Renaissance"
+            },
+            {
+                "id": "1936-jesse-owens",
+                "year": 1936,
+                "title": "Jesse Owens Wins 4 Gold Medals",
+                "category": "Sports",
+                "description": "Jesse Owens wins four gold medals at the Berlin Olympics, defying Nazi ideology.",
+                "source": "https://en.wikipedia.org/wiki/Jesse_Owens"
+            },
+            {
+                "id": "1947-jackie-robinson",
+                "year": 1947,
+                "title": "Jackie Robinson Breaks Baseball Color Barrier",
+                "category": "Sports",
+                "description": "Jackie Robinson becomes the first African American to play in Major League Baseball.",
+                "source": "https://en.wikipedia.org/wiki/Jackie_Robinson"
+            },
+            {
+                "id": "1948-windrush",
+                "year": 1948,
+                "title": "HMT Empire Windrush Arrives",
+                "category": "Civil Rights",
+                "description": "The HMT Empire Windrush brings Caribbean migrants to the UK, beginning the Windrush generation.",
+                "source": "https://en.wikipedia.org/wiki/HMT_Empire_Windrush"
+            },
+            {
+                "id": "1954-brown-v-board",
+                "year": 1954,
+                "title": "Brown v. Board of Education",
+                "category": "Civil Rights",
+                "description": "Supreme Court rules school segregation unconstitutional, overturning 'separate but equal'.",
+                "source": "https://en.wikipedia.org/wiki/Brown_v._Board_of_Education"
+            },
+            {
+                "id": "1955-montgomery-boycott",
+                "year": 1955,
+                "title": "Montgomery Bus Boycott",
+                "category": "Civil Rights",
+                "description": "Rosa Parks' arrest sparks the Montgomery Bus Boycott, led by Martin Luther King Jr.",
+                "source": "https://en.wikipedia.org/wiki/Montgomery_bus_boycott"
+            },
+            {
+                "id": "1957-ghana-independence",
+                "year": 1957,
+                "title": "Ghana Gains Independence",
+                "category": "Politics",
+                "description": "Ghana becomes the first sub-Saharan African country to gain independence from colonial rule.",
+                "source": "https://en.wikipedia.org/wiki/Ghana#Independence"
+            },
+            {
+                "id": "1963-march-washington",
+                "year": 1963,
+                "title": "March on Washington",
+                "category": "Civil Rights",
+                "description": "250,000 people attend the March on Washington where MLK delivers 'I Have a Dream' speech.",
+                "source": "https://en.wikipedia.org/wiki/March_on_Washington_for_Jobs_and_Freedom"
+            },
+            {
+                "id": "1964-civil-rights-act",
+                "year": 1964,
+                "title": "Civil Rights Act Passed",
+                "category": "Civil Rights",
+                "description": "President Johnson signs the Civil Rights Act, outlawing discrimination based on race, color, religion, sex, or national origin.",
+                "source": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964"
+            },
+            {
+                "id": "1965-voting-rights-act",
+                "year": 1965,
+                "title": "Voting Rights Act Passed",
+                "category": "Civil Rights",
+                "description": "The Voting Rights Act prohibits racial discrimination in voting.",
+                "source": "https://en.wikipedia.org/wiki/Voting_Rights_Act_of_1965"
+            },
+            {
+                "id": "1966-black-panther-party",
+                "year": 1966,
+                "title": "Black Panther Party Founded",
+                "category": "Civil Rights",
+                "description": "Huey Newton and Bobby Seale found the Black Panther Party in Oakland, California.",
+                "source": "https://en.wikipedia.org/wiki/Black_Panther_Party"
+            },
+            {
+                "id": "1967-loving-v-virginia",
+                "year": 1967,
+                "title": "Loving v. Virginia",
+                "category": "Civil Rights",
+                "description": "Supreme Court strikes down laws banning interracial marriage.",
+                "source": "https://en.wikipedia.org/wiki/Loving_v._Virginia"
+            },
+            {
+                "id": "1968-mlk-assassination",
+                "year": 1968,
+                "title": "Martin Luther King Jr. Assassinated",
+                "category": "Civil Rights",
+                "description": "Dr. Martin Luther King Jr. is assassinated in Memphis, Tennessee.",
+                "source": "https://en.wikipedia.org/wiki/Assassination_of_Martin_Luther_King_Jr."
+            },
+            {
+                "id": "1977-roots",
+                "year": 1977,
+                "title": "Roots Airs on Television",
+                "category": "Culture",
+                "description": "The miniseries 'Roots' airs, becoming one of the most-watched television events in history.",
+                "source": "https://en.wikipedia.org/wiki/Roots_(1977_miniseries)"
+            },
+            {
+                "id": "1983-mlk-day",
+                "year": 1983,
+                "title": "MLK Day Becomes Federal Holiday",
+                "category": "Civil Rights",
+                "description": "President Reagan signs legislation making Martin Luther King Jr. Day a federal holiday.",
+                "source": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr._Day"
+            },
+            {
+                "id": "1986-oprah",
+                "year": 1986,
+                "title": "The Oprah Winfrey Show Premieres",
+                "category": "Culture",
+                "description": "The Oprah Winfrey Show begins national syndication, becoming the highest-rated talk show.",
+                "source": "https://en.wikipedia.org/wiki/The_Oprah_Winfrey_Show"
+            },
+            {
+                "id": "1992-rodney-king",
+                "year": 1992,
+                "title": "LA Riots",
+                "category": "Civil Rights",
+                "description": "The acquittal of officers in the Rodney King beating sparks widespread civil unrest.",
+                "source": "https://en.wikipedia.org/wiki/1992_Los_Angeles_riots"
+            },
+            {
+                "id": "1994-mandela-president",
+                "year": 1994,
+                "title": "Nelson Mandela Elected President",
+                "category": "Politics",
+                "description": "Nelson Mandela becomes South Africa's first Black president after the end of apartheid.",
+                "source": "https://en.wikipedia.org/wiki/Nelson_Mandela"
+            },
+            {
+                "id": "2008-obama-elected",
+                "year": 2008,
+                "title": "Barack Obama Elected President",
+                "category": "Politics",
+                "description": "Barack Obama becomes the first African American President of the United States.",
+                "source": "https://en.wikipedia.org/wiki/Barack_Obama"
+            },
+            {
+                "id": "2012-trayvon-martin",
+                "year": 2012,
+                "title": "Trayvon Martin Shooting",
+                "category": "Civil Rights",
+                "description": "The shooting of Trayvon Martin leads to the founding of Black Lives Matter movement.",
+                "source": "https://en.wikipedia.org/wiki/Shooting_of_Trayvon_Martin"
+            },
+            {
+                "id": "2013-blm-founded",
+                "year": 2013,
+                "title": "Black Lives Matter Founded",
+                "category": "Civil Rights",
+                "description": "Alicia Garza, Patrisse Cullors, and Opal Tometi found the Black Lives Matter movement.",
+                "source": "https://en.wikipedia.org/wiki/Black_Lives_Matter"
+            },
+            {
+                "id": "2016-nmaahc-opens",
+                "year": 2016,
+                "title": "NMAAHC Opens",
+                "category": "Culture",
+                "description": "The National Museum of African American History and Culture opens on the National Mall.",
+                "source": "https://en.wikipedia.org/wiki/National_Museum_of_African_American_History_and_Culture"
+            },
+            {
+                "id": "2018-black-panther",
+                "year": 2018,
+                "title": "Black Panther Released",
+                "category": "Culture",
+                "description": "Marvel's Black Panther becomes a cultural phenomenon, grossing $1.3 billion worldwide.",
+                "source": "https://en.wikipedia.org/wiki/Black_Panther_(film)"
+            },
+            {
+                "id": "2020-george-floyd",
+                "year": 2020,
+                "title": "George Floyd Protests",
+                "category": "Civil Rights",
+                "description": "The murder of George Floyd sparks worldwide protests against police brutality.",
+                "source": "https://en.wikipedia.org/wiki/Murder_of_George_Floyd"
+            },
+            {
+                "id": "2020-kamala-vp",
+                "year": 2020,
+                "title": "Kamala Harris Elected VP",
+                "category": "Politics",
+                "description": "Kamala Harris becomes the first Black and South Asian American Vice President.",
+                "source": "https://en.wikipedia.org/wiki/Kamala_Harris"
+            },
+            {
+                "id": "2022-kbj-scotus",
+                "year": 2022,
+                "title": "Ketanji Brown Jackson Confirmed",
+                "category": "Politics",
+                "description": "Ketanji Brown Jackson becomes the first Black woman on the Supreme Court.",
+                "source": "https://en.wikipedia.org/wiki/Ketanji_Brown_Jackson"
+            },
+            {
+                "id": "2023-warnock-reelected",
+                "year": 2023,
+                "title": "Warnock Wins Full Term",
+                "category": "Politics",
+                "description": "Raphael Warnock wins a full Senate term, the first Black senator elected in Georgia.",
+                "source": "https://en.wikipedia.org/wiki/Raphael_Warnock"
+            }
+        ],
+        "eras": [
+            {
+                "name": "Colonial & Slavery",
+                "start": 1619,
+                "end": 1865
+            },
+            {
+                "name": "Reconstruction",
+                "start": 1865,
+                "end": 1877
+            },
+            {
+                "name": "Jim Crow Era",
+                "start": 1877,
+                "end": 1954
+            },
+            {
+                "name": "Civil Rights Movement",
+                "start": 1954,
+                "end": 1968
+            },
+            {
+                "name": "Post-Civil Rights",
+                "start": 1968,
+                "end": 2008
+            },
+            {
+                "name": "Modern Era",
+                "start": 2008,
+                "end": 2024
+            }
+        ]
+    }
 }

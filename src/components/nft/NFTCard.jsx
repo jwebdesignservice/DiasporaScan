@@ -83,15 +83,15 @@ export default function NFTCard({
     const handleMint = async () => {
         if (minted || isMinting) return
         setIsMinting(true)
-        
+
         // Simulate minting delay
         await new Promise(resolve => setTimeout(resolve, 2000))
-        
+
         setIsMinting(false)
         setJustMinted(true)
-        
+
         if (onMint) onMint()
-        
+
         // Reset after animation
         setTimeout(() => setJustMinted(false), 3000)
     }
@@ -107,7 +107,7 @@ export default function NFTCard({
         >
             {/* Background gradient */}
             <div className={`absolute inset-0 bg-gradient-to-br ${config.bgGradient}`} />
-            
+
             {/* Animated border for legendary */}
             {rarity === 'legendary' && (
                 <div className="absolute inset-0 rounded-xl overflow-hidden">
@@ -185,13 +185,12 @@ export default function NFTCard({
                     <button
                         onClick={handleMint}
                         disabled={minted || isMinting}
-                        className={`w-full py-2 rounded-lg font-bold text-sm transition-all duration-300 ${
-                            minted || justMinted
+                        className={`w-full py-2 rounded-lg font-bold text-sm transition-all duration-300 ${minted || justMinted
                                 ? 'bg-[var(--color-accent-green)] text-white cursor-default'
                                 : isMinting
-                                ? 'bg-[var(--color-accent-gold)]/50 text-black cursor-wait'
-                                : 'bg-[var(--color-accent-gold)] hover:bg-[var(--color-accent-gold-light)] text-black hover:scale-[1.02]'
-                        }`}
+                                    ? 'bg-[var(--color-accent-gold)]/50 text-black cursor-wait'
+                                    : 'bg-[var(--color-accent-gold)] hover:bg-[var(--color-accent-gold-light)] text-black hover:scale-[1.02]'
+                            }`}
                     >
                         {minted || justMinted ? (
                             <span className="flex items-center justify-center gap-2">

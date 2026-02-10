@@ -54,7 +54,7 @@ export default function Scholarships() {
     const filteredScholarships = useMemo(() => {
         if (!searchQuery) return scholarshipPrograms
         const q = searchQuery.toLowerCase()
-        return scholarshipPrograms.filter(s => 
+        return scholarshipPrograms.filter(s =>
             s.name.toLowerCase().includes(q) ||
             s.sponsor.toLowerCase().includes(q)
         )
@@ -64,9 +64,11 @@ export default function Scholarships() {
         { id: 'ranking', label: '#', align: 'right', mono: true },
         { id: 'name', label: 'Institution' },
         { id: 'location', label: 'Location', color: 'muted' },
-        { id: 'type', label: 'Type', render: (val) => (
-            <span className="px-2 py-0.5 text-xs bg-[var(--color-bg-tertiary)] rounded">{val}</span>
-        )},
+        {
+            id: 'type', label: 'Type', render: (val) => (
+                <span className="px-2 py-0.5 text-xs bg-[var(--color-bg-tertiary)] rounded">{val}</span>
+            )
+        },
         { id: 'founded', label: 'Founded', align: 'right', mono: true },
         { id: 'enrollment', label: 'Enrollment', format: 'number', align: 'right', mono: true },
         { id: 'endowment', label: 'Endowment', format: 'currency', align: 'right', mono: true, color: 'green' },
@@ -90,22 +92,20 @@ export default function Scholarships() {
                 <div className="flex gap-2 mb-6">
                     <button
                         onClick={() => { setActiveTab('hbcus'); setActiveFilters({}) }}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'hbcus'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'hbcus'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <GraduationCap className="w-4 h-4" />
                         HBCUs
                     </button>
                     <button
                         onClick={() => { setActiveTab('scholarships'); setActiveFilters({}) }}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'scholarships'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'scholarships'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <Award className="w-4 h-4" />
                         Scholarship Programs

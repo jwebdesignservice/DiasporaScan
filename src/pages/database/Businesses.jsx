@@ -33,9 +33,9 @@ export default function Businesses() {
         { id: 'businesses', label: 'Businesses', format: 'number', align: 'right', mono: true },
         { id: 'revenue', label: 'Revenue', format: 'currency', align: 'right', mono: true, color: 'green' },
         { id: 'percentOfTotal', label: '% of Total', align: 'right', mono: true, render: (val) => `${val}%` },
-        { 
-            id: 'growth', 
-            label: 'Growth', 
+        {
+            id: 'growth',
+            label: 'Growth',
             align: 'right',
             render: (val) => (
                 <span className="flex items-center justify-end gap-1 text-[var(--color-accent-green)]">
@@ -47,8 +47,8 @@ export default function Businesses() {
     ]
 
     const stateColumns = [
-        { 
-            id: 'state', 
+        {
+            id: 'state',
             label: 'State',
             render: (val, row) => (
                 <div className="flex items-center gap-2">
@@ -82,33 +82,30 @@ export default function Businesses() {
                 <div className="flex gap-2 mb-6">
                     <button
                         onClick={() => setActiveTab('industry')}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'industry'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'industry'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <Briefcase className="w-4 h-4" />
                         By Industry
                     </button>
                     <button
                         onClick={() => setActiveTab('state')}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'state'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'state'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         <Building2 className="w-4 h-4" />
                         By State
                     </button>
                     <button
                         onClick={() => setActiveTab('notable')}
-                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${
-                            activeTab === 'notable'
+                        className={`flex items-center gap-2 px-4 py-2 text-sm rounded-lg transition-colors ${activeTab === 'notable'
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         Notable Companies
                     </button>

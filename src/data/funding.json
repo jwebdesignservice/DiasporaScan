@@ -1,160 +1,256 @@
 {
-  "funding": {
-    "overview": {
-      "totalGranted": 15800000000,
-      "totalOrganizations": 250,
-      "topDonorCountry": "United States",
-      "description": "Major grants and funding to African and diaspora causes from foundations, governments, and international organizations."
-    },
-    "grants": [
-      {
-        "id": "gates-africa-health",
-        "donor": "Bill & Melinda Gates Foundation",
-        "recipient": "African Health Initiative",
-        "amount": 1200000000,
-        "year": 2023,
-        "category": "Health",
-        "countries": ["Nigeria", "Kenya", "Ethiopia", "South Africa"],
-        "description": "Supporting healthcare infrastructure and disease prevention across sub-Saharan Africa.",
-        "source": "https://www.gatesfoundation.org/our-work/places/africa"
-      },
-      {
-        "id": "ford-racial-justice",
-        "donor": "Ford Foundation",
-        "recipient": "Racial Justice Initiative",
-        "amount": 180000000,
-        "year": 2023,
-        "category": "Civil Rights",
-        "countries": ["United States"],
-        "description": "Building Institutions and Networks (BUILD) grants for racial justice organizations.",
-        "source": "https://www.fordfoundation.org/work/challenging-inequality/"
-      },
-      {
-        "id": "usaid-africa-trade",
-        "donor": "USAID",
-        "recipient": "African Trade Programs",
-        "amount": 850000000,
-        "year": 2023,
-        "category": "Economic Development",
-        "countries": ["Ghana", "Kenya", "Senegal", "Tanzania"],
-        "description": "Power Africa and Prosper Africa initiatives supporting economic growth.",
-        "source": "https://www.usaid.gov/africa"
-      },
-      {
-        "id": "rockefeller-climate",
-        "donor": "Rockefeller Foundation",
-        "recipient": "African Climate Resilience",
-        "amount": 150000000,
-        "year": 2023,
-        "category": "Climate",
-        "countries": ["Nigeria", "Kenya", "Ethiopia"],
-        "description": "Supporting renewable energy and climate adaptation in Africa.",
-        "source": "https://www.rockefellerfoundation.org/africa/"
-      },
-      {
-        "id": "mastercard-education",
-        "donor": "Mastercard Foundation",
-        "recipient": "Scholars Program",
-        "amount": 500000000,
-        "year": 2023,
-        "category": "Education",
-        "countries": ["Ghana", "Kenya", "Rwanda", "Uganda"],
-        "description": "Scholarships for talented African students at top universities worldwide.",
-        "source": "https://mastercardfdn.org/all/scholars/"
-      },
-      {
-        "id": "open-society-justice",
-        "donor": "Open Society Foundations",
-        "recipient": "African Justice Programs",
-        "amount": 120000000,
-        "year": 2023,
-        "category": "Justice",
-        "countries": ["South Africa", "Nigeria", "Kenya"],
-        "description": "Supporting human rights and justice reform across Africa.",
-        "source": "https://www.opensocietyfoundations.org/what-we-do/regions/africa"
-      },
-      {
-        "id": "bloomberg-mayors",
-        "donor": "Bloomberg Philanthropies",
-        "recipient": "African Mayors Initiative",
-        "amount": 80000000,
-        "year": 2023,
-        "category": "Governance",
-        "countries": ["South Africa", "Ghana", "Kenya"],
-        "description": "Supporting effective governance in African cities.",
-        "source": "https://www.bloomberg.org/government-innovation/cities/"
-      },
-      {
-        "id": "wellcome-research",
-        "donor": "Wellcome Trust",
-        "recipient": "Africa Research Programs",
-        "amount": 200000000,
-        "year": 2023,
-        "category": "Research",
-        "countries": ["Kenya", "South Africa", "Malawi"],
-        "description": "Funding biomedical research centers across Africa.",
-        "source": "https://wellcome.org/what-we-do/our-work/africa-asia-programmes"
-      },
-      {
-        "id": "hewlett-population",
-        "donor": "William and Flora Hewlett Foundation",
-        "recipient": "Population & Reproductive Health",
-        "amount": 95000000,
-        "year": 2023,
-        "category": "Health",
-        "countries": ["Nigeria", "Kenya", "Ethiopia"],
-        "description": "Family planning and women's health initiatives.",
-        "source": "https://hewlett.org/strategy/gender-equity-and-governance/"
-      },
-      {
-        "id": "kellogg-food-security",
-        "donor": "W.K. Kellogg Foundation",
-        "recipient": "Food Security Programs",
-        "amount": 75000000,
-        "year": 2023,
-        "category": "Agriculture",
-        "countries": ["South Africa", "Haiti"],
-        "description": "Supporting food security and childhood nutrition.",
-        "source": "https://www.wkkf.org/what-we-do"
-      },
-      {
-        "id": "macarthur-conservation",
-        "donor": "MacArthur Foundation",
-        "recipient": "African Conservation",
-        "amount": 65000000,
-        "year": 2023,
-        "category": "Environment",
-        "countries": ["Nigeria", "Madagascar", "DRC"],
-        "description": "Protecting forests and biodiversity in Africa.",
-        "source": "https://www.macfound.org/programs/conservation/"
-      },
-      {
-        "id": "luminate-digital",
-        "donor": "Luminate",
-        "recipient": "Digital Rights Africa",
-        "amount": 45000000,
-        "year": 2023,
-        "category": "Technology",
-        "countries": ["Nigeria", "Kenya", "South Africa"],
-        "description": "Supporting digital rights and civic tech organizations.",
-        "source": "https://luminategroup.com/"
-      }
-    ],
-    "categories": [
-      { "id": "health", "name": "Health", "totalFunding": 1495000000 },
-      { "id": "education", "name": "Education", "totalFunding": 500000000 },
-      { "id": "economic", "name": "Economic Development", "totalFunding": 850000000 },
-      { "id": "civil-rights", "name": "Civil Rights", "totalFunding": 300000000 },
-      { "id": "climate", "name": "Climate & Environment", "totalFunding": 215000000 },
-      { "id": "governance", "name": "Governance", "totalFunding": 80000000 },
-      { "id": "technology", "name": "Technology", "totalFunding": 45000000 }
-    ],
-    "topDonors": [
-      { "name": "Bill & Melinda Gates Foundation", "totalGiven": 1200000000, "focus": "Health & Development" },
-      { "name": "USAID", "totalGiven": 850000000, "focus": "Economic Development" },
-      { "name": "Mastercard Foundation", "totalGiven": 500000000, "focus": "Education" },
-      { "name": "Wellcome Trust", "totalGiven": 200000000, "focus": "Research" },
-      { "name": "Ford Foundation", "totalGiven": 180000000, "focus": "Social Justice" }
-    ]
-  }
+    "funding": {
+        "overview": {
+            "totalGranted": 15800000000,
+            "totalOrganizations": 250,
+            "topDonorCountry": "United States",
+            "description": "Major grants and funding to African and diaspora causes from foundations, governments, and international organizations."
+        },
+        "grants": [
+            {
+                "id": "gates-africa-health",
+                "donor": "Bill & Melinda Gates Foundation",
+                "recipient": "African Health Initiative",
+                "amount": 1200000000,
+                "year": 2023,
+                "category": "Health",
+                "countries": [
+                    "Nigeria",
+                    "Kenya",
+                    "Ethiopia",
+                    "South Africa"
+                ],
+                "description": "Supporting healthcare infrastructure and disease prevention across sub-Saharan Africa.",
+                "source": "https://www.gatesfoundation.org/our-work/places/africa"
+            },
+            {
+                "id": "ford-racial-justice",
+                "donor": "Ford Foundation",
+                "recipient": "Racial Justice Initiative",
+                "amount": 180000000,
+                "year": 2023,
+                "category": "Civil Rights",
+                "countries": [
+                    "United States"
+                ],
+                "description": "Building Institutions and Networks (BUILD) grants for racial justice organizations.",
+                "source": "https://www.fordfoundation.org/work/challenging-inequality/"
+            },
+            {
+                "id": "usaid-africa-trade",
+                "donor": "USAID",
+                "recipient": "African Trade Programs",
+                "amount": 850000000,
+                "year": 2023,
+                "category": "Economic Development",
+                "countries": [
+                    "Ghana",
+                    "Kenya",
+                    "Senegal",
+                    "Tanzania"
+                ],
+                "description": "Power Africa and Prosper Africa initiatives supporting economic growth.",
+                "source": "https://www.usaid.gov/africa"
+            },
+            {
+                "id": "rockefeller-climate",
+                "donor": "Rockefeller Foundation",
+                "recipient": "African Climate Resilience",
+                "amount": 150000000,
+                "year": 2023,
+                "category": "Climate",
+                "countries": [
+                    "Nigeria",
+                    "Kenya",
+                    "Ethiopia"
+                ],
+                "description": "Supporting renewable energy and climate adaptation in Africa.",
+                "source": "https://www.rockefellerfoundation.org/africa/"
+            },
+            {
+                "id": "mastercard-education",
+                "donor": "Mastercard Foundation",
+                "recipient": "Scholars Program",
+                "amount": 500000000,
+                "year": 2023,
+                "category": "Education",
+                "countries": [
+                    "Ghana",
+                    "Kenya",
+                    "Rwanda",
+                    "Uganda"
+                ],
+                "description": "Scholarships for talented African students at top universities worldwide.",
+                "source": "https://mastercardfdn.org/all/scholars/"
+            },
+            {
+                "id": "open-society-justice",
+                "donor": "Open Society Foundations",
+                "recipient": "African Justice Programs",
+                "amount": 120000000,
+                "year": 2023,
+                "category": "Justice",
+                "countries": [
+                    "South Africa",
+                    "Nigeria",
+                    "Kenya"
+                ],
+                "description": "Supporting human rights and justice reform across Africa.",
+                "source": "https://www.opensocietyfoundations.org/what-we-do/regions/africa"
+            },
+            {
+                "id": "bloomberg-mayors",
+                "donor": "Bloomberg Philanthropies",
+                "recipient": "African Mayors Initiative",
+                "amount": 80000000,
+                "year": 2023,
+                "category": "Governance",
+                "countries": [
+                    "South Africa",
+                    "Ghana",
+                    "Kenya"
+                ],
+                "description": "Supporting effective governance in African cities.",
+                "source": "https://www.bloomberg.org/government-innovation/cities/"
+            },
+            {
+                "id": "wellcome-research",
+                "donor": "Wellcome Trust",
+                "recipient": "Africa Research Programs",
+                "amount": 200000000,
+                "year": 2023,
+                "category": "Research",
+                "countries": [
+                    "Kenya",
+                    "South Africa",
+                    "Malawi"
+                ],
+                "description": "Funding biomedical research centers across Africa.",
+                "source": "https://wellcome.org/what-we-do/our-work/africa-asia-programmes"
+            },
+            {
+                "id": "hewlett-population",
+                "donor": "William and Flora Hewlett Foundation",
+                "recipient": "Population & Reproductive Health",
+                "amount": 95000000,
+                "year": 2023,
+                "category": "Health",
+                "countries": [
+                    "Nigeria",
+                    "Kenya",
+                    "Ethiopia"
+                ],
+                "description": "Family planning and women's health initiatives.",
+                "source": "https://hewlett.org/strategy/gender-equity-and-governance/"
+            },
+            {
+                "id": "kellogg-food-security",
+                "donor": "W.K. Kellogg Foundation",
+                "recipient": "Food Security Programs",
+                "amount": 75000000,
+                "year": 2023,
+                "category": "Agriculture",
+                "countries": [
+                    "South Africa",
+                    "Haiti"
+                ],
+                "description": "Supporting food security and childhood nutrition.",
+                "source": "https://www.wkkf.org/what-we-do"
+            },
+            {
+                "id": "macarthur-conservation",
+                "donor": "MacArthur Foundation",
+                "recipient": "African Conservation",
+                "amount": 65000000,
+                "year": 2023,
+                "category": "Environment",
+                "countries": [
+                    "Nigeria",
+                    "Madagascar",
+                    "DRC"
+                ],
+                "description": "Protecting forests and biodiversity in Africa.",
+                "source": "https://www.macfound.org/programs/conservation/"
+            },
+            {
+                "id": "luminate-digital",
+                "donor": "Luminate",
+                "recipient": "Digital Rights Africa",
+                "amount": 45000000,
+                "year": 2023,
+                "category": "Technology",
+                "countries": [
+                    "Nigeria",
+                    "Kenya",
+                    "South Africa"
+                ],
+                "description": "Supporting digital rights and civic tech organizations.",
+                "source": "https://luminategroup.com/"
+            }
+        ],
+        "categories": [
+            {
+                "id": "health",
+                "name": "Health",
+                "totalFunding": 1495000000
+            },
+            {
+                "id": "education",
+                "name": "Education",
+                "totalFunding": 500000000
+            },
+            {
+                "id": "economic",
+                "name": "Economic Development",
+                "totalFunding": 850000000
+            },
+            {
+                "id": "civil-rights",
+                "name": "Civil Rights",
+                "totalFunding": 300000000
+            },
+            {
+                "id": "climate",
+                "name": "Climate & Environment",
+                "totalFunding": 215000000
+            },
+            {
+                "id": "governance",
+                "name": "Governance",
+                "totalFunding": 80000000
+            },
+            {
+                "id": "technology",
+                "name": "Technology",
+                "totalFunding": 45000000
+            }
+        ],
+        "topDonors": [
+            {
+                "name": "Bill & Melinda Gates Foundation",
+                "totalGiven": 1200000000,
+                "focus": "Health & Development"
+            },
+            {
+                "name": "USAID",
+                "totalGiven": 850000000,
+                "focus": "Economic Development"
+            },
+            {
+                "name": "Mastercard Foundation",
+                "totalGiven": 500000000,
+                "focus": "Education"
+            },
+            {
+                "name": "Wellcome Trust",
+                "totalGiven": 200000000,
+                "focus": "Research"
+            },
+            {
+                "name": "Ford Foundation",
+                "totalGiven": 180000000,
+                "focus": "Social Justice"
+            }
+        ]
+    }
 }

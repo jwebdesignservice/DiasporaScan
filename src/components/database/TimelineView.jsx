@@ -40,11 +40,10 @@ export default function TimelineView({ events = [], eras = [] }) {
                 <div className="flex flex-wrap gap-2 mb-6">
                     <button
                         onClick={() => setSelectedEra(null)}
-                        className={`px-3 py-1.5 text-xs rounded-full transition-colors ${
-                            !selectedEra
+                        className={`px-3 py-1.5 text-xs rounded-full transition-colors ${!selectedEra
                                 ? 'bg-[var(--color-accent-green)] text-white'
                                 : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                        }`}
+                            }`}
                     >
                         All Eras
                     </button>
@@ -52,11 +51,10 @@ export default function TimelineView({ events = [], eras = [] }) {
                         <button
                             key={era.name}
                             onClick={() => setSelectedEra(era.name)}
-                            className={`px-3 py-1.5 text-xs rounded-full transition-colors ${
-                                selectedEra === era.name
+                            className={`px-3 py-1.5 text-xs rounded-full transition-colors ${selectedEra === era.name
                                     ? 'bg-[var(--color-accent-green)] text-white'
                                     : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                            }`}
+                                }`}
                         >
                             {era.name} ({era.start}-{era.end})
                         </button>

@@ -1,308 +1,324 @@
 {
-  "officials": {
-    "overview": {
-      "totalCongress": 60,
-      "senators": 4,
-      "representatives": 56,
-      "governors": 0,
-      "mayors": 50,
-      "description": "Black elected officials in the United States Congress and major cities. Data current as of 2024.",
-      "source": "https://www.congress.gov/"
-    },
-    "senators": [
-      {
-        "id": "cory-booker",
-        "name": "Cory Booker",
-        "state": "New Jersey",
-        "party": "Democrat",
-        "since": 2013,
-        "born": 1969,
-        "education": "Stanford, Oxford, Yale Law",
-        "committees": ["Judiciary", "Foreign Relations", "Agriculture"],
-        "website": "https://www.booker.senate.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg/440px-Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg"
-      },
-      {
-        "id": "raphael-warnock",
-        "name": "Raphael Warnock",
-        "state": "Georgia",
-        "party": "Democrat",
-        "since": 2021,
-        "born": 1969,
-        "education": "Morehouse, Union Theological Seminary",
-        "committees": ["Banking", "Commerce", "Agriculture"],
-        "website": "https://www.warnock.senate.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Raphael_Warnock_official_photo.jpg/440px-Raphael_Warnock_official_photo.jpg"
-      },
-      {
-        "id": "laphonza-butler",
-        "name": "Laphonza Butler",
-        "state": "California",
-        "party": "Democrat",
-        "since": 2023,
-        "born": 1979,
-        "education": "Jackson State University",
-        "committees": ["Banking", "Judiciary", "Rules"],
-        "website": "https://www.butler.senate.gov",
-        "image": null
-      },
-      {
-        "id": "tim-scott",
-        "name": "Tim Scott",
-        "state": "South Carolina",
-        "party": "Republican",
-        "since": 2013,
-        "born": 1965,
-        "education": "Charleston Southern University",
-        "committees": ["Finance", "Banking", "Health"],
-        "website": "https://www.scott.senate.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg/440px-Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg"
-      }
-    ],
-    "representatives": [
-      {
-        "id": "jim-clyburn",
-        "name": "James Clyburn",
-        "state": "South Carolina",
-        "district": 6,
-        "party": "Democrat",
-        "since": 1993,
-        "leadership": "Assistant Democratic Leader",
-        "website": "https://clyburn.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Jim_Clyburn_official_photo.jpg/440px-Jim_Clyburn_official_photo.jpg"
-      },
-      {
-        "id": "hakeem-jeffries",
-        "name": "Hakeem Jeffries",
-        "state": "New York",
-        "district": 8,
-        "party": "Democrat",
-        "since": 2013,
-        "leadership": "House Minority Leader",
-        "website": "https://jeffries.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hakeem_Jeffries_117th_Congress_portrait.jpg/440px-Hakeem_Jeffries_117th_Congress_portrait.jpg"
-      },
-      {
-        "id": "maxine-waters",
-        "name": "Maxine Waters",
-        "state": "California",
-        "district": 43,
-        "party": "Democrat",
-        "since": 1991,
-        "leadership": "Ranking Member, Financial Services",
-        "website": "https://waters.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Maxine_Waters_official_photo.jpg/440px-Maxine_Waters_official_photo.jpg"
-      },
-      {
-        "id": "sheila-jackson-lee",
-        "name": "Sheila Jackson Lee",
-        "state": "Texas",
-        "district": 18,
-        "party": "Democrat",
-        "since": 1995,
-        "leadership": null,
-        "website": "https://jacksonlee.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Sheila_Jackson_Lee_official_photo.jpg/440px-Sheila_Jackson_Lee_official_photo.jpg"
-      },
-      {
-        "id": "john-lewis-legacy",
-        "name": "John Lewis",
-        "state": "Georgia",
-        "district": 5,
-        "party": "Democrat",
-        "since": 1987,
-        "leadership": "Civil Rights Icon (1940-2020)",
-        "website": "https://johnlewis.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/John_Lewis_2006_%28cropped%29.jpg/440px-John_Lewis_2006_%28cropped%29.jpg",
-        "legacy": true
-      },
-      {
-        "id": "barbara-lee",
-        "name": "Barbara Lee",
-        "state": "California",
-        "district": 12,
-        "party": "Democrat",
-        "since": 1998,
-        "leadership": null,
-        "website": "https://lee.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Barbara_Lee_official_photo.jpg/440px-Barbara_Lee_official_photo.jpg"
-      },
-      {
-        "id": "ayanna-pressley",
-        "name": "Ayanna Pressley",
-        "state": "Massachusetts",
-        "district": 7,
-        "party": "Democrat",
-        "since": 2019,
-        "leadership": "Member of 'The Squad'",
-        "website": "https://pressley.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Ayanna_Pressley%2C_official_portrait%2C_116th_Congress.jpg/440px-Ayanna_Pressley%2C_official_portrait%2C_116th_Congress.jpg"
-      },
-      {
-        "id": "byron-donalds",
-        "name": "Byron Donalds",
-        "state": "Florida",
-        "district": 19,
-        "party": "Republican",
-        "since": 2021,
-        "leadership": null,
-        "website": "https://donalds.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Byron_Donalds_117th_Congress_portrait.jpg/440px-Byron_Donalds_117th_Congress_portrait.jpg"
-      },
-      {
-        "id": "burgess-owens",
-        "name": "Burgess Owens",
-        "state": "Utah",
-        "district": 4,
-        "party": "Republican",
-        "since": 2021,
-        "leadership": null,
-        "website": "https://owens.house.gov",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Burgess_Owens_117th_Congress_portrait.jpg/440px-Burgess_Owens_117th_Congress_portrait.jpg"
-      },
-      {
-        "id": "jasmine-crockett",
-        "name": "Jasmine Crockett",
-        "state": "Texas",
-        "district": 30,
-        "party": "Democrat",
-        "since": 2023,
-        "leadership": null,
-        "website": "https://crockett.house.gov",
-        "image": null
-      }
-    ],
-    "mayors": [
-      {
-        "id": "eric-adams",
-        "name": "Eric Adams",
-        "city": "New York City",
-        "state": "NY",
-        "population": 8300000,
-        "since": 2022,
-        "party": "Democrat",
-        "website": "https://www.nyc.gov/mayor"
-      },
-      {
-        "id": "brandon-johnson",
-        "name": "Brandon Johnson",
-        "city": "Chicago",
-        "state": "IL",
-        "population": 2700000,
-        "since": 2023,
-        "party": "Democrat",
-        "website": "https://www.chicago.gov/city/en/depts/mayor.html"
-      },
-      {
-        "id": "karen-bass",
-        "name": "Karen Bass",
-        "city": "Los Angeles",
-        "state": "CA",
-        "population": 3900000,
-        "since": 2022,
-        "party": "Democrat",
-        "website": "https://www.lamayor.org"
-      },
-      {
-        "id": "sylvester-turner",
-        "name": "Sylvester Turner",
-        "city": "Houston",
-        "state": "TX",
-        "population": 2300000,
-        "since": 2016,
-        "party": "Democrat",
-        "website": "https://www.houstontx.gov/mayor/"
-      },
-      {
-        "id": "muriel-bowser",
-        "name": "Muriel Bowser",
-        "city": "Washington, DC",
-        "state": "DC",
-        "population": 690000,
-        "since": 2015,
-        "party": "Democrat",
-        "website": "https://mayor.dc.gov"
-      },
-      {
-        "id": "andre-dickens",
-        "name": "Andre Dickens",
-        "city": "Atlanta",
-        "state": "GA",
-        "population": 500000,
-        "since": 2022,
-        "party": "Democrat",
-        "website": "https://www.atlantaga.gov/government/mayor-s-office"
-      },
-      {
-        "id": "justin-bibb",
-        "name": "Justin Bibb",
-        "city": "Cleveland",
-        "state": "OH",
-        "population": 370000,
-        "since": 2022,
-        "party": "Independent",
-        "website": "https://www.clevelandohio.gov/mayor"
-      },
-      {
-        "id": "mike-duggan",
-        "name": "Mike Duggan",
-        "city": "Detroit",
-        "state": "MI",
-        "population": 640000,
-        "since": 2014,
-        "party": "Democrat",
-        "website": "https://detroitmi.gov/government/mayors-office"
-      }
-    ],
-    "historicalFirsts": [
-      {
-        "achievement": "First Black President",
-        "name": "Barack Obama",
-        "year": 2009,
-        "source": "https://en.wikipedia.org/wiki/Barack_Obama"
-      },
-      {
-        "achievement": "First Black Vice President",
-        "name": "Kamala Harris",
-        "year": 2021,
-        "source": "https://en.wikipedia.org/wiki/Kamala_Harris"
-      },
-      {
-        "achievement": "First Black Supreme Court Justice",
-        "name": "Thurgood Marshall",
-        "year": 1967,
-        "source": "https://en.wikipedia.org/wiki/Thurgood_Marshall"
-      },
-      {
-        "achievement": "First Black Woman Supreme Court Justice",
-        "name": "Ketanji Brown Jackson",
-        "year": 2022,
-        "source": "https://en.wikipedia.org/wiki/Ketanji_Brown_Jackson"
-      },
-      {
-        "achievement": "First Black Senator (Post-Reconstruction)",
-        "name": "Edward Brooke",
-        "year": 1967,
-        "source": "https://en.wikipedia.org/wiki/Edward_Brooke"
-      },
-      {
-        "achievement": "First Black House Minority Leader",
-        "name": "Hakeem Jeffries",
-        "year": 2023,
-        "source": "https://en.wikipedia.org/wiki/Hakeem_Jeffries"
-      },
-      {
-        "achievement": "First Black Secretary of State",
-        "name": "Colin Powell",
-        "year": 2001,
-        "source": "https://en.wikipedia.org/wiki/Colin_Powell"
-      },
-      {
-        "achievement": "First Black Secretary of Defense",
-        "name": "Lloyd Austin",
-        "year": 2021,
-        "source": "https://en.wikipedia.org/wiki/Lloyd_Austin"
-      }
-    ]
-  }
+    "officials": {
+        "overview": {
+            "totalCongress": 60,
+            "senators": 4,
+            "representatives": 56,
+            "governors": 0,
+            "mayors": 50,
+            "description": "Black elected officials in the United States Congress and major cities. Data current as of 2024.",
+            "source": "https://www.congress.gov/"
+        },
+        "senators": [
+            {
+                "id": "cory-booker",
+                "name": "Cory Booker",
+                "state": "New Jersey",
+                "party": "Democrat",
+                "since": 2013,
+                "born": 1969,
+                "education": "Stanford, Oxford, Yale Law",
+                "committees": [
+                    "Judiciary",
+                    "Foreign Relations",
+                    "Agriculture"
+                ],
+                "website": "https://www.booker.senate.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg/440px-Cory_Booker%2C_official_portrait%2C_114th_Congress.jpg"
+            },
+            {
+                "id": "raphael-warnock",
+                "name": "Raphael Warnock",
+                "state": "Georgia",
+                "party": "Democrat",
+                "since": 2021,
+                "born": 1969,
+                "education": "Morehouse, Union Theological Seminary",
+                "committees": [
+                    "Banking",
+                    "Commerce",
+                    "Agriculture"
+                ],
+                "website": "https://www.warnock.senate.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Raphael_Warnock_official_photo.jpg/440px-Raphael_Warnock_official_photo.jpg"
+            },
+            {
+                "id": "laphonza-butler",
+                "name": "Laphonza Butler",
+                "state": "California",
+                "party": "Democrat",
+                "since": 2023,
+                "born": 1979,
+                "education": "Jackson State University",
+                "committees": [
+                    "Banking",
+                    "Judiciary",
+                    "Rules"
+                ],
+                "website": "https://www.butler.senate.gov",
+                "image": null
+            },
+            {
+                "id": "tim-scott",
+                "name": "Tim Scott",
+                "state": "South Carolina",
+                "party": "Republican",
+                "since": 2013,
+                "born": 1965,
+                "education": "Charleston Southern University",
+                "committees": [
+                    "Finance",
+                    "Banking",
+                    "Health"
+                ],
+                "website": "https://www.scott.senate.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg/440px-Tim_Scott%2C_official_portrait%2C_113th_Congress.jpg"
+            }
+        ],
+        "representatives": [
+            {
+                "id": "jim-clyburn",
+                "name": "James Clyburn",
+                "state": "South Carolina",
+                "district": 6,
+                "party": "Democrat",
+                "since": 1993,
+                "leadership": "Assistant Democratic Leader",
+                "website": "https://clyburn.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Jim_Clyburn_official_photo.jpg/440px-Jim_Clyburn_official_photo.jpg"
+            },
+            {
+                "id": "hakeem-jeffries",
+                "name": "Hakeem Jeffries",
+                "state": "New York",
+                "district": 8,
+                "party": "Democrat",
+                "since": 2013,
+                "leadership": "House Minority Leader",
+                "website": "https://jeffries.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hakeem_Jeffries_117th_Congress_portrait.jpg/440px-Hakeem_Jeffries_117th_Congress_portrait.jpg"
+            },
+            {
+                "id": "maxine-waters",
+                "name": "Maxine Waters",
+                "state": "California",
+                "district": 43,
+                "party": "Democrat",
+                "since": 1991,
+                "leadership": "Ranking Member, Financial Services",
+                "website": "https://waters.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Maxine_Waters_official_photo.jpg/440px-Maxine_Waters_official_photo.jpg"
+            },
+            {
+                "id": "sheila-jackson-lee",
+                "name": "Sheila Jackson Lee",
+                "state": "Texas",
+                "district": 18,
+                "party": "Democrat",
+                "since": 1995,
+                "leadership": null,
+                "website": "https://jacksonlee.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Sheila_Jackson_Lee_official_photo.jpg/440px-Sheila_Jackson_Lee_official_photo.jpg"
+            },
+            {
+                "id": "john-lewis-legacy",
+                "name": "John Lewis",
+                "state": "Georgia",
+                "district": 5,
+                "party": "Democrat",
+                "since": 1987,
+                "leadership": "Civil Rights Icon (1940-2020)",
+                "website": "https://johnlewis.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/John_Lewis_2006_%28cropped%29.jpg/440px-John_Lewis_2006_%28cropped%29.jpg",
+                "legacy": true
+            },
+            {
+                "id": "barbara-lee",
+                "name": "Barbara Lee",
+                "state": "California",
+                "district": 12,
+                "party": "Democrat",
+                "since": 1998,
+                "leadership": null,
+                "website": "https://lee.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Barbara_Lee_official_photo.jpg/440px-Barbara_Lee_official_photo.jpg"
+            },
+            {
+                "id": "ayanna-pressley",
+                "name": "Ayanna Pressley",
+                "state": "Massachusetts",
+                "district": 7,
+                "party": "Democrat",
+                "since": 2019,
+                "leadership": "Member of 'The Squad'",
+                "website": "https://pressley.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Ayanna_Pressley%2C_official_portrait%2C_116th_Congress.jpg/440px-Ayanna_Pressley%2C_official_portrait%2C_116th_Congress.jpg"
+            },
+            {
+                "id": "byron-donalds",
+                "name": "Byron Donalds",
+                "state": "Florida",
+                "district": 19,
+                "party": "Republican",
+                "since": 2021,
+                "leadership": null,
+                "website": "https://donalds.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Byron_Donalds_117th_Congress_portrait.jpg/440px-Byron_Donalds_117th_Congress_portrait.jpg"
+            },
+            {
+                "id": "burgess-owens",
+                "name": "Burgess Owens",
+                "state": "Utah",
+                "district": 4,
+                "party": "Republican",
+                "since": 2021,
+                "leadership": null,
+                "website": "https://owens.house.gov",
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Burgess_Owens_117th_Congress_portrait.jpg/440px-Burgess_Owens_117th_Congress_portrait.jpg"
+            },
+            {
+                "id": "jasmine-crockett",
+                "name": "Jasmine Crockett",
+                "state": "Texas",
+                "district": 30,
+                "party": "Democrat",
+                "since": 2023,
+                "leadership": null,
+                "website": "https://crockett.house.gov",
+                "image": null
+            }
+        ],
+        "mayors": [
+            {
+                "id": "eric-adams",
+                "name": "Eric Adams",
+                "city": "New York City",
+                "state": "NY",
+                "population": 8300000,
+                "since": 2022,
+                "party": "Democrat",
+                "website": "https://www.nyc.gov/mayor"
+            },
+            {
+                "id": "brandon-johnson",
+                "name": "Brandon Johnson",
+                "city": "Chicago",
+                "state": "IL",
+                "population": 2700000,
+                "since": 2023,
+                "party": "Democrat",
+                "website": "https://www.chicago.gov/city/en/depts/mayor.html"
+            },
+            {
+                "id": "karen-bass",
+                "name": "Karen Bass",
+                "city": "Los Angeles",
+                "state": "CA",
+                "population": 3900000,
+                "since": 2022,
+                "party": "Democrat",
+                "website": "https://www.lamayor.org"
+            },
+            {
+                "id": "sylvester-turner",
+                "name": "Sylvester Turner",
+                "city": "Houston",
+                "state": "TX",
+                "population": 2300000,
+                "since": 2016,
+                "party": "Democrat",
+                "website": "https://www.houstontx.gov/mayor/"
+            },
+            {
+                "id": "muriel-bowser",
+                "name": "Muriel Bowser",
+                "city": "Washington, DC",
+                "state": "DC",
+                "population": 690000,
+                "since": 2015,
+                "party": "Democrat",
+                "website": "https://mayor.dc.gov"
+            },
+            {
+                "id": "andre-dickens",
+                "name": "Andre Dickens",
+                "city": "Atlanta",
+                "state": "GA",
+                "population": 500000,
+                "since": 2022,
+                "party": "Democrat",
+                "website": "https://www.atlantaga.gov/government/mayor-s-office"
+            },
+            {
+                "id": "justin-bibb",
+                "name": "Justin Bibb",
+                "city": "Cleveland",
+                "state": "OH",
+                "population": 370000,
+                "since": 2022,
+                "party": "Independent",
+                "website": "https://www.clevelandohio.gov/mayor"
+            },
+            {
+                "id": "mike-duggan",
+                "name": "Mike Duggan",
+                "city": "Detroit",
+                "state": "MI",
+                "population": 640000,
+                "since": 2014,
+                "party": "Democrat",
+                "website": "https://detroitmi.gov/government/mayors-office"
+            }
+        ],
+        "historicalFirsts": [
+            {
+                "achievement": "First Black President",
+                "name": "Barack Obama",
+                "year": 2009,
+                "source": "https://en.wikipedia.org/wiki/Barack_Obama"
+            },
+            {
+                "achievement": "First Black Vice President",
+                "name": "Kamala Harris",
+                "year": 2021,
+                "source": "https://en.wikipedia.org/wiki/Kamala_Harris"
+            },
+            {
+                "achievement": "First Black Supreme Court Justice",
+                "name": "Thurgood Marshall",
+                "year": 1967,
+                "source": "https://en.wikipedia.org/wiki/Thurgood_Marshall"
+            },
+            {
+                "achievement": "First Black Woman Supreme Court Justice",
+                "name": "Ketanji Brown Jackson",
+                "year": 2022,
+                "source": "https://en.wikipedia.org/wiki/Ketanji_Brown_Jackson"
+            },
+            {
+                "achievement": "First Black Senator (Post-Reconstruction)",
+                "name": "Edward Brooke",
+                "year": 1967,
+                "source": "https://en.wikipedia.org/wiki/Edward_Brooke"
+            },
+            {
+                "achievement": "First Black House Minority Leader",
+                "name": "Hakeem Jeffries",
+                "year": 2023,
+                "source": "https://en.wikipedia.org/wiki/Hakeem_Jeffries"
+            },
+            {
+                "achievement": "First Black Secretary of State",
+                "name": "Colin Powell",
+                "year": 2001,
+                "source": "https://en.wikipedia.org/wiki/Colin_Powell"
+            },
+            {
+                "achievement": "First Black Secretary of Defense",
+                "name": "Lloyd Austin",
+                "year": 2021,
+                "source": "https://en.wikipedia.org/wiki/Lloyd_Austin"
+            }
+        ]
+    }
 }
