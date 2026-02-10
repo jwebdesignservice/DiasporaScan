@@ -34,27 +34,19 @@ export default function NFTGallery() {
     const [mintedNFTs, setMintedNFTs] = useState([])
     const [showGenerator, setShowGenerator] = useState(false)
 
-    // Load figures from API
+    // Load figures - use static data with all celebrity types
     useEffect(() => {
-        async function loadFigures() {
-            setLoading(true)
-            try {
-                const data = await fetchHistoricalFigures('civil_rights', 20)
-                setFigures(data)
-            } catch (error) {
-                console.error('Failed to load figures:', error)
-                setFigures(figuresData.figures.slice(0, 20))
-            }
-            setLoading(false)
-        }
-        loadFigures()
+        setLoading(true)
+        // Use all figures from static data (athletes, musicians, actors, etc.)
+        setFigures(figuresData.figures)
+        setLoading(false)
 
         // Load minted NFTs from localStorage
         const saved = localStorage.getItem('mintedNFTs')
         if (saved) setMintedNFTs(JSON.parse(saved))
     }, [])
 
-    // Create NFT items from data
+    // Create NFT items from data - all celebrity types
     const figureNFTs = figures.map((figure, index) => ({
         id: `figure-${figure.id || index}`,
         name: figure.name,
@@ -64,19 +56,26 @@ export default function NFTGallery() {
         rarity: assignRarity(figure, index),
         edition: index + 1,
         totalEditions: 1000,
-        burnAmount: figure.category === 'Civil Rights' ? 500 : 100,
+        burnAmount: ['Athlete', 'Music', 'Actor'].includes(figure.category) ? 750 : 
+                    figure.category === 'Civil Rights' ? 500 : 250,
     }))
 
-    const countryNFTs = countriesData.countries.slice(0, 10).map((country, index) => ({
+    // Filter to African countries only (exclude Diaspora regions)
+    const africanCountries = countriesData.countries.filter(
+        country => !country.region.includes('Diaspora') && !country.region.includes('Caribbean') && 
+                   !country.region.includes('America') && !country.region.includes('Europe')
+    )
+
+    const countryNFTs = africanCountries.map((country, index) => ({
         id: `country-${country.id}`,
         name: country.name,
-        image: country.flag,
+        image: `https://flagcdn.com/w320/${country.code.toLowerCase()}.png`,
         type: 'country',
         category: country.region,
-        rarity: index < 2 ? 'legendary' : index < 4 ? 'epic' : index < 7 ? 'rare' : 'common',
+        rarity: index < 2 ? 'legendary' : index < 4 ? 'epic' : index < 6 ? 'rare' : 'common',
         edition: index + 1,
         totalEditions: 500,
-        burnAmount: 250,
+        burnAmount: 300,
     }))
 
     const allNFTs = [...figureNFTs, ...countryNFTs]

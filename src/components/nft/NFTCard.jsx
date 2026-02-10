@@ -137,7 +137,8 @@ export default function NFTCard({
                         <img
                             src={image}
                             alt={name}
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                            style={{ objectPosition: 'center 15%' }}
                             onError={(e) => {
                                 e.target.style.display = 'none'
                                 e.target.nextSibling.style.display = 'flex'
