@@ -5,9 +5,9 @@ import { Search, Menu, X } from 'lucide-react'
 const navItems = [
     { path: '/', label: 'Map' },
     { path: '/database', label: 'Database' },
-    { path: '/nfts', label: 'NFTs' },
     { path: '/analysis', label: 'Analysis' },
     { path: '/token', label: 'Token' },
+    { path: '/nfts', label: 'NFTs' },
     { path: '/about', label: 'More' },
 ]
 
