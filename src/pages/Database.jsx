@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, RefreshCw, ExternalLink, Loader2 } from 'lucide-react'
+import { ArrowRight, RefreshCw, ExternalLink, Loader2, Users, Music, Utensils, Globe, Flag, User } from 'lucide-react'
 
 import SearchBar from '../components/search/SearchBar'
 import TerminalStats from '../components/ui/TerminalStats'
@@ -293,8 +293,8 @@ export default function Database() {
                                     key={tab.id}
                                     onClick={() => handleFilterChange(tab.id)}
                                     className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${activeFilter === tab.id
-                                            ? 'bg-[var(--color-accent-green)] text-white'
-                                            : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-bg-secondary)]'
+                                        ? 'bg-[var(--color-accent-green)] text-white'
+                                        : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-bg-secondary)]'
                                         }`}
                                 >
                                     {tab.label}
@@ -315,8 +315,8 @@ export default function Database() {
                                             key={cat.id}
                                             onClick={() => handleFigureCategoryClick(cat.id)}
                                             className={`text-xs px-3 py-1.5 rounded transition-colors ${selectedFigureCategory === cat.id
-                                                    ? 'bg-[var(--color-accent-gold)] text-white'
-                                                    : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] border border-[var(--color-border)]'
+                                                ? 'bg-[var(--color-accent-gold)] text-white'
+                                                : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] border border-[var(--color-border)]'
                                                 }`}
                                         >
                                             {cat.label}
@@ -460,14 +460,20 @@ export default function Database() {
                                                 className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
                                             >
                                                 <td className="py-3 px-3">
-                                                    {(figure.image || figure.thumbnail) && (
+                                                    {(figure.image || figure.thumbnail) ? (
                                                         <img
                                                             src={figure.image || figure.thumbnail}
                                                             alt={figure.name}
                                                             className="w-10 h-10 object-cover rounded"
-                                                            onError={(e) => e.target.style.display = 'none'}
+                                                            onError={(e) => {
+                                                                e.target.style.display = 'none'
+                                                                e.target.nextSibling.style.display = 'flex'
+                                                            }}
                                                         />
-                                                    )}
+                                                    ) : null}
+                                                    <div className={`w-10 h-10 bg-[var(--color-accent-gold)]/10 rounded flex items-center justify-center ${(figure.image || figure.thumbnail) ? 'hidden' : ''}`}>
+                                                        <User className="w-5 h-5 text-[var(--color-accent-gold)]" />
+                                                    </div>
                                                 </td>
                                                 <td className="py-3 px-3 text-sm text-[var(--color-text-primary)]">
                                                     {figure.name}
@@ -510,6 +516,7 @@ export default function Database() {
                                 <table className="w-full">
                                     <thead>
                                         <tr className="border-b border-[var(--color-border)]">
+                                            <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]"></th>
                                             <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Name</th>
                                             <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Country</th>
                                             <th className="py-2 px-3 text-right text-xs font-medium text-[var(--color-accent-green)]">Population</th>
@@ -527,6 +534,11 @@ export default function Database() {
                                                 onClick={() => navigate(`/detail?name=${encodeURIComponent(clan.name)}&type=clans`)}
                                                 className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
                                             >
+                                                <td className="py-3 px-3">
+                                                    <div className="w-10 h-10 bg-blue-500/10 rounded flex items-center justify-center">
+                                                        <Users className="w-5 h-5 text-blue-400" />
+                                                    </div>
+                                                </td>
                                                 <td className="py-3 px-3 text-sm text-[var(--color-text-primary)]">
                                                     {clan.name}
                                                 </td>
@@ -586,20 +598,33 @@ export default function Database() {
                                                 className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
                                             >
                                                 <td className="py-3 px-3">
-                                                    {item.image && (
+                                                    {item.image ? (
                                                         <img
                                                             src={item.image}
                                                             alt={item.name}
                                                             className="w-10 h-10 object-cover rounded"
-                                                            onError={(e) => e.target.style.display = 'none'}
+                                                            onError={(e) => {
+                                                                e.target.style.display = 'none'
+                                                                e.target.nextSibling.style.display = 'flex'
+                                                            }}
                                                         />
-                                                    )}
+                                                    ) : null}
+                                                    <div className={`w-10 h-10 rounded flex items-center justify-center ${item.image ? 'hidden' : ''} ${item.keyArtists ? 'bg-purple-500/10' : item.ingredients ? 'bg-orange-500/10' : 'bg-blue-500/10'
+                                                        }`}>
+                                                        {item.keyArtists ? (
+                                                            <Music className="w-5 h-5 text-purple-400" />
+                                                        ) : item.ingredients ? (
+                                                            <Utensils className="w-5 h-5 text-orange-400" />
+                                                        ) : (
+                                                            <Globe className="w-5 h-5 text-blue-400" />
+                                                        )}
+                                                    </div>
                                                 </td>
                                                 <td className="py-3 px-3 text-sm text-[var(--color-text-primary)]">
                                                     {item.name}
                                                 </td>
                                                 <td className="py-3 px-3 text-sm">
-                                                    <Badge variant="default">
+                                                    <Badge variant={item.keyArtists ? 'default' : item.ingredients ? 'gold' : 'blue'}>
                                                         {item.keyArtists ? 'Music' : item.ingredients ? 'Food' : 'Language'}
                                                     </Badge>
                                                 </td>

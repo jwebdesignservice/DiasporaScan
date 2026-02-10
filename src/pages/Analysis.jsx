@@ -120,8 +120,8 @@ export default function Analysis() {
     )
 
     // Filter migrations based on active filter
-    const filteredMigrations = activeFilter === 'all' 
-        ? diasporaData.diaspora.migrations 
+    const filteredMigrations = activeFilter === 'all'
+        ? diasporaData.diaspora.migrations
         : diasporaData.diaspora.migrations.filter(m => m.type === activeFilter)
 
     return (
@@ -179,8 +179,8 @@ export default function Analysis() {
                                 key={tab.id}
                                 onClick={() => setActiveFilter(tab.id)}
                                 className={`text-sm transition-colors ${activeFilter === tab.id
-                                        ? 'text-[var(--color-accent-green)]'
-                                        : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
+                                    ? 'text-[var(--color-accent-green)]'
+                                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
                                     }`}
                             >
                                 {tab.label}
