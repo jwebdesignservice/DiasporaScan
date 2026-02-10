@@ -1,11 +1,57 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { Search, Menu, X } from 'lucide-react'
+import { Search, Menu, X, ChevronDown } from 'lucide-react'
 
-const navItems = [
+// Mega menu structure
+const megaMenuItems = [
+    {
+        label: 'Database',
+        path: '/database',
+        dropdown: [
+            { label: 'Diaspora Funding', path: '/database/funding', description: 'Grants & donations to African causes' },
+            { label: 'Remittances', path: '/database/remittances', description: 'Money sent to Africa by country' },
+            { label: 'Organizations', path: '/database/organizations', description: 'NGOs, charities & cultural orgs' },
+            { label: 'Scholarships', path: '/database/scholarships', description: 'HBCUs & education grants' },
+            { label: 'Businesses', path: '/database/businesses', description: 'Black-owned business directory' },
+            { label: 'Elected Officials', path: '/database/officials', description: 'Politicians & representatives' },
+            { label: 'Historical Timeline', path: '/database/timeline', description: 'Key events from 1619 to present' },
+        ]
+    },
+    {
+        label: 'Political',
+        path: '/political',
+        dropdown: [
+            { label: 'Donations', path: '/political/donations', description: 'Campaign contributions' },
+            { label: 'Politicians', path: '/political/politicians', description: 'Elected officials database' },
+            { label: 'PACs', path: '/political/pacs', description: 'Political action committees' },
+            { label: 'Donor Network', path: '/political/donors', description: 'Major donors & networks' },
+            { label: 'Leaderboard', path: '/political/leaderboard', description: 'Top political contributors' },
+        ]
+    },
+    {
+        label: 'Analysis',
+        path: '/analysis',
+        dropdown: [
+            { label: 'Overview', path: '/analysis', description: 'Migration analysis dashboard' },
+            { label: 'Migration Routes', path: '/analysis#routes', description: 'Historical migration patterns' },
+            { label: 'Diaspora Communities', path: '/analysis#communities', description: 'Global community data' },
+            { label: 'State Comparison', path: '/analysis#compare', description: 'Compare diaspora by state' },
+        ]
+    },
+    {
+        label: 'Crowdsourcing',
+        path: '/crowdsourcing',
+        dropdown: [
+            { label: 'Data Requests', path: '/crowdsourcing/requests', description: 'Request new data' },
+            { label: 'Bounty Board', path: '/crowdsourcing/bounties', description: 'Earn by contributing' },
+            { label: 'Submit Data', path: '/crowdsourcing/submit', description: 'Add to our database' },
+            { label: 'Leaderboard', path: '/crowdsourcing/leaderboard', description: 'Top contributors' },
+        ]
+    },
+]
+
+const simpleNavItems = [
     { path: '/', label: 'Map' },
-    { path: '/database', label: 'Database' },
-    { path: '/analysis', label: 'Analysis' },
     { path: '/token', label: 'Token' },
     { path: '/nfts', label: 'NFTs' },
     { path: '/about', label: 'More' },
@@ -15,6 +61,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [searchFocused, setSearchFocused] = useState(false)
     const [searchQuery, setSearchQuery] = useState('')
+    const [activeDropdown, setActiveDropdown] = useState(null)
     const location = useLocation()
     const navigate = useNavigate()
 
@@ -36,6 +83,14 @@ export default function Header() {
         }
     }
 
+    const handleDropdownEnter = (label) => {
+        setActiveDropdown(label)
+    }
+
+    const handleDropdownLeave = () => {
+        setActiveDropdown(null)
+    }
+
     return (
         <header className="sticky top-0 z-50 bg-[var(--color-bg-primary)]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,10 +103,65 @@ export default function Header() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <nav className="hidden md:flex items-center gap-8">
-                        {navItems.map((item) => {
-                            const isActive = location.pathname === item.path ||
-                                (item.path === '/' && location.pathname === '/')
+                    <nav className="hidden md:flex items-center gap-6">
+                        {/* Simple nav items first */}
+                        <Link
+                            to="/"
+                            className={`text-sm transition-colors ${location.pathname === '/'
+                                ? 'text-[var(--color-accent-green)]'
+                                : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
+                                }`}
+                        >
+                            Map
+                        </Link>
+
+                        {/* Mega menu items */}
+                        {megaMenuItems.map((item) => {
+                            const isActive = location.pathname.startsWith(item.path)
+                            return (
+                                <div
+                                    key={item.label}
+                                    className="relative"
+                                    onMouseEnter={() => handleDropdownEnter(item.label)}
+                                    onMouseLeave={handleDropdownLeave}
+                                >
+                                    <button
+                                        className={`flex items-center gap-1 text-sm transition-colors ${isActive
+                                            ? 'text-[var(--color-accent-green)]'
+                                            : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
+                                            }`}
+                                    >
+                                        {item.label}
+                                        <ChevronDown className={`w-3 h-3 transition-transform ${activeDropdown === item.label ? 'rotate-180' : ''}`} />
+                                    </button>
+
+                                    {/* Dropdown */}
+                                    {activeDropdown === item.label && (
+                                        <div className="absolute top-full left-0 mt-2 w-64 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg shadow-xl py-2 z-50">
+                                            {item.dropdown.map((subItem) => (
+                                                <Link
+                                                    key={subItem.path}
+                                                    to={subItem.path}
+                                                    onClick={() => setActiveDropdown(null)}
+                                                    className="block px-4 py-2 hover:bg-[var(--color-bg-tertiary)] transition-colors"
+                                                >
+                                                    <div className="text-sm text-[var(--color-text-primary)]">
+                                                        {subItem.label}
+                                                    </div>
+                                                    <div className="text-xs text-[var(--color-text-muted)]">
+                                                        {subItem.description}
+                                                    </div>
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+                            )
+                        })}
+
+                        {/* Remaining simple items */}
+                        {simpleNavItems.slice(1).map((item) => {
+                            const isActive = location.pathname === item.path
                             return (
                                 <Link
                                     key={item.path}
@@ -71,8 +181,7 @@ export default function Header() {
                     <div className="hidden sm:flex items-center gap-3">
                         <form
                             onSubmit={handleSearch}
-                            className={`relative flex items-center transition-all ${searchFocused ? 'w-56' : 'w-44'
-                                }`}
+                            className={`relative flex items-center transition-all ${searchFocused ? 'w-56' : 'w-44'}`}
                         >
                             <Search className="absolute left-3 w-4 h-4 text-[var(--color-text-muted)]" />
                             <input
@@ -110,7 +219,7 @@ export default function Header() {
 
             {/* Mobile Menu */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-[var(--color-bg-secondary)]">
+                <div className="md:hidden bg-[var(--color-bg-secondary)] max-h-[80vh] overflow-y-auto">
                     <div className="px-4 py-4 space-y-2">
                         {/* Mobile Search */}
                         <form onSubmit={handleMobileSearch} className="relative mb-4">
@@ -123,22 +232,53 @@ export default function Header() {
                             />
                         </form>
 
-                        {navItems.map((item) => {
-                            const isActive = location.pathname === item.path
-                            return (
+                        {/* Map link */}
+                        <Link
+                            to="/"
+                            onClick={() => setMobileMenuOpen(false)}
+                            className={`block px-4 py-3 rounded-lg text-base font-medium transition-all ${location.pathname === '/'
+                                ? 'text-[var(--color-accent-green)]'
+                                : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-bg-tertiary)]'
+                                }`}
+                        >
+                            Map
+                        </Link>
+
+                        {/* Mega menu items in mobile */}
+                        {megaMenuItems.map((item) => (
+                            <div key={item.label} className="border-t border-[var(--color-border)] pt-2">
+                                <div className="px-4 py-2 text-xs uppercase tracking-wider text-[var(--color-text-muted)]">
+                                    {item.label}
+                                </div>
+                                {item.dropdown.map((subItem) => (
+                                    <Link
+                                        key={subItem.path}
+                                        to={subItem.path}
+                                        onClick={() => setMobileMenuOpen(false)}
+                                        className="block px-6 py-2 text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-accent-green)]"
+                                    >
+                                        {subItem.label}
+                                    </Link>
+                                ))}
+                            </div>
+                        ))}
+
+                        {/* Other nav items */}
+                        <div className="border-t border-[var(--color-border)] pt-2">
+                            {simpleNavItems.slice(1).map((item) => (
                                 <Link
                                     key={item.path}
                                     to={item.path}
                                     onClick={() => setMobileMenuOpen(false)}
-                                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-all ${isActive
+                                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-all ${location.pathname === item.path
                                         ? 'text-[var(--color-accent-green)]'
                                         : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-bg-tertiary)]'
                                         }`}
                                 >
                                     {item.label}
                                 </Link>
-                            )
-                        })}
+                            ))}
+                        </div>
 
                         <Link
                             to="/token"

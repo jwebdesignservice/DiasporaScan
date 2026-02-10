@@ -1,0 +1,184 @@
+{
+  "businesses": {
+    "overview": {
+      "totalBlackOwned": 3200000,
+      "totalRevenue": 206900000000,
+      "employmentGenerated": 3500000,
+      "growthRate": 15.6,
+      "description": "Black-owned businesses in the United States by industry, revenue, and state. Data from U.S. Census Annual Business Survey.",
+      "source": "https://www.census.gov/programs-surveys/abs.html"
+    },
+    "byIndustry": [
+      {
+        "industry": "Health Care & Social Assistance",
+        "businesses": 420000,
+        "revenue": 40200000000,
+        "percentOfTotal": 13.1,
+        "growth": 12.5
+      },
+      {
+        "industry": "Professional Services",
+        "businesses": 360000,
+        "revenue": 35800000000,
+        "percentOfTotal": 11.3,
+        "growth": 18.2
+      },
+      {
+        "industry": "Retail Trade",
+        "businesses": 310000,
+        "revenue": 32500000000,
+        "percentOfTotal": 9.7,
+        "growth": 8.4
+      },
+      {
+        "industry": "Construction",
+        "businesses": 280000,
+        "revenue": 28100000000,
+        "percentOfTotal": 8.8,
+        "growth": 14.1
+      },
+      {
+        "industry": "Transportation & Warehousing",
+        "businesses": 240000,
+        "revenue": 22300000000,
+        "percentOfTotal": 7.5,
+        "growth": 22.3
+      },
+      {
+        "industry": "Accommodation & Food Services",
+        "businesses": 210000,
+        "revenue": 18900000000,
+        "percentOfTotal": 6.6,
+        "growth": 9.7
+      },
+      {
+        "industry": "Real Estate",
+        "businesses": 180000,
+        "revenue": 15600000000,
+        "percentOfTotal": 5.6,
+        "growth": 11.8
+      },
+      {
+        "industry": "Technology",
+        "businesses": 95000,
+        "revenue": 12400000000,
+        "percentOfTotal": 3.0,
+        "growth": 35.2
+      },
+      {
+        "industry": "Finance & Insurance",
+        "businesses": 85000,
+        "revenue": 11200000000,
+        "percentOfTotal": 2.7,
+        "growth": 16.5
+      },
+      {
+        "industry": "Entertainment & Media",
+        "businesses": 75000,
+        "revenue": 8500000000,
+        "percentOfTotal": 2.3,
+        "growth": 28.1
+      }
+    ],
+    "byState": [
+      { "state": "Georgia", "code": "GA", "businesses": 340000, "revenue": 24500000000 },
+      { "state": "Texas", "code": "TX", "businesses": 310000, "revenue": 22800000000 },
+      { "state": "Florida", "code": "FL", "businesses": 290000, "revenue": 21200000000 },
+      { "state": "New York", "code": "NY", "businesses": 260000, "revenue": 19500000000 },
+      { "state": "California", "code": "CA", "businesses": 240000, "revenue": 18900000000 },
+      { "state": "Maryland", "code": "MD", "businesses": 180000, "revenue": 13400000000 },
+      { "state": "Illinois", "code": "IL", "businesses": 150000, "revenue": 11200000000 },
+      { "state": "North Carolina", "code": "NC", "businesses": 140000, "revenue": 10500000000 },
+      { "state": "Virginia", "code": "VA", "businesses": 130000, "revenue": 9800000000 },
+      { "state": "Louisiana", "code": "LA", "businesses": 110000, "revenue": 8200000000 }
+    ],
+    "notableCompanies": [
+      {
+        "name": "Vista Equity Partners",
+        "founder": "Robert F. Smith",
+        "industry": "Private Equity",
+        "revenue": 10000000000,
+        "employees": 500,
+        "founded": 2000,
+        "description": "Technology-focused private equity firm managing over $100 billion in assets.",
+        "website": "https://vistaequitypartners.com"
+      },
+      {
+        "name": "World Wide Technology",
+        "founder": "David Steward",
+        "industry": "Technology",
+        "revenue": 17000000000,
+        "employees": 9000,
+        "founded": 1990,
+        "description": "Technology solutions provider and one of the largest Black-owned businesses.",
+        "website": "https://wwt.com"
+      },
+      {
+        "name": "Essence Communications",
+        "founder": "Edward Lewis, Clarence Smith, Cecil Hollingsworth, Jonathan Blount",
+        "industry": "Media",
+        "revenue": 100000000,
+        "employees": 200,
+        "founded": 1968,
+        "description": "Media company publishing ESSENCE magazine, reaching 17 million readers.",
+        "website": "https://essence.com"
+      },
+      {
+        "name": "BET (Black Entertainment Television)",
+        "founder": "Robert L. Johnson",
+        "industry": "Entertainment",
+        "revenue": 500000000,
+        "employees": 600,
+        "founded": 1980,
+        "description": "Leading media company for Black culture and entertainment.",
+        "website": "https://bet.com"
+      },
+      {
+        "name": "Beatrice International",
+        "founder": "Reginald Lewis",
+        "industry": "Food & Beverage",
+        "revenue": 2000000000,
+        "employees": 5000,
+        "founded": 1987,
+        "description": "Historic multinational food company acquired by Reginald Lewis for $985M.",
+        "website": null
+      },
+      {
+        "name": "RLJ Lodging Trust",
+        "founder": "Robert L. Johnson",
+        "industry": "Hospitality",
+        "revenue": 1300000000,
+        "employees": 300,
+        "founded": 2011,
+        "description": "Real estate investment trust owning premium hotels.",
+        "website": "https://rljlodgingtrust.com"
+      },
+      {
+        "name": "Sundial Brands",
+        "founder": "Richelieu Dennis",
+        "industry": "Consumer Products",
+        "revenue": 240000000,
+        "employees": 300,
+        "founded": 1991,
+        "description": "Personal care company known for SheaMoisture and Nubian Heritage brands.",
+        "website": "https://sundialbrands.com"
+      },
+      {
+        "name": "Walker's Legacy",
+        "founder": "Natalie Madeira Cofield",
+        "industry": "Business Services",
+        "revenue": 5000000,
+        "employees": 25,
+        "founded": 2009,
+        "description": "Platform supporting women of color entrepreneurs.",
+        "website": "https://walkerslegacy.com"
+      }
+    ],
+    "trends": {
+      "fastestGrowing": ["Technology", "Entertainment & Media", "Transportation & Warehousing"],
+      "venture_funding_2023": 780000000,
+      "percentWithEmployees": 4.5,
+      "averageRevenue": 64656
+    }
+  }
+}

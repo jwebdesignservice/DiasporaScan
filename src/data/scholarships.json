@@ -1,0 +1,221 @@
+{
+  "scholarships": {
+    "overview": {
+      "totalHBCUs": 107,
+      "totalEnrollment": 228000,
+      "annualScholarships": 500000000,
+      "description": "Historically Black Colleges and Universities (HBCUs) and scholarships for African diaspora students."
+    },
+    "hbcus": [
+      {
+        "id": "howard",
+        "name": "Howard University",
+        "location": "Washington, DC",
+        "founded": 1867,
+        "enrollment": 12000,
+        "type": "Private",
+        "endowment": 969000000,
+        "notableAlumni": ["Kamala Harris", "Thurgood Marshall", "Toni Morrison"],
+        "website": "https://howard.edu",
+        "ranking": 1
+      },
+      {
+        "id": "spelman",
+        "name": "Spelman College",
+        "location": "Atlanta, GA",
+        "founded": 1881,
+        "enrollment": 2100,
+        "type": "Private (Women)",
+        "endowment": 480000000,
+        "notableAlumni": ["Stacey Abrams", "Alice Walker", "Marian Wright Edelman"],
+        "website": "https://spelman.edu",
+        "ranking": 2
+      },
+      {
+        "id": "morehouse",
+        "name": "Morehouse College",
+        "location": "Atlanta, GA",
+        "founded": 1867,
+        "enrollment": 2200,
+        "type": "Private (Men)",
+        "endowment": 200000000,
+        "notableAlumni": ["Martin Luther King Jr.", "Spike Lee", "Samuel L. Jackson"],
+        "website": "https://morehouse.edu",
+        "ranking": 3
+      },
+      {
+        "id": "hampton",
+        "name": "Hampton University",
+        "location": "Hampton, VA",
+        "founded": 1868,
+        "enrollment": 4600,
+        "type": "Private",
+        "endowment": 300000000,
+        "notableAlumni": ["Booker T. Washington", "Mary Jackson", "Wanda Sykes"],
+        "website": "https://hamptonu.edu",
+        "ranking": 4
+      },
+      {
+        "id": "tuskegee",
+        "name": "Tuskegee University",
+        "location": "Tuskegee, AL",
+        "founded": 1881,
+        "enrollment": 2900,
+        "type": "Private",
+        "endowment": 175000000,
+        "notableAlumni": ["George Washington Carver", "Rosa Parks", "Lionel Richie"],
+        "website": "https://tuskegee.edu",
+        "ranking": 5
+      },
+      {
+        "id": "fisk",
+        "name": "Fisk University",
+        "location": "Nashville, TN",
+        "founded": 1866,
+        "enrollment": 1000,
+        "type": "Private",
+        "endowment": 68000000,
+        "notableAlumni": ["W.E.B. Du Bois", "John Lewis", "Nikki Giovanni"],
+        "website": "https://fisk.edu",
+        "ranking": 6
+      },
+      {
+        "id": "florida-am",
+        "name": "Florida A&M University",
+        "location": "Tallahassee, FL",
+        "founded": 1887,
+        "enrollment": 9500,
+        "type": "Public",
+        "endowment": 130000000,
+        "notableAlumni": ["Common", "Pam Oliver", "Will Packer"],
+        "website": "https://famu.edu",
+        "ranking": 7
+      },
+      {
+        "id": "nc-at",
+        "name": "North Carolina A&T",
+        "location": "Greensboro, NC",
+        "founded": 1891,
+        "enrollment": 13000,
+        "type": "Public",
+        "endowment": 130000000,
+        "notableAlumni": ["Jesse Jackson", "Ronald McNair", "Taraji P. Henson"],
+        "website": "https://ncat.edu",
+        "ranking": 8
+      },
+      {
+        "id": "prairie-view",
+        "name": "Prairie View A&M",
+        "location": "Prairie View, TX",
+        "founded": 1876,
+        "enrollment": 9100,
+        "type": "Public",
+        "endowment": 150000000,
+        "notableAlumni": ["Kirby Puckett", "Jiles Daniels"],
+        "website": "https://pvamu.edu",
+        "ranking": 9
+      },
+      {
+        "id": "xavier-la",
+        "name": "Xavier University of Louisiana",
+        "location": "New Orleans, LA",
+        "founded": 1925,
+        "enrollment": 3300,
+        "type": "Private",
+        "endowment": 160000000,
+        "notableAlumni": ["Norman C. Francis", "Regina Benjamin"],
+        "website": "https://xula.edu",
+        "ranking": 10
+      }
+    ],
+    "scholarshipPrograms": [
+      {
+        "id": "gates-millennium",
+        "name": "Gates Millennium Scholars",
+        "sponsor": "Bill & Melinda Gates Foundation",
+        "amount": "Full tuition",
+        "eligibility": "African American, Hispanic, Asian, Native American students",
+        "deadline": "January",
+        "website": "https://gmsp.org",
+        "description": "Covers full cost of attendance for undergraduate and graduate studies."
+      },
+      {
+        "id": "uncf-scholarships",
+        "name": "UNCF Scholarships",
+        "sponsor": "United Negro College Fund",
+        "amount": "Varies ($500 - $50,000)",
+        "eligibility": "African American students at UNCF member institutions",
+        "deadline": "Varies",
+        "website": "https://uncf.org/scholarships",
+        "description": "Over 400 scholarship programs supporting Black students."
+      },
+      {
+        "id": "mastercard-scholars",
+        "name": "Mastercard Foundation Scholars",
+        "sponsor": "Mastercard Foundation",
+        "amount": "Full tuition + living expenses",
+        "eligibility": "African students from economically disadvantaged backgrounds",
+        "deadline": "Varies by university",
+        "website": "https://mastercardfdn.org/all/scholars/",
+        "description": "Full scholarships at partner universities in US, Canada, and Africa."
+      },
+      {
+        "id": "ron-brown",
+        "name": "Ron Brown Scholar Program",
+        "sponsor": "CAP Charitable Foundation",
+        "amount": "$40,000 ($10,000/year)",
+        "eligibility": "African American high school seniors",
+        "deadline": "January",
+        "website": "https://ronbrown.org",
+        "description": "Identifies and supports community-minded Black youth."
+      },
+      {
+        "id": "jackie-robinson",
+        "name": "Jackie Robinson Foundation",
+        "sponsor": "Jackie Robinson Foundation",
+        "amount": "$30,000 over 4 years",
+        "eligibility": "Minority high school seniors with financial need",
+        "deadline": "February",
+        "website": "https://jackierobinson.org",
+        "description": "Scholarship and leadership development program."
+      },
+      {
+        "id": "thurgood-marshall",
+        "name": "Thurgood Marshall Scholarship",
+        "sponsor": "Thurgood Marshall College Fund",
+        "amount": "Varies",
+        "eligibility": "Students at public HBCUs",
+        "deadline": "Varies",
+        "website": "https://tmcf.org/our-scholarships/",
+        "description": "Multiple scholarship programs for HBCU students."
+      },
+      {
+        "id": "coca-cola",
+        "name": "Coca-Cola Scholars Program",
+        "sponsor": "Coca-Cola Foundation",
+        "amount": "$20,000",
+        "eligibility": "High school seniors (US citizens)",
+        "deadline": "October",
+        "website": "https://coca-colascholarsfoundation.org",
+        "description": "Achievement-based scholarship for leaders."
+      },
+      {
+        "id": "fulbright-africa",
+        "name": "Fulbright Program (Africa)",
+        "sponsor": "U.S. Department of State",
+        "amount": "Full funding",
+        "eligibility": "African students and scholars",
+        "deadline": "Varies by country",
+        "website": "https://foreign.fulbrightonline.org/",
+        "description": "Exchange program for graduate study and research."
+      }
+    ],
+    "statistics": {
+      "totalHBCUGraduates": 5000000,
+      "percentOfBlackDoctors": 40,
+      "percentOfBlackLawyers": 25,
+      "percentOfBlackEngineers": 50,
+      "annualGraduates": 50000
+    }
+  }
+}

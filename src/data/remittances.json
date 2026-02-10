@@ -1,0 +1,184 @@
+{
+  "remittances": {
+    "overview": {
+      "totalToAfrica2023": 100000000000,
+      "growthRate": 3.8,
+      "topReceiver": "Nigeria",
+      "description": "Personal remittances sent from diaspora communities to African countries. Data sourced from World Bank Migration and Development Brief.",
+      "source": "https://www.worldbank.org/en/topic/migrationremittancesdiasporaissues"
+    },
+    "byCountry": [
+      {
+        "country": "Nigeria",
+        "code": "NG",
+        "region": "West Africa",
+        "2020": 17208000000,
+        "2021": 19197000000,
+        "2022": 20127000000,
+        "2023": 20500000000,
+        "2024": 21200000000,
+        "percentOfGDP": 4.3,
+        "mainSources": ["United States", "United Kingdom", "Germany"],
+        "source": "https://www.worldbank.org/en/country/nigeria"
+      },
+      {
+        "country": "Egypt",
+        "code": "EG",
+        "region": "North Africa",
+        "2020": 29603000000,
+        "2021": 31497000000,
+        "2022": 28332000000,
+        "2023": 24000000000,
+        "2024": 22000000000,
+        "percentOfGDP": 6.8,
+        "mainSources": ["Saudi Arabia", "UAE", "Kuwait"],
+        "source": "https://www.worldbank.org/en/country/egypt"
+      },
+      {
+        "country": "Morocco",
+        "code": "MA",
+        "region": "North Africa",
+        "2020": 7418000000,
+        "2021": 10405000000,
+        "2022": 11175000000,
+        "2023": 11500000000,
+        "2024": 12000000000,
+        "percentOfGDP": 8.2,
+        "mainSources": ["France", "Spain", "Italy"],
+        "source": "https://www.worldbank.org/en/country/morocco"
+      },
+      {
+        "country": "Ghana",
+        "code": "GH",
+        "region": "West Africa",
+        "2020": 3613000000,
+        "2021": 4505000000,
+        "2022": 4595000000,
+        "2023": 4700000000,
+        "2024": 4900000000,
+        "percentOfGDP": 6.1,
+        "mainSources": ["United States", "United Kingdom", "Germany"],
+        "source": "https://www.worldbank.org/en/country/ghana"
+      },
+      {
+        "country": "Kenya",
+        "code": "KE",
+        "region": "East Africa",
+        "2020": 3094000000,
+        "2021": 3718000000,
+        "2022": 4027000000,
+        "2023": 4200000000,
+        "2024": 4500000000,
+        "percentOfGDP": 3.8,
+        "mainSources": ["United States", "United Kingdom", "UAE"],
+        "source": "https://www.worldbank.org/en/country/kenya"
+      },
+      {
+        "country": "Senegal",
+        "code": "SN",
+        "region": "West Africa",
+        "2020": 2574000000,
+        "2021": 2733000000,
+        "2022": 2848000000,
+        "2023": 3000000000,
+        "2024": 3200000000,
+        "percentOfGDP": 10.5,
+        "mainSources": ["France", "Italy", "Spain"],
+        "source": "https://www.worldbank.org/en/country/senegal"
+      },
+      {
+        "country": "South Africa",
+        "code": "ZA",
+        "region": "Southern Africa",
+        "2020": 912000000,
+        "2021": 1063000000,
+        "2022": 1127000000,
+        "2023": 1200000000,
+        "2024": 1300000000,
+        "percentOfGDP": 0.3,
+        "mainSources": ["United Kingdom", "Australia", "United States"],
+        "source": "https://www.worldbank.org/en/country/southafrica"
+      },
+      {
+        "country": "Ethiopia",
+        "code": "ET",
+        "region": "East Africa",
+        "2020": 573000000,
+        "2021": 714000000,
+        "2022": 780000000,
+        "2023": 850000000,
+        "2024": 920000000,
+        "percentOfGDP": 0.7,
+        "mainSources": ["United States", "Saudi Arabia", "Israel"],
+        "source": "https://www.worldbank.org/en/country/ethiopia"
+      },
+      {
+        "country": "Uganda",
+        "code": "UG",
+        "region": "East Africa",
+        "2020": 1065000000,
+        "2021": 1149000000,
+        "2022": 1263000000,
+        "2023": 1350000000,
+        "2024": 1450000000,
+        "percentOfGDP": 3.1,
+        "mainSources": ["United States", "United Kingdom", "Kenya"],
+        "source": "https://www.worldbank.org/en/country/uganda"
+      },
+      {
+        "country": "Zimbabwe",
+        "code": "ZW",
+        "region": "Southern Africa",
+        "2020": 1839000000,
+        "2021": 2040000000,
+        "2022": 1842000000,
+        "2023": 1900000000,
+        "2024": 2000000000,
+        "percentOfGDP": 9.8,
+        "mainSources": ["South Africa", "United Kingdom", "United States"],
+        "source": "https://www.worldbank.org/en/country/zimbabwe"
+      },
+      {
+        "country": "Tanzania",
+        "code": "TZ",
+        "region": "East Africa",
+        "2020": 475000000,
+        "2021": 558000000,
+        "2022": 620000000,
+        "2023": 700000000,
+        "2024": 780000000,
+        "percentOfGDP": 1.0,
+        "mainSources": ["United States", "United Kingdom", "Canada"],
+        "source": "https://www.worldbank.org/en/country/tanzania"
+      },
+      {
+        "country": "Mali",
+        "code": "ML",
+        "region": "West Africa",
+        "2020": 894000000,
+        "2021": 1002000000,
+        "2022": 1050000000,
+        "2023": 1100000000,
+        "2024": 1150000000,
+        "percentOfGDP": 5.9,
+        "mainSources": ["France", "Ivory Coast", "Spain"],
+        "source": "https://www.worldbank.org/en/country/mali"
+      }
+    ],
+    "trends": [
+      { "year": 2019, "totalToAfrica": 86000000000 },
+      { "year": 2020, "totalToAfrica": 83000000000 },
+      { "year": 2021, "totalToAfrica": 95000000000 },
+      { "year": 2022, "totalToAfrica": 98000000000 },
+      { "year": 2023, "totalToAfrica": 100000000000 },
+      { "year": 2024, "totalToAfrica": 105000000000 }
+    ],
+    "topSourceCountries": [
+      { "country": "United States", "amount": 25000000000 },
+      { "country": "Saudi Arabia", "amount": 18000000000 },
+      { "country": "France", "amount": 12000000000 },
+      { "country": "United Kingdom", "amount": 10000000000 },
+      { "country": "UAE", "amount": 8000000000 }
+    ]
+  }
+}

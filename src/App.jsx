@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Preloader from './components/ui/Preloader'
 import ScrollToTop from './components/utils/ScrollToTop'
+
+// Main pages
 import Home from './pages/Home'
 import Explore from './pages/Explore'
 import Africa from './pages/Africa'
@@ -15,6 +17,15 @@ import Token from './pages/Token'
 import About from './pages/About'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
+
+// Database sub-pages
+import Funding from './pages/database/Funding'
+import Remittances from './pages/database/Remittances'
+import Organizations from './pages/database/Organizations'
+import Scholarships from './pages/database/Scholarships'
+import Businesses from './pages/database/Businesses'
+import Officials from './pages/database/Officials'
+import Timeline from './pages/database/Timeline'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -34,6 +45,7 @@ function App() {
       )}
       <Layout>
         <Routes>
+          {/* Main routes */}
           <Route path="/" element={<Home />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/africa" element={<Africa />} />
@@ -46,6 +58,21 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+
+          {/* Database sub-routes */}
+          <Route path="/database/funding" element={<Funding />} />
+          <Route path="/database/remittances" element={<Remittances />} />
+          <Route path="/database/organizations" element={<Organizations />} />
+          <Route path="/database/scholarships" element={<Scholarships />} />
+          <Route path="/database/businesses" element={<Businesses />} />
+          <Route path="/database/officials" element={<Officials />} />
+          <Route path="/database/timeline" element={<Timeline />} />
+
+          {/* Political sub-routes (placeholder - redirect to main analysis for now) */}
+          <Route path="/political/*" element={<Analysis />} />
+          
+          {/* Crowdsourcing sub-routes (placeholder - redirect to about for now) */}
+          <Route path="/crowdsourcing/*" element={<About />} />
         </Routes>
       </Layout>
     </>
