@@ -79,7 +79,7 @@ function AfricaMap({ onCountryClick }) {
     }
 
     return (
-        <div className="relative w-full" onMouseMove={handleMouseMove}>
+        <div className="relative w-full overflow-hidden" onMouseMove={handleMouseMove}>
             <ComposableMap
                 projection="geoMercator"
                 projectionConfig={{
@@ -93,42 +93,43 @@ function AfricaMap({ onCountryClick }) {
             >
                 <Geographies geography={geoUrl}>
                     {({ geographies }) =>
-                        geographies.map((geo) => {
-                            const isAfrican = isAfricanCountry(geo)
-                            const countryData = getCountryData(geo.properties.name)
+                        geographies
+                            .filter((geo) => isAfricanCountry(geo))
+                            .map((geo) => {
+                                const countryData = getCountryData(geo.properties.name)
 
-                            return (
-                                <Geography
-                                    key={geo.rsmKey}
-                                    geography={geo}
-                                    onMouseEnter={() => isAfrican && setHoveredCountry(geo.properties.name)}
-                                    onMouseLeave={() => setHoveredCountry(null)}
-                                    onClick={() => countryData && onCountryClick?.(countryData)}
-                                    style={{
-                                        default: {
-                                            fill: getCountryColor(geo),
-                                            stroke: isAfrican ? '#0a0a0f' : 'transparent',
-                                            strokeWidth: 0.5,
-                                            outline: 'none',
-                                            transition: 'all 0.2s',
-                                            cursor: countryData ? 'pointer' : 'default',
-                                        },
-                                        hover: {
-                                            fill: isAfrican ? '#60a5fa' : 'transparent',
-                                            stroke: isAfrican ? '#0a0a0f' : 'transparent',
-                                            strokeWidth: 0.5,
-                                            outline: 'none',
-                                        },
-                                        pressed: {
-                                            fill: '#93c5fd',
-                                            stroke: '#0a0a0f',
-                                            strokeWidth: 0.5,
-                                            outline: 'none',
-                                        },
-                                    }}
-                                />
-                            )
-                        })
+                                return (
+                                    <Geography
+                                        key={geo.rsmKey}
+                                        geography={geo}
+                                        onMouseEnter={() => setHoveredCountry(geo.properties.name)}
+                                        onMouseLeave={() => setHoveredCountry(null)}
+                                        onClick={() => countryData && onCountryClick?.(countryData)}
+                                        style={{
+                                            default: {
+                                                fill: getCountryColor(geo),
+                                                stroke: '#0a0a0f',
+                                                strokeWidth: 0.5,
+                                                outline: 'none',
+                                                transition: 'all 0.2s',
+                                                cursor: countryData ? 'pointer' : 'default',
+                                            },
+                                            hover: {
+                                                fill: '#60a5fa',
+                                                stroke: '#0a0a0f',
+                                                strokeWidth: 0.5,
+                                                outline: 'none',
+                                            },
+                                            pressed: {
+                                                fill: '#93c5fd',
+                                                stroke: '#0a0a0f',
+                                                strokeWidth: 0.5,
+                                                outline: 'none',
+                                            },
+                                        }}
+                                    />
+                                )
+                            })
                     }
                 </Geographies>
             </ComposableMap>
