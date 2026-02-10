@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Preloader from './components/ui/Preloader'
+import ScrollToTop from './components/utils/ScrollToTop'
 import Home from './pages/Home'
 import Explore from './pages/Explore'
 import Africa from './pages/Africa'
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       {showPreloader && loading && (
         <Preloader onComplete={handlePreloaderComplete} />
       )}
