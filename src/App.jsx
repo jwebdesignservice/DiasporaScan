@@ -10,6 +10,7 @@ import Search from './pages/Search'
 import Database from './pages/Database'
 import Detail from './pages/Detail'
 import Analysis from './pages/Analysis'
+import NFTGallery from './pages/NFTGallery'
 import Token from './pages/Token'
 import About from './pages/About'
 import Terms from './pages/Terms'
@@ -40,6 +41,7 @@ function App() {
           <Route path="/database" element={<Database />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/analysis" element={<Analysis />} />
+          <Route path="/nfts" element={<NFTGallery />} />
           <Route path="/token" element={<Token />} />
           <Route path="/about" element={<About />} />
           <Route path="/terms" element={<Terms />} />
