@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Search, Menu, X } from 'lucide-react'
 
 const navItems = [
@@ -12,7 +12,27 @@ const navItems = [
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [searchFocused, setSearchFocused] = useState(false)
+    const [searchQuery, setSearchQuery] = useState('')
     const location = useLocation()
+    const navigate = useNavigate()
+
+    const handleSearch = (e) => {
+        e.preventDefault()
+        if (searchQuery.trim()) {
+            navigate(`/database?q=${encodeURIComponent(searchQuery.trim())}`)
+            setSearchQuery('')
+        }
+    }
+
+    const handleMobileSearch = (e) => {
+        e.preventDefault()
+        const query = e.target.elements.mobileSearch.value.trim()
+        if (query) {
+            navigate(`/database?q=${encodeURIComponent(query)}`)
+            setMobileMenuOpen(false)
+            e.target.reset()
+        }
+    }
 
     return (
         <header className="sticky top-0 z-50 bg-[var(--color-bg-primary)]">
@@ -47,7 +67,8 @@ export default function Header() {
 
                     {/* Right Side - Search & CTA */}
                     <div className="hidden sm:flex items-center gap-3">
-                        <div
+                        <form
+                            onSubmit={handleSearch}
                             className={`relative flex items-center transition-all ${searchFocused ? 'w-56' : 'w-44'
                                 }`}
                         >
@@ -55,14 +76,16 @@ export default function Header() {
                             <input
                                 type="text"
                                 placeholder="Search"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
                                 onFocus={() => setSearchFocused(true)}
                                 onBlur={() => setSearchFocused(false)}
                                 className="w-full pl-9 pr-10 py-1.5 bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-md text-sm text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent-green)] transition-all"
                             />
                             <span className="absolute right-2 text-xs text-[var(--color-text-muted)] font-mono">
-                                ⌘K
+                                ⏎
                             </span>
-                        </div>
+                        </form>
 
                         {/* CTA Button */}
                         <Link
@@ -88,14 +111,15 @@ export default function Header() {
                 <div className="md:hidden bg-[var(--color-bg-secondary)]">
                     <div className="px-4 py-4 space-y-2">
                         {/* Mobile Search */}
-                        <div className="relative mb-4">
+                        <form onSubmit={handleMobileSearch} className="relative mb-4">
                             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--color-text-muted)]" />
                             <input
                                 type="text"
+                                name="mobileSearch"
                                 placeholder="Search..."
                                 className="w-full pl-10 pr-4 py-3 bg-[var(--color-bg-tertiary)] border border-[var(--color-border)] rounded-lg text-sm text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] focus:outline-none focus:border-[var(--color-accent-green)]"
                             />
-                        </div>
+                        </form>
 
                         {navItems.map((item) => {
                             const isActive = location.pathname === item.path

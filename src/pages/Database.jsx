@@ -114,35 +114,87 @@ export default function Database() {
     loadFigures()
   }, [selectedFigureCategory])
 
-  // When clicking a figure category, switch to figures filter
+  // When clicking a figure category, switch to figures filter but keep search query
   const handleFigureCategoryClick = (categoryId) => {
     setSelectedFigureCategory(categoryId)
-    // Auto-switch to figures filter when selecting a category
+    // Auto-switch to figures filter when selecting a category, preserve search query
     if (activeFilter !== 'figures') {
-      handleFilterChange('figures')
+      const params = new URLSearchParams(searchParams)
+      params.set('type', 'figures')
+      setSearchParams(params)
     }
   }
 
   // Filter data based on search query and active filter
+  // Match by name, country, origin, region etc.
+  const lowerQuery = searchQuery.toLowerCase()
+  
   const filteredData = {
-    countries: allData.countries.filter(c => 
-      !searchQuery || c.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ),
-    figures: allData.figures.filter(f => 
-      !searchQuery || f.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ),
-    clans: allData.clans.filter(c => 
-      !searchQuery || c.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ),
+    countries: allData.countries.filter(c => {
+      if (!searchQuery) return true
+      return (
+        c.name?.toLowerCase().includes(lowerQuery) ||
+        c.region?.toLowerCase().includes(lowerQuery) ||
+        c.capital?.toLowerCase().includes(lowerQuery)
+      )
+    }),
+    figures: allData.figures.filter(f => {
+      // First check if it matches the search query (if any)
+      const matchesSearch = !searchQuery || (
+        f.name?.toLowerCase().includes(lowerQuery) ||
+        f.origin?.toLowerCase().includes(lowerQuery) ||
+        f.category?.toLowerCase().includes(lowerQuery) ||
+        f.description?.toLowerCase().includes(lowerQuery)
+      )
+      
+      // Then check if it matches the selected figure category (when on figures filter)
+      const categoryLabel = figureCategories.find(c => c.id === selectedFigureCategory)?.label?.toLowerCase()
+      const matchesCategory = activeFilter !== 'figures' || !categoryLabel || 
+        f.category?.toLowerCase().includes(categoryLabel) ||
+        selectedFigureCategory === 'civil_rights' && f.category?.toLowerCase().includes('civil') ||
+        selectedFigureCategory === 'political_leaders' && (f.category?.toLowerCase().includes('politic') || f.category?.toLowerCase().includes('leader')) ||
+        selectedFigureCategory === 'african_leaders' && (f.origin && !['United States', 'Jamaica', 'Haiti', 'Brazil', 'UK', 'United Kingdom'].includes(f.origin))
+      
+      return matchesSearch && matchesCategory
+    }),
+    clans: allData.clans.filter(c => {
+      if (!searchQuery) return true
+      return (
+        c.name?.toLowerCase().includes(lowerQuery) ||
+        c.country?.toLowerCase().includes(lowerQuery) ||
+        c.language?.toLowerCase().includes(lowerQuery)
+      )
+    }),
     culture: [
-      ...allData.music.filter(m => !searchQuery || m.name.toLowerCase().includes(searchQuery.toLowerCase())),
-      ...allData.food.filter(f => !searchQuery || f.name.toLowerCase().includes(searchQuery.toLowerCase())),
-      ...allData.languages.filter(l => !searchQuery || l.name.toLowerCase().includes(searchQuery.toLowerCase())),
+      ...allData.music.filter(m => {
+        if (!searchQuery) return true
+        return (
+          m.name?.toLowerCase().includes(lowerQuery) ||
+          m.origin?.toLowerCase().includes(lowerQuery)
+        )
+      }),
+      ...allData.food.filter(f => {
+        if (!searchQuery) return true
+        return (
+          f.name?.toLowerCase().includes(lowerQuery) ||
+          f.origin?.toLowerCase().includes(lowerQuery) ||
+          f.countries?.some(c => c.toLowerCase().includes(lowerQuery))
+        )
+      }),
+      ...allData.languages.filter(l => {
+        if (!searchQuery) return true
+        return (
+          l.name?.toLowerCase().includes(lowerQuery) ||
+          l.regions?.some(r => r.toLowerCase().includes(lowerQuery)) ||
+          l.countries?.some(c => c.toLowerCase().includes(lowerQuery))
+        )
+      }),
     ]
   }
 
   const handleFilterChange = (filter) => {
     const params = new URLSearchParams(searchParams)
+    // Keep search query when changing filters to allow filtering within search results
     if (filter === 'all') {
       params.delete('type')
     } else {
@@ -163,89 +215,117 @@ export default function Database() {
     <div className="min-h-screen">
       <section className="px-4 py-6">
         <div className="max-w-7xl mx-auto">
-          {/* Top Stats */}
+          {/* Top Stats - Show filtered counts when searching */}
           <div className="flex flex-wrap gap-8 lg:gap-16 mb-6">
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-text-primary)]">
                 {isLoading ? <Loader2 className="w-10 h-10 animate-spin" /> : totalResults}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
-                Total results
+                {searchQuery ? 'Results found' : 'Total results'}
               </div>
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-accent-green)]">
-                {allData.countries.length}
+                {filteredData.countries.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
-                Countries
+                Countries {searchQuery && filteredData.countries.length !== allData.countries.length && `(of ${allData.countries.length})`}
               </div>
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-accent-gold)]">
-                {figuresInitialLoad ? <Loader2 className="w-10 h-10 animate-spin" /> : allData.figures.length}
+                {figuresInitialLoad ? <Loader2 className="w-10 h-10 animate-spin" /> : filteredData.figures.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
-                Historical Figures
+                Figures {searchQuery && filteredData.figures.length !== allData.figures.length && `(of ${allData.figures.length})`}
               </div>
             </div>
             <div>
               <div className="font-mono text-4xl md:text-5xl font-bold text-[var(--color-text-secondary)]">
-                {allData.clans.length}
+                {filteredData.clans.length}
               </div>
               <div className="text-sm text-[var(--color-text-muted)] mt-1">
-                Ethnic Groups
+                Ethnic Groups {searchQuery && filteredData.clans.length !== allData.clans.length && `(of ${allData.clans.length})`}
+              </div>
+            </div>
+            <div>
+              <div className="font-mono text-4xl md:text-5xl font-bold text-blue-400">
+                {filteredData.culture.length}
+              </div>
+              <div className="text-sm text-[var(--color-text-muted)] mt-1">
+                Culture
               </div>
             </div>
           </div>
+
+          {/* Search query indicator */}
+          {searchQuery && (
+            <div className="mb-4 flex items-center gap-2">
+              <span className="text-sm text-[var(--color-text-muted)]">Showing results for:</span>
+              <span className="px-3 py-1 bg-[var(--color-accent-green)]/10 text-[var(--color-accent-green)] text-sm font-medium rounded">
+                "{searchQuery}"
+              </span>
+              <button
+                onClick={() => {
+                  const params = new URLSearchParams(searchParams)
+                  params.delete('q')
+                  setSearchParams(params)
+                }}
+                className="text-xs text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] underline"
+              >
+                Clear
+              </button>
+            </div>
+          )}
 
           {/* Search Bar */}
           <div className="mb-6">
             <SearchBar large />
           </div>
 
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap gap-4 mb-6">
-            {filterTabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => handleFilterChange(tab.id)}
-                className={`text-sm transition-colors ${
-                  activeFilter === tab.id
-                    ? 'text-[var(--color-accent-green)]'
-                    : 'text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Figure Category Filter */}
+          {/* Unified Filter Section */}
           <div className="mb-6 pb-6 border-b border-[var(--color-border)]">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs text-[var(--color-text-muted)]">Fetch Historical Figures from Wikipedia:</span>
-              {figuresLoading && <Loader2 className="w-4 h-4 animate-spin text-[var(--color-accent-green)]" />}
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {figureCategories.map((cat) => (
+            {/* Main Category Tabs */}
+            <div className="flex flex-wrap items-center gap-1 mb-4">
+              {filterTabs.map((tab) => (
                 <button
-                  key={cat.id}
-                  onClick={() => handleFigureCategoryClick(cat.id)}
-                  className={`text-xs px-3 py-1.5 rounded transition-colors ${
-                    selectedFigureCategory === cat.id
+                  key={tab.id}
+                  onClick={() => handleFilterChange(tab.id)}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-all ${
+                    activeFilter === tab.id
                       ? 'bg-[var(--color-accent-green)] text-white'
                       : 'bg-[var(--color-bg-tertiary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-bg-secondary)]'
                   }`}
                 >
-                  {cat.label}
+                  {tab.label}
                 </button>
               ))}
+              {figuresLoading && <Loader2 className="w-4 h-4 ml-2 animate-spin text-[var(--color-accent-green)]" />}
             </div>
-            {activeFilter !== 'figures' && (
-              <p className="text-xs text-[var(--color-text-muted)] mt-2">
-                Click a category above to fetch and view historical figures
-              </p>
+
+            {/* Sub-filters for Historical Figures (only show when figures is active) */}
+            {activeFilter === 'figures' && (
+              <div className="mt-3 pt-3 border-t border-[var(--color-border)]/50">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-xs text-[var(--color-text-muted)]">Filter by profession:</span>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {figureCategories.map((cat) => (
+                    <button
+                      key={cat.id}
+                      onClick={() => handleFigureCategoryClick(cat.id)}
+                      className={`text-xs px-3 py-1.5 rounded transition-colors ${
+                        selectedFigureCategory === cat.id
+                          ? 'bg-[var(--color-accent-gold)] text-white'
+                          : 'bg-[var(--color-bg-secondary)] text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] border border-[var(--color-border)]'
+                      }`}
+                    >
+                      {cat.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
             )}
           </div>
 

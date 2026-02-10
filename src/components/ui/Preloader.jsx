@@ -88,33 +88,6 @@ export default function Preloader({ onComplete }) {
             />
           </div>
 
-          {/* Animated circles */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <motion.div
-              animate={{ 
-                scale: [1, 1.2, 1],
-                opacity: [0.1, 0.2, 0.1],
-              }}
-              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute w-[600px] h-[600px] rounded-full border border-[var(--color-accent-green)]/20"
-            />
-            <motion.div
-              animate={{ 
-                scale: [1.2, 1, 1.2],
-                opacity: [0.1, 0.15, 0.1],
-              }}
-              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-              className="absolute w-[400px] h-[400px] rounded-full border border-[var(--color-accent-gold)]/20"
-            />
-            <motion.div
-              animate={{ 
-                scale: [1, 1.3, 1],
-                opacity: [0.05, 0.1, 0.05],
-              }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-              className="absolute w-[800px] h-[800px] rounded-full border border-[var(--color-text-muted)]/10"
-            />
-          </div>
 
 
           {/* Main content */}
