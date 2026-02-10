@@ -265,7 +265,8 @@ export default function Analysis() {
                                     stat={migration.estimatedPeople?.toLocaleString()}
                                     statLabel="people"
                                     isNew={migration.id === 'transatlantic'}
-                                    href={`/database?q=${encodeURIComponent(migration.name)}`}
+                                    href={`/detail?name=${encodeURIComponent(migration.wikiTitle || migration.name.replace(/\s/g, '_'))}&type=topic`}
+                                    externalUrl={`https://en.wikipedia.org/wiki/${encodeURIComponent(migration.wikiTitle || migration.name.replace(/\s/g, '_'))}`}
                                     delay={index * 0.05}
                                 />
                             ))}

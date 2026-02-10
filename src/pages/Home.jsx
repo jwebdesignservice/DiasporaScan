@@ -45,7 +45,7 @@ const regionStats2 = [
     { name: 'Egypt', value: '10M', subtitle: '104,000,000 population', id: 'egypt' },
 ]
 
-// Featured investigations/analyses with Wikipedia links
+// Featured investigations/analyses - link to detail page with topic type
 const featuredAnalyses = [
     {
         title: 'Transatlantic Slave Trade Routes',
@@ -53,7 +53,7 @@ const featuredAnalyses = [
         stat: '12.5M',
         statLabel: 'people',
         isNew: true,
-        href: '/analysis',
+        href: '/detail?name=Atlantic_slave_trade&type=topic',
         externalUrl: 'https://en.wikipedia.org/wiki/Atlantic_slave_trade',
     },
     {
@@ -62,7 +62,7 @@ const featuredAnalyses = [
         stat: '6M',
         statLabel: 'migrants',
         isNew: true,
-        href: '/analysis',
+        href: '/detail?name=Great_Migration_(African_American)&type=topic',
         externalUrl: 'https://en.wikipedia.org/wiki/Great_Migration_(African_American)',
     },
     {
@@ -70,7 +70,7 @@ const featuredAnalyses = [
         description: 'Caribbean migrants who came to the UK between 1948-1971 to help rebuild post-war Britain. Named after the ship HMT Empire Windrush.',
         stat: '500K',
         statLabel: 'people',
-        href: '/analysis',
+        href: '/detail?name=Windrush_generation&type=topic',
         externalUrl: 'https://en.wikipedia.org/wiki/Windrush_generation',
     },
     {
@@ -78,18 +78,18 @@ const featuredAnalyses = [
         description: 'Contemporary migration patterns from 1980s to present. Education, employment, and refuge-seeking across Europe, North America, and Gulf States.',
         stat: '17M',
         statLabel: 'migrants',
-        href: '/analysis',
+        href: '/detail?name=African_diaspora&type=topic',
         externalUrl: 'https://en.wikipedia.org/wiki/African_diaspora',
     },
 ]
 
 const moreAnalyses = [
-    { title: 'Yoruba Diaspora Network', description: 'Tracing Yoruba influence from Nigeria to Brazil, Cuba, and the Americas through Orisha traditions.', stat: '45M', statLabel: 'speakers', href: '/database?q=Yoruba', externalUrl: 'https://en.wikipedia.org/wiki/Yoruba_people' },
-    { title: 'Ashanti Kingdom Legacy', description: 'The Golden Stool, Kente cloth origins, and the spread of Akan culture across West Africa and diaspora.', stat: '11M', statLabel: 'people', href: '/database?q=Ashanti', externalUrl: 'https://en.wikipedia.org/wiki/Ashanti_Empire' },
-    { title: 'Reggae & Rastafari Spread', description: 'How Jamaican music and spirituality influenced global culture from Bob Marley to modern Afrobeats.', stat: 'Global', statLabel: 'influence', href: '/database?q=Reggae', externalUrl: 'https://en.wikipedia.org/wiki/Reggae' },
-    { title: 'Afro-Brazilian Culture Map', description: 'Salvador, Bahia has the largest Black population outside Africa. Samba, Capoeira, and Candomblé origins.', stat: '97M', statLabel: 'Afro-Brazilians', href: '/database?q=Brazil', externalUrl: 'https://en.wikipedia.org/wiki/Afro-Brazilians' },
-    { title: 'Black British History', description: 'From Mary Seacole to Stormzy. Notting Hill Carnival, Grime music, and cultural contributions.', stat: '2M+', statLabel: 'population', href: '/database?q=United Kingdom', externalUrl: 'https://en.wikipedia.org/wiki/Black_British_people' },
-    { title: 'Haitian Revolution', description: 'The only successful slave revolt in history (1791-1804). First free Black republic in the world.', stat: '1804', statLabel: 'independence', href: '/database?q=Haiti', externalUrl: 'https://en.wikipedia.org/wiki/Haitian_Revolution' },
+    { title: 'Yoruba Diaspora Network', description: 'Tracing Yoruba influence from Nigeria to Brazil, Cuba, and the Americas through Orisha traditions.', stat: '45M', statLabel: 'speakers', href: '/detail?name=Yoruba_people&type=topic', externalUrl: 'https://en.wikipedia.org/wiki/Yoruba_people' },
+    { title: 'Ashanti Kingdom Legacy', description: 'The Golden Stool, Kente cloth origins, and the spread of Akan culture across West Africa and diaspora.', stat: '11M', statLabel: 'people', href: '/detail?name=Ashanti_Empire&type=topic', externalUrl: 'https://en.wikipedia.org/wiki/Ashanti_Empire' },
+    { title: 'Reggae & Rastafari Spread', description: 'How Jamaican music and spirituality influenced global culture from Bob Marley to modern Afrobeats.', stat: 'Global', statLabel: 'influence', href: '/detail?name=Reggae&type=topic', externalUrl: 'https://en.wikipedia.org/wiki/Reggae' },
+    { title: 'Afro-Brazilian Culture Map', description: 'Salvador, Bahia has the largest Black population outside Africa. Samba, Capoeira, and Candomblé origins.', stat: '97M', statLabel: 'Afro-Brazilians', href: '/detail?name=Afro-Brazilians&type=topic', externalUrl: 'https://en.wikipedia.org/wiki/Afro-Brazilians' },
+    { title: 'Black British History', description: 'From Mary Seacole to Stormzy. Notting Hill Carnival, Grime music, and cultural contributions.', stat: '2M+', statLabel: 'population', href: '/detail?name=Black_British_people&type=topic', externalUrl: 'https://en.wikipedia.org/wiki/Black_British_people' },
+    { title: 'Haitian Revolution', description: 'The only successful slave revolt in history (1791-1804). First free Black republic in the world.', stat: '1804', statLabel: 'independence', href: '/detail?name=Haitian_Revolution&type=topic', externalUrl: 'https://en.wikipedia.org/wiki/Haitian_Revolution' },
 ]
 
 export default function Home() {
@@ -186,7 +186,7 @@ export default function Home() {
     )
 
     const handleCountryClick = (country) => {
-        navigate(`/search?q=${encodeURIComponent(country.name)}&type=country`)
+        navigate(`/detail?name=${encodeURIComponent(country.name)}&type=countries`)
     }
 
     const handleSubscribe = (e) => {
@@ -197,15 +197,18 @@ export default function Home() {
 
     const handleFilterClick = (filterId) => {
         setActiveFilter(filterId)
-        if (filterId !== 'all') {
-            navigate(`/search?type=${filterId}`)
+        // Navigate to database page with appropriate filter
+        if (filterId === 'all') {
+            navigate('/database')
+        } else {
+            navigate(`/database?type=${filterId}`)
         }
     }
 
     const handleRegionClick = (regionId) => {
         const country = allData.countries.find(c => c.id === regionId)
         if (country) {
-            navigate(`/search?q=${encodeURIComponent(country.name)}&type=country`)
+            navigate(`/detail?name=${encodeURIComponent(country.name)}&type=countries`)
         }
     }
 
@@ -480,7 +483,7 @@ export default function Home() {
                                             initial={{ opacity: 0 }}
                                             animate={{ opacity: 1 }}
                                             transition={{ delay: index * 0.03 }}
-                                            onClick={() => navigate(`/database?q=${encodeURIComponent(figure.name)}&type=figures`)}
+                                            onClick={() => navigate(`/detail?name=${encodeURIComponent(figure.name)}&type=figures`)}
                                             className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
                                         >
                                             <td className="py-3 px-3 text-sm text-[var(--color-text-primary)]">

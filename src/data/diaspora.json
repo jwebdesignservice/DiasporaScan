@@ -9,6 +9,7 @@
       {
         "id": "transatlantic",
         "name": "Transatlantic Slave Trade",
+        "wikiTitle": "Atlantic_slave_trade",
         "period": "1500s - 1800s",
         "origin": "West & Central Africa",
         "destinations": ["Americas", "Caribbean", "Brazil"],
@@ -22,6 +23,7 @@
       {
         "id": "great-migration",
         "name": "Great Migration",
+        "wikiTitle": "Great_Migration_(African_American)",
         "period": "1910 - 1970",
         "origin": "Southern United States",
         "destinations": ["Northern US", "Western US"],
@@ -32,6 +34,7 @@
       {
         "id": "windrush",
         "name": "Windrush Generation",
+        "wikiTitle": "Windrush_generation",
         "period": "1948 - 1971",
         "origin": "Caribbean",
         "destinations": ["United Kingdom"],
@@ -42,6 +45,7 @@
       {
         "id": "modern-african",
         "name": "Modern African Migration",
+        "wikiTitle": "African_diaspora",
         "period": "1980s - Present",
         "origin": "Various African Nations",
         "destinations": ["Europe", "North America", "Gulf States"],

@@ -8,6 +8,7 @@ import Explore from './pages/Explore'
 import Africa from './pages/Africa'
 import Search from './pages/Search'
 import Database from './pages/Database'
+import Detail from './pages/Detail'
 import Analysis from './pages/Analysis'
 import Token from './pages/Token'
 import About from './pages/About'
@@ -37,6 +38,7 @@ function App() {
           <Route path="/africa" element={<Africa />} />
           <Route path="/search" element={<Search />} />
           <Route path="/database" element={<Database />} />
+          <Route path="/detail" element={<Detail />} />
           <Route path="/analysis" element={<Analysis />} />
           <Route path="/token" element={<Token />} />
           <Route path="/about" element={<About />} />
