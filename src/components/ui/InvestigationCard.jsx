@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { ExternalLink } from 'lucide-react'
 
 export default function InvestigationCard({ 
   title, 
@@ -8,6 +9,7 @@ export default function InvestigationCard({
   statLabel, 
   isNew = false, 
   href = '#',
+  externalUrl = null,
   delay = 0 
 }) {
   return (
@@ -31,14 +33,28 @@ export default function InvestigationCard({
               </span>
             )}
           </div>
-          {stat && (
-            <div className="text-right flex-shrink-0">
-              <span className="font-mono text-xs text-[var(--color-accent-green)]">{stat}</span>
-              {statLabel && (
-                <span className="text-xs text-[var(--color-text-muted)] ml-1">{statLabel}</span>
-              )}
-            </div>
-          )}
+          <div className="flex items-center gap-2 flex-shrink-0">
+            {stat && (
+              <div className="text-right">
+                <span className="font-mono text-xs text-[var(--color-accent-green)]">{stat}</span>
+                {statLabel && (
+                  <span className="text-xs text-[var(--color-text-muted)] ml-1">{statLabel}</span>
+                )}
+              </div>
+            )}
+            {externalUrl && (
+              <a
+                href={externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="p-1 text-[var(--color-text-muted)] hover:text-[var(--color-accent-green)] transition-colors"
+                title="Learn more on Wikipedia"
+              >
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            )}
+          </div>
         </div>
         <p className="text-xs text-[var(--color-text-muted)] leading-relaxed">
           {description}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { ArrowRight, Loader2 } from 'lucide-react'
+import { ArrowRight, Loader2, ExternalLink } from 'lucide-react'
 
 import AfricaMap from '../components/maps/AfricaMap'
 import StatBox from '../components/ui/StatBox'
@@ -45,7 +45,7 @@ const regionStats2 = [
     { name: 'Egypt', value: '10M', subtitle: '104,000,000 population', id: 'egypt' },
 ]
 
-// Featured investigations/analyses
+// Featured investigations/analyses with Wikipedia links
 const featuredAnalyses = [
     {
         title: 'Transatlantic Slave Trade Routes',
@@ -53,7 +53,8 @@ const featuredAnalyses = [
         stat: '12.5M',
         statLabel: 'people',
         isNew: true,
-        href: '/explore',
+        href: '/analysis',
+        externalUrl: 'https://en.wikipedia.org/wiki/Atlantic_slave_trade',
     },
     {
         title: 'Great Migration (1910-1970)',
@@ -61,31 +62,34 @@ const featuredAnalyses = [
         stat: '6M',
         statLabel: 'migrants',
         isNew: true,
-        href: '/explore',
+        href: '/analysis',
+        externalUrl: 'https://en.wikipedia.org/wiki/Great_Migration_(African_American)',
     },
     {
         title: 'Windrush Generation Analysis',
         description: 'Caribbean migrants who came to the UK between 1948-1971 to help rebuild post-war Britain. Named after the ship HMT Empire Windrush.',
         stat: '500K',
         statLabel: 'people',
-        href: '/explore',
+        href: '/analysis',
+        externalUrl: 'https://en.wikipedia.org/wiki/Windrush_generation',
     },
     {
         title: 'Modern African Migration',
         description: 'Contemporary migration patterns from 1980s to present. Education, employment, and refuge-seeking across Europe, North America, and Gulf States.',
         stat: '17M',
         statLabel: 'migrants',
-        href: '/explore',
+        href: '/analysis',
+        externalUrl: 'https://en.wikipedia.org/wiki/African_diaspora',
     },
 ]
 
 const moreAnalyses = [
-    { title: 'Yoruba Diaspora Network', description: 'Tracing Yoruba influence from Nigeria to Brazil, Cuba, and the Americas through Orisha traditions.', stat: '45M', statLabel: 'speakers', href: '/search?q=Yoruba' },
-    { title: 'Ashanti Kingdom Legacy', description: 'The Golden Stool, Kente cloth origins, and the spread of Akan culture across West Africa and diaspora.', stat: '11M', statLabel: 'people', href: '/search?q=Ashanti' },
-    { title: 'Reggae & Rastafari Spread', description: 'How Jamaican music and spirituality influenced global culture from Bob Marley to modern Afrobeats.', stat: 'Global', statLabel: 'influence', href: '/search?q=Reggae' },
-    { title: 'Afro-Brazilian Culture Map', description: 'Salvador, Bahia has the largest Black population outside Africa. Samba, Capoeira, and Candomblé origins.', stat: '97M', statLabel: 'Afro-Brazilians', href: '/search?q=Brazil' },
-    { title: 'Black British History', description: 'From Mary Seacole to Stormzy. Notting Hill Carnival, Grime music, and cultural contributions.', stat: '2M+', statLabel: 'population', href: '/search?q=United Kingdom' },
-    { title: 'Haitian Revolution', description: 'The only successful slave revolt in history (1791-1804). First free Black republic in the world.', stat: '1804', statLabel: 'independence', href: '/search?q=Haiti' },
+    { title: 'Yoruba Diaspora Network', description: 'Tracing Yoruba influence from Nigeria to Brazil, Cuba, and the Americas through Orisha traditions.', stat: '45M', statLabel: 'speakers', href: '/database?q=Yoruba', externalUrl: 'https://en.wikipedia.org/wiki/Yoruba_people' },
+    { title: 'Ashanti Kingdom Legacy', description: 'The Golden Stool, Kente cloth origins, and the spread of Akan culture across West Africa and diaspora.', stat: '11M', statLabel: 'people', href: '/database?q=Ashanti', externalUrl: 'https://en.wikipedia.org/wiki/Ashanti_Empire' },
+    { title: 'Reggae & Rastafari Spread', description: 'How Jamaican music and spirituality influenced global culture from Bob Marley to modern Afrobeats.', stat: 'Global', statLabel: 'influence', href: '/database?q=Reggae', externalUrl: 'https://en.wikipedia.org/wiki/Reggae' },
+    { title: 'Afro-Brazilian Culture Map', description: 'Salvador, Bahia has the largest Black population outside Africa. Samba, Capoeira, and Candomblé origins.', stat: '97M', statLabel: 'Afro-Brazilians', href: '/database?q=Brazil', externalUrl: 'https://en.wikipedia.org/wiki/Afro-Brazilians' },
+    { title: 'Black British History', description: 'From Mary Seacole to Stormzy. Notting Hill Carnival, Grime music, and cultural contributions.', stat: '2M+', statLabel: 'population', href: '/database?q=United Kingdom', externalUrl: 'https://en.wikipedia.org/wiki/Black_British_people' },
+    { title: 'Haitian Revolution', description: 'The only successful slave revolt in history (1791-1804). First free Black republic in the world.', stat: '1804', statLabel: 'independence', href: '/database?q=Haiti', externalUrl: 'https://en.wikipedia.org/wiki/Haitian_Revolution' },
 ]
 
 export default function Home() {
@@ -370,6 +374,7 @@ export default function Home() {
                                     statLabel={analysis.statLabel}
                                     isNew={analysis.isNew}
                                     href={analysis.href}
+                                    externalUrl={analysis.externalUrl}
                                     delay={index * 0.05}
                                 />
                             ))}
@@ -387,6 +392,7 @@ export default function Home() {
                                     stat={analysis.stat}
                                     statLabel={analysis.statLabel}
                                     href={analysis.href}
+                                    externalUrl={analysis.externalUrl}
                                     delay={index * 0.03}
                                 />
                             ))}
@@ -405,12 +411,13 @@ export default function Home() {
                                         <th className="py-2 px-3 text-right text-xs font-medium text-[var(--color-accent-green)]">Population</th>
                                         <th className="py-2 px-3 text-right text-xs font-medium text-[var(--color-accent-green)]">Diaspora</th>
                                         <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Type</th>
+                                        <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Link</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {allData.countries.slice(0, 10).map((country, index) => (
                                         <motion.tr
-                                            key={country.id}
+                                            key={country.id || index}
                                             initial={{ opacity: 0 }}
                                             animate={{ opacity: 1 }}
                                             transition={{ delay: index * 0.03 }}
@@ -427,12 +434,23 @@ export default function Home() {
                                                 {(country.population / 1000000).toFixed(0)}M
                                             </td>
                                             <td className="py-3 px-3 text-sm text-right font-mono text-[var(--color-accent-gold)]">
-                                                {(country.diasporaPopulation / 1000000).toFixed(0)}M
+                                                {((country.diasporaPopulation || 0) / 1000000).toFixed(0)}M
                                             </td>
                                             <td className="py-3 px-3 text-sm">
-                                                <Badge variant={country.region.includes('Diaspora') ? 'gold' : 'green'}>
-                                                    {country.region.includes('Diaspora') ? 'Diaspora' : 'African'}
+                                                <Badge variant={country.region?.includes('Diaspora') ? 'gold' : 'green'}>
+                                                    {country.region?.includes('Diaspora') ? 'Diaspora' : 'African'}
                                                 </Badge>
+                                            </td>
+                                            <td className="py-3 px-3">
+                                                <a
+                                                    href={`https://en.wikipedia.org/wiki/${encodeURIComponent(country.name)}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
+                                                >
+                                                    <ExternalLink className="w-4 h-4" />
+                                                </a>
                                             </td>
                                         </motion.tr>
                                     ))}
@@ -452,16 +470,17 @@ export default function Home() {
                                         <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Origin</th>
                                         <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Era</th>
                                         <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Category</th>
+                                        <th className="py-2 px-3 text-left text-xs font-medium text-[var(--color-accent-green)]">Link</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {allData.figures.slice(0, 8).map((figure, index) => (
                                         <motion.tr
-                                            key={figure.id}
+                                            key={figure.id || index}
                                             initial={{ opacity: 0 }}
                                             animate={{ opacity: 1 }}
                                             transition={{ delay: index * 0.03 }}
-                                            onClick={() => navigate(`/search?q=${encodeURIComponent(figure.name)}&type=figure`)}
+                                            onClick={() => navigate(`/database?q=${encodeURIComponent(figure.name)}&type=figures`)}
                                             className="border-b border-[var(--color-border)]/50 hover:bg-[var(--color-bg-secondary)] transition-colors cursor-pointer"
                                         >
                                             <td className="py-3 px-3 text-sm text-[var(--color-text-primary)]">
@@ -476,26 +495,21 @@ export default function Home() {
                                             <td className="py-3 px-3 text-sm">
                                                 <Badge variant="blue">{figure.category}</Badge>
                                             </td>
+                                            <td className="py-3 px-3">
+                                                <a
+                                                    href={figure.url || `https://en.wikipedia.org/wiki/${encodeURIComponent(figure.name)}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="text-[var(--color-accent-green)] hover:text-[var(--color-accent-green-light)]"
+                                                >
+                                                    <ExternalLink className="w-4 h-4" />
+                                                </a>
+                                            </td>
                                         </motion.tr>
                                     ))}
                                 </tbody>
                             </table>
-                        </div>
-                    </div>
-
-                    {/* Data Sources Footer */}
-                    <div className="pt-6 border-t border-[var(--color-border)]">
-                        <h3 className="text-sm text-[var(--color-text-muted)] mb-3">Data Sources</h3>
-                        <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
-                            {allData.countries.filter(c => !c.region?.includes('Diaspora')).map((country) => (
-                                <Link
-                                    key={country.id}
-                                    to={`/search?q=${encodeURIComponent(country.name)}`}
-                                    className="text-[var(--color-text-secondary)] hover:text-[var(--color-accent-green)] transition-colors"
-                                >
-                                    {country.name}
-                                </Link>
-                            ))}
                         </div>
                     </div>
                 </div>
