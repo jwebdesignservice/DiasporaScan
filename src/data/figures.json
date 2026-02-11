@@ -18,6 +18,346 @@
             "quote": "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that."
         },
         {
+            "id": "barack-obama",
+            "name": "Barack Obama",
+            "birth": "1961",
+            "death": null,
+            "origin": "United States",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/440px-President_Barack_Obama.jpg",
+            "description": "44th President of the United States, the first African American to hold the office.",
+            "achievements": [
+                "First African American U.S. President",
+                "Nobel Peace Prize winner (2009)",
+                "Affordable Care Act (Obamacare)",
+                "Two-term President (2009-2017)"
+            ],
+            "quote": "Change will not come if we wait for some other person or some other time. We are the ones we've been waiting for."
+        },
+        {
+            "id": "michelle-obama",
+            "name": "Michelle Obama",
+            "birth": "1964",
+            "death": null,
+            "origin": "United States",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Michelle_Obama_2013_official_portrait.jpg/440px-Michelle_Obama_2013_official_portrait.jpg",
+            "description": "American attorney and author who served as First Lady of the United States from 2009 to 2017.",
+            "achievements": [
+                "First African American First Lady",
+                "Launched 'Let's Move!' childhood obesity campaign",
+                "Best-selling author of 'Becoming'",
+                "Advocate for education and military families"
+            ],
+            "quote": "When they go low, we go high."
+        },
+        {
+            "id": "rosa-parks",
+            "name": "Rosa Parks",
+            "birth": "1913",
+            "death": "2005",
+            "origin": "United States",
+            "category": "Civil Rights",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Rosaparks.jpg/440px-Rosaparks.jpg",
+            "description": "American civil rights activist, known as the 'Mother of the Civil Rights Movement' for refusing to give up her bus seat.",
+            "achievements": [
+                "Sparked the Montgomery Bus Boycott",
+                "Congressional Gold Medal recipient",
+                "Presidential Medal of Freedom",
+                "NAACP lifetime achievement award"
+            ],
+            "quote": "I have learned over the years that when one's mind is made up, this diminishes fear."
+        },
+        {
+            "id": "malcolm-x",
+            "name": "Malcolm X",
+            "birth": "1925",
+            "death": "1965",
+            "origin": "United States",
+            "category": "Civil Rights",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Malcolm_X_NYWTS_4.jpg/440px-Malcolm_X_NYWTS_4.jpg",
+            "description": "American Muslim minister and human rights activist who was a prominent figure during the civil rights movement.",
+            "achievements": [
+                "Nation of Islam spokesperson",
+                "Founded Muslim Mosque, Inc.",
+                "Advocate for Black empowerment",
+                "His autobiography influenced millions"
+            ],
+            "quote": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today."
+        },
+        {
+            "id": "jackie-robinson",
+            "name": "Jackie Robinson",
+            "birth": "1919",
+            "death": "1972",
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Jackie_Robinson%2C_Brooklyn_Dodgers%2C_1954.jpg/440px-Jackie_Robinson%2C_Brooklyn_Dodgers%2C_1954.jpg",
+            "description": "American professional baseball player who broke Major League Baseball's color barrier.",
+            "achievements": [
+                "First Black MLB player in modern era",
+                "Rookie of the Year (1947)",
+                "6-time All-Star",
+                "Number 42 retired by all MLB teams"
+            ],
+            "quote": "A life is not important except in the impact it has on other lives."
+        },
+        {
+            "id": "jesse-owens",
+            "name": "Jesse Owens",
+            "birth": "1913",
+            "death": "1980",
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Jesse_Owens2.jpg/440px-Jesse_Owens2.jpg",
+            "description": "American track and field athlete who won four gold medals at the 1936 Berlin Olympics.",
+            "achievements": [
+                "4 gold medals at 1936 Berlin Olympics",
+                "Set 3 world records in 45 minutes",
+                "Presidential Medal of Freedom",
+                "Defied Nazi ideology of racial superiority"
+            ],
+            "quote": "The battles that count aren't the ones for gold medals. The struggles within yourself—the invisible, inevitable battles inside all of us—that's where it's at."
+        },
+        {
+            "id": "kobe-bryant",
+            "name": "Kobe Bryant",
+            "birth": "1978",
+            "death": "2020",
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kobe_Bryant_2014.jpg/440px-Kobe_Bryant_2014.jpg",
+            "description": "American professional basketball player who spent his entire 20-year career with the Los Angeles Lakers.",
+            "achievements": [
+                "5-time NBA Champion",
+                "2-time NBA Finals MVP",
+                "18-time NBA All-Star",
+                "Oscar winner for 'Dear Basketball'"
+            ],
+            "quote": "The most important thing is to try and inspire people so that they can be great in whatever they want to do."
+        },
+        {
+            "id": "shaquille-oneal",
+            "name": "Shaquille O'Neal",
+            "birth": "1972",
+            "death": null,
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Shaq_Heat.jpg/440px-Shaq_Heat.jpg",
+            "description": "American former professional basketball player, one of the most dominant centers in NBA history.",
+            "achievements": [
+                "4-time NBA Champion",
+                "3-time NBA Finals MVP",
+                "15-time NBA All-Star",
+                "NBA Most Valuable Player (2000)"
+            ],
+            "quote": "Excellence is not a singular act, but a habit. You are what you repeatedly do."
+        },
+        {
+            "id": "tiger-woods",
+            "name": "Tiger Woods",
+            "birth": "1975",
+            "death": null,
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tiger_Woods_in_2019.jpg/440px-Tiger_Woods_in_2019.jpg",
+            "description": "American professional golfer, one of the greatest golfers of all time.",
+            "achievements": [
+                "15-time major championship winner",
+                "82 PGA Tour wins",
+                "Held world No. 1 ranking for record 683 weeks",
+                "Presidential Medal of Freedom"
+            ],
+            "quote": "I smile at obstacles."
+        },
+        {
+            "id": "florence-griffith-joyner",
+            "name": "Florence Griffith-Joyner",
+            "birth": "1959",
+            "death": "1998",
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Florence_Griffith-Joyner_1988.jpg/440px-Florence_Griffith-Joyner_1988.jpg",
+            "description": "American track and field athlete, fastest woman of all time. Still holds world records in 100m and 200m.",
+            "achievements": [
+                "World record holder 100m (10.49s) and 200m (21.34s)",
+                "3 gold medals at 1988 Seoul Olympics",
+                "Known as 'Flo-Jo'",
+                "Records unbroken for over 35 years"
+            ],
+            "quote": "When anyone tells me I can't do anything, I'm just not listening anymore."
+        },
+        {
+            "id": "wilma-rudolph",
+            "name": "Wilma Rudolph",
+            "birth": "1940",
+            "death": "1994",
+            "origin": "United States",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wilma_Rudolph_%281960%29.jpg/440px-Wilma_Rudolph_%281960%29.jpg",
+            "description": "American sprinter who became the first American woman to win three gold medals in a single Olympic Games.",
+            "achievements": [
+                "3 gold medals at 1960 Rome Olympics",
+                "Overcame polio as a child",
+                "First American woman with 3 golds in one Olympics",
+                "Inspiration for women in sports"
+            ],
+            "quote": "Never underestimate the power of dreams and the influence of the human spirit."
+        },
+        {
+            "id": "mo-farah",
+            "name": "Mo Farah",
+            "birth": "1983",
+            "death": null,
+            "origin": "Somalia",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Mo_Farah_2017.jpg/440px-Mo_Farah_2017.jpg",
+            "description": "British long-distance runner of Somali origin, the most successful British track athlete in Olympic history.",
+            "achievements": [
+                "4-time Olympic gold medalist",
+                "6-time World Champion",
+                "Most successful British track athlete",
+                "Knight Bachelor"
+            ],
+            "quote": "If you dream and have the ambition and want to work hard, then you can achieve."
+        },
+        {
+            "id": "eliud-kipchoge",
+            "name": "Eliud Kipchoge",
+            "birth": "1984",
+            "death": null,
+            "origin": "Kenya",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2022_Berlin_Marathon_-_Eliud_Kipchoge.jpg/440px-2022_Berlin_Marathon_-_Eliud_Kipchoge.jpg",
+            "description": "Kenyan professional long-distance runner, widely regarded as the greatest marathon runner of all time.",
+            "achievements": [
+                "Marathon world record holder (2:01:09)",
+                "First person to run marathon under 2 hours (unofficial)",
+                "2-time Olympic marathon champion",
+                "5-time Berlin Marathon winner"
+            ],
+            "quote": "No human is limited."
+        },
+        {
+            "id": "sadio-mane",
+            "name": "Sadio Mané",
+            "birth": "1992",
+            "death": null,
+            "origin": "Senegal",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sadio_Man%C3%A9_%282022%29.jpg/440px-Sadio_Man%C3%A9_%282022%29.jpg",
+            "description": "Senegalese professional footballer known for his speed, finishing, and philanthropic work.",
+            "achievements": [
+                "Africa Cup of Nations winner (2022)",
+                "Premier League champion",
+                "UEFA Champions League winner",
+                "African Footballer of the Year"
+            ],
+            "quote": "I don't need to display luxury cars, luxury homes. I prefer that my people receive what they need."
+        },
+        {
+            "id": "mohamed-salah",
+            "name": "Mohamed Salah",
+            "birth": "1992",
+            "death": null,
+            "origin": "Egypt",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Mohamed_Salah_2022.jpg/440px-Mohamed_Salah_2022.jpg",
+            "description": "Egyptian professional footballer, considered one of the best players in the world.",
+            "achievements": [
+                "2-time Premier League Golden Boot winner",
+                "UEFA Champions League winner",
+                "2-time African Footballer of the Year",
+                "Time 100 Most Influential People"
+            ],
+            "quote": "If you believe in something, go for it."
+        },
+        {
+            "id": "didier-drogba",
+            "name": "Didier Drogba",
+            "birth": "1978",
+            "death": null,
+            "origin": "Côte d'Ivoire",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Didier_Drogba_%282018%29.jpg/440px-Didier_Drogba_%282018%29.jpg",
+            "description": "Ivorian former professional footballer, Chelsea legend and African football icon.",
+            "achievements": [
+                "UEFA Champions League winner",
+                "4-time Premier League champion",
+                "2-time African Footballer of the Year",
+                "Helped bring peace to Côte d'Ivoire civil war"
+            ],
+            "quote": "When I score, my country wins—and when my country wins, we're at peace."
+        },
+        {
+            "id": "samuel-eto",
+            "name": "Samuel Eto'o",
+            "birth": "1981",
+            "death": null,
+            "origin": "Cameroon",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Samuel_Eto%27o_Fils_2019.jpg/440px-Samuel_Eto%27o_Fils_2019.jpg",
+            "description": "Cameroonian former professional footballer, one of the greatest African players ever.",
+            "achievements": [
+                "4-time African Footballer of the Year",
+                "3-time UEFA Champions League winner",
+                "2-time Africa Cup of Nations winner",
+                "Olympic gold medalist (2000)"
+            ],
+            "quote": "I'm proud to be African."
+        },
+        {
+            "id": "george-weah",
+            "name": "George Weah",
+            "birth": "1966",
+            "death": null,
+            "origin": "Liberia",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/George_Weah_%28cropped%29.jpg/440px-George_Weah_%28cropped%29.jpg",
+            "description": "Liberian politician and former professional footballer, first African to win FIFA World Player of the Year.",
+            "achievements": [
+                "FIFA World Player of the Year (1995)",
+                "Ballon d'Or winner (1995)",
+                "First African winner of these awards",
+                "25th President of Liberia"
+            ],
+            "quote": "Football taught me discipline, commitment, and the value of hard work."
+        },
+        {
+            "id": "hakeem-olajuwon",
+            "name": "Hakeem Olajuwon",
+            "birth": "1963",
+            "death": null,
+            "origin": "Nigeria",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Hakeem_Olajuwon_2019_%28cropped%29.jpg/440px-Hakeem_Olajuwon_2019_%28cropped%29.jpg",
+            "description": "Nigerian-American former professional basketball player, considered one of the greatest centers in NBA history.",
+            "achievements": [
+                "2-time NBA Champion",
+                "NBA MVP (1994)",
+                "2-time NBA Finals MVP",
+                "12-time NBA All-Star"
+            ],
+            "quote": "I believe skill comes from practicing the fundamentals."
+        },
+        {
+            "id": "dikembe-mutombo",
+            "name": "Dikembe Mutombo",
+            "birth": "1966",
+            "death": null,
+            "origin": "Democratic Republic of the Congo",
+            "category": "Athlete",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dikembe_Mutombo_at_2023_Met_Gala_%28cropped%29.jpg/440px-Dikembe_Mutombo_at_2023_Met_Gala_%28cropped%29.jpg",
+            "description": "Congolese-American former professional basketball player, known for his shot-blocking and humanitarian work.",
+            "achievements": [
+                "4-time NBA Defensive Player of the Year",
+                "8-time NBA All-Star",
+                "Built Biamba Marie Mutombo Hospital in Congo",
+                "NBA's highest-paid player (1996)"
+            ],
+            "quote": "Not in my house!"
+        },
+        {
             "id": "nelson-mandela",
             "name": "Nelson Mandela",
             "birth": "1918",
@@ -526,6 +866,890 @@
                 "Time 100 Most Influential People"
             ],
             "quote": "Learn from your past and be better because of your past, but don't cry about your past."
+        },
+        {
+            "id": "jay-z",
+            "name": "Jay-Z",
+            "birth": "1969",
+            "death": null,
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg/440px-Jay-Z_%40_Shawn_%27Jay-Z%27_Carter_Foundation_Carnival_%28crop_2%29.jpg",
+            "description": "American rapper, songwriter, and businessman. One of the most influential hip-hop artists of all time.",
+            "achievements": [
+                "24-time Grammy Award winner",
+                "First hip-hop artist billionaire",
+                "Founder of Roc Nation",
+                "Rock and Roll Hall of Fame inductee"
+            ],
+            "quote": "I'm not afraid of dying, I'm afraid of not trying."
+        },
+        {
+            "id": "kanye-west",
+            "name": "Kanye West",
+            "birth": "1977",
+            "death": null,
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kanye_West_at_the_2009_Tribeca_Film_Festival_%28crop_2%29.jpg/440px-Kanye_West_at_the_2009_Tribeca_Film_Festival_%28crop_2%29.jpg",
+            "description": "American rapper, record producer, and fashion designer. Influential figure in hip-hop and fashion.",
+            "achievements": [
+                "24-time Grammy Award winner",
+                "Founded Yeezy brand",
+                "Multiple platinum albums",
+                "Transformed hip-hop production"
+            ],
+            "quote": "I refuse to accept other people's ideas of happiness for me."
+        },
+        {
+            "id": "drake",
+            "name": "Drake",
+            "birth": "1986",
+            "death": null,
+            "origin": "Canada",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Drake_July_2016.jpg/440px-Drake_July_2016.jpg",
+            "description": "Canadian rapper, singer, and actor. One of the best-selling music artists of all time.",
+            "achievements": [
+                "Most streamed artist on Spotify",
+                "5-time Grammy Award winner",
+                "Founded OVO Sound record label",
+                "Most Billboard Hot 100 entries ever"
+            ],
+            "quote": "I was born to make mistakes, not to fake perfection."
+        },
+        {
+            "id": "nicki-minaj",
+            "name": "Nicki Minaj",
+            "birth": "1982",
+            "death": null,
+            "origin": "Trinidad and Tobago",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nicki_Minaj_2017_%28cropped%29.jpg/440px-Nicki_Minaj_2017_%28cropped%29.jpg",
+            "description": "Trinidadian-American rapper, singer, and songwriter. Best-selling female rapper of all time.",
+            "achievements": [
+                "Over 100 million records sold",
+                "Most Hot 100 entries by solo female artist",
+                "5 American Music Awards",
+                "12 BET Awards"
+            ],
+            "quote": "When I win and when I lose, I take ownership of it, because I really am in charge of what I do."
+        },
+        {
+            "id": "cardi-b",
+            "name": "Cardi B",
+            "birth": "1992",
+            "death": null,
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Cardi_B_Photo_%2848477208607%29_%28cropped%29.jpg/440px-Cardi_B_Photo_%2848477208607%29_%28cropped%29.jpg",
+            "description": "American rapper and actress of Dominican and Trinidadian descent.",
+            "achievements": [
+                "Grammy Award for Best Rap Album",
+                "First female rapper to top Billboard Hot 100 solo in 19 years",
+                "Diamond-certified single 'Bodak Yellow'",
+                "Billboard Woman of the Year"
+            ],
+            "quote": "I'm gonna make it happen because I'm a hustler."
+        },
+        {
+            "id": "morgan-freeman",
+            "name": "Morgan Freeman",
+            "birth": "1937",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Morgan_Freeman_Deauville_2018.jpg/440px-Morgan_Freeman_Deauville_2018.jpg",
+            "description": "American actor, director, and narrator. Known for his distinctive deep voice.",
+            "achievements": [
+                "Academy Award winner (Million Dollar Baby)",
+                "3 Golden Globe nominations",
+                "AFI Life Achievement Award",
+                "National Geographic narrator"
+            ],
+            "quote": "Learning how to be still, to really be still and let life happen—that stillness becomes a radiance."
+        },
+        {
+            "id": "samuel-l-jackson",
+            "name": "Samuel L. Jackson",
+            "birth": "1948",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/SamuelLJackson.jpg/440px-SamuelLJackson.jpg",
+            "description": "American actor and producer. One of the highest-grossing actors in film history.",
+            "achievements": [
+                "Films grossed over $27 billion worldwide",
+                "BAFTA Award winner",
+                "Honorary Academy Award",
+                "Iconic roles in Pulp Fiction, MCU"
+            ],
+            "quote": "If you have an opportunity to use your voice, you should use it."
+        },
+        {
+            "id": "will-smith",
+            "name": "Will Smith",
+            "birth": "1968",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Will_Smith_2021.png/440px-Will_Smith_2021.png",
+            "description": "American actor, rapper, and producer. One of the most bankable stars in Hollywood history.",
+            "achievements": [
+                "Academy Award winner (King Richard)",
+                "4-time Grammy Award winner",
+                "Films grossed over $9 billion",
+                "Fresh Prince of Bel-Air star"
+            ],
+            "quote": "The only thing that I see that is distinctly different about me is I'm not afraid to die on a treadmill."
+        },
+        {
+            "id": "jamie-foxx",
+            "name": "Jamie Foxx",
+            "birth": "1967",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Jamie_Foxx_by_Gage_Skidmore_2.jpg/440px-Jamie_Foxx_by_Gage_Skidmore_2.jpg",
+            "description": "American actor, singer, and comedian. Known for his versatility in comedy and drama.",
+            "achievements": [
+                "Academy Award winner (Ray)",
+                "Grammy Award winner",
+                "BAFTA Award winner",
+                "Golden Globe winner"
+            ],
+            "quote": "What I learned at a very early age was that I was responsible for my life."
+        },
+        {
+            "id": "halle-berry",
+            "name": "Halle Berry",
+            "birth": "1966",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Halle_Berry_by_Gage_Skidmore_2.jpg/440px-Halle_Berry_by_Gage_Skidmore_2.jpg",
+            "description": "American actress. First African American woman to win the Academy Award for Best Actress.",
+            "achievements": [
+                "First Black woman to win Best Actress Oscar",
+                "Emmy Award winner",
+                "Golden Globe winner",
+                "Bond girl in 'Die Another Day'"
+            ],
+            "quote": "I don't take my clothes off for the movies; I do it for myself."
+        },
+        {
+            "id": "angela-bassett",
+            "name": "Angela Bassett",
+            "birth": "1958",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Angela_Bassett_%2848462295987%29_%28cropped%29.jpg/440px-Angela_Bassett_%2848462295987%29_%28cropped%29.jpg",
+            "description": "American actress known for her powerful biographical performances.",
+            "achievements": [
+                "Academy Award nominee",
+                "Golden Globe winner",
+                "Played Tina Turner, Betty Shabazz, Rosa Parks",
+                "Black Panther's Queen Ramonda"
+            ],
+            "quote": "I don't take anything for granted."
+        },
+        {
+            "id": "whoopi-goldberg",
+            "name": "Whoopi Goldberg",
+            "birth": "1955",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Whoopi_Goldberg_at_a_NYC_No_on_Prop_8_Rally.jpg/440px-Whoopi_Goldberg_at_a_NYC_No_on_Prop_8_Rally.jpg",
+            "description": "American actress, comedian, and television personality. One of few EGOT winners.",
+            "achievements": [
+                "EGOT winner (Emmy, Grammy, Oscar, Tony)",
+                "Academy Award winner (Ghost)",
+                "Co-host of The View",
+                "One of 17 EGOT winners ever"
+            ],
+            "quote": "An actress can only play a woman. I'm an actor—I can play anything."
+        },
+        {
+            "id": "stevie-wonder",
+            "name": "Stevie Wonder",
+            "birth": "1950",
+            "death": null,
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Stevie_Wonder_1973.JPG/440px-Stevie_Wonder_1973.JPG",
+            "description": "American singer, songwriter, and musician. Considered one of the most successful musical artists of all time.",
+            "achievements": [
+                "25-time Grammy Award winner",
+                "Presidential Medal of Freedom",
+                "Rock and Roll Hall of Fame",
+                "Over 100 million records sold"
+            ],
+            "quote": "Ability may get you to the top, but it takes character to keep you there."
+        },
+        {
+            "id": "prince",
+            "name": "Prince",
+            "birth": "1958",
+            "death": "2016",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Prince_at_Coachella_%28cropped%29.jpg/440px-Prince_at_Coachella_%28cropped%29.jpg",
+            "description": "American singer, songwriter, and multi-instrumentalist. Known for his eclectic style and musical innovation.",
+            "achievements": [
+                "7-time Grammy Award winner",
+                "Academy Award winner (Purple Rain)",
+                "Rock and Roll Hall of Fame",
+                "Over 150 million records sold"
+            ],
+            "quote": "A strong spirit transcends rules."
+        },
+        {
+            "id": "michael-jackson",
+            "name": "Michael Jackson",
+            "birth": "1958",
+            "death": "2009",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Michael_Jackson_in_1988.jpg/440px-Michael_Jackson_in_1988.jpg",
+            "description": "American singer, songwriter, and dancer. Known as the 'King of Pop'.",
+            "achievements": [
+                "Best-selling album of all time (Thriller)",
+                "13-time Grammy Award winner",
+                "Invented the moonwalk",
+                "Most awarded recording artist ever"
+            ],
+            "quote": "If you enter this world knowing you are loved and you leave this world knowing the same, then everything that happens in between can be dealt with."
+        },
+        {
+            "id": "whitney-houston",
+            "name": "Whitney Houston",
+            "birth": "1963",
+            "death": "2012",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Whitney_Houston_Welcome_Home_Heroes_1_cropped.jpg/440px-Whitney_Houston_Welcome_Home_Heroes_1_cropped.jpg",
+            "description": "American singer and actress. One of the best-selling music artists of all time.",
+            "achievements": [
+                "6-time Grammy Award winner",
+                "Most consecutive No. 1 singles (7)",
+                "Over 200 million records sold",
+                "Greatest voice of all time (Rolling Stone)"
+            ],
+            "quote": "I decided long ago never to walk in anyone's shadow."
+        },
+        {
+            "id": "aretha-franklin",
+            "name": "Aretha Franklin",
+            "birth": "1942",
+            "death": "2018",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Aretha_franklin_1960s_%28cropped%29.jpg/440px-Aretha_franklin_1960s_%28cropped%29.jpg",
+            "description": "American singer known as the 'Queen of Soul'.",
+            "achievements": [
+                "18-time Grammy Award winner",
+                "First woman in Rock and Roll Hall of Fame",
+                "Presidential Medal of Freedom",
+                "Greatest singer of all time (Rolling Stone)"
+            ],
+            "quote": "Being the Queen is not all about singing, and being a diva is not all about singing."
+        },
+        {
+            "id": "james-brown",
+            "name": "James Brown",
+            "birth": "1933",
+            "death": "2006",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/James_Brown_Live_Hamburg_1973_1702730029.jpg/440px-James_Brown_Live_Hamburg_1973_1702730029.jpg",
+            "description": "American singer, songwriter, and dancer. Known as the 'Godfather of Soul'.",
+            "achievements": [
+                "Pioneer of funk music",
+                "Rock and Roll Hall of Fame",
+                "Grammy Lifetime Achievement Award",
+                "One of the most influential musicians ever"
+            ],
+            "quote": "Get up off that thing, dance and you'll feel better."
+        },
+        {
+            "id": "ray-charles",
+            "name": "Ray Charles",
+            "birth": "1930",
+            "death": "2004",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ray_Charles_classic_piano_pose.jpg/440px-Ray_Charles_classic_piano_pose.jpg",
+            "description": "American singer, songwriter, and pianist. Pioneer of soul music.",
+            "achievements": [
+                "17-time Grammy Award winner",
+                "Rock and Roll Hall of Fame",
+                "Presidential Medal of Arts",
+                "Known as 'The Genius'"
+            ],
+            "quote": "I was born with music inside me."
+        },
+        {
+            "id": "nina-simone",
+            "name": "Nina Simone",
+            "birth": "1933",
+            "death": "2003",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nina_Simone_1965_-_restoration1.jpg/440px-Nina_Simone_1965_-_restoration1.jpg",
+            "description": "American singer, songwriter, and civil rights activist. Known as the 'High Priestess of Soul'.",
+            "achievements": [
+                "Grammy Hall of Fame",
+                "Rock and Roll Hall of Fame",
+                "Civil rights anthem 'Mississippi Goddam'",
+                "Influenced generations of musicians"
+            ],
+            "quote": "There's no excuse for the young people not knowing who the heroes and heroines are or were."
+        },
+        {
+            "id": "billie-holiday",
+            "name": "Billie Holiday",
+            "birth": "1915",
+            "death": "1959",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Billie_Holiday_1947.jpg/440px-Billie_Holiday_1947.jpg",
+            "description": "American jazz and swing singer. One of the greatest jazz vocalists of all time.",
+            "achievements": [
+                "Grammy Hall of Fame (multiple recordings)",
+                "Recorded 'Strange Fruit' - anti-lynching anthem",
+                "Influential vocal style",
+                "Rock and Roll Hall of Fame"
+            ],
+            "quote": "If I'm going to sing like someone else, then I don't need to sing at all."
+        },
+        {
+            "id": "louis-armstrong",
+            "name": "Louis Armstrong",
+            "birth": "1901",
+            "death": "1971",
+            "origin": "United States",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Louis_Armstrong_restored.jpg/440px-Louis_Armstrong_restored.jpg",
+            "description": "American trumpeter, composer, and singer. One of the most influential figures in jazz history.",
+            "achievements": [
+                "Pioneer of jazz improvisation",
+                "Grammy Lifetime Achievement Award",
+                "'What a Wonderful World' iconic song",
+                "Transformed jazz into solo art form"
+            ],
+            "quote": "What we play is life."
+        },
+        {
+            "id": "toni-morrison",
+            "name": "Toni Morrison",
+            "birth": "1931",
+            "death": "2019",
+            "origin": "United States",
+            "category": "Literature",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Toni_Morrison_2008-2.jpg/440px-Toni_Morrison_2008-2.jpg",
+            "description": "American novelist and Nobel Prize winner. One of the most celebrated authors in American literature.",
+            "achievements": [
+                "Nobel Prize in Literature (1993)",
+                "Pulitzer Prize for 'Beloved'",
+                "Presidential Medal of Freedom",
+                "First Black female Nobel laureate in Literature"
+            ],
+            "quote": "If there's a book that you want to read, but it hasn't been written yet, then you must write it."
+        },
+        {
+            "id": "langston-hughes",
+            "name": "Langston Hughes",
+            "birth": "1901",
+            "death": "1967",
+            "origin": "United States",
+            "category": "Literature",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Langston_Hughes_by_Carl_Van_Vechten_1936.jpg/440px-Langston_Hughes_by_Carl_Van_Vechten_1936.jpg",
+            "description": "American poet and social activist. One of the leaders of the Harlem Renaissance.",
+            "achievements": [
+                "Leader of Harlem Renaissance",
+                "Created 'jazz poetry'",
+                "Spingarn Medal from NAACP",
+                "Influenced generations of Black writers"
+            ],
+            "quote": "Hold fast to dreams, for if dreams die, life is a broken-winged bird that cannot fly."
+        },
+        {
+            "id": "zora-neale-hurston",
+            "name": "Zora Neale Hurston",
+            "birth": "1891",
+            "death": "1960",
+            "origin": "United States",
+            "category": "Literature",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Zora_Neale_Hurston_%28Portriat_1938%29.jpg/440px-Zora_Neale_Hurston_%28Portriat_1938%29.jpg",
+            "description": "American author, anthropologist, and folklorist. Key figure of the Harlem Renaissance.",
+            "achievements": [
+                "Author of 'Their Eyes Were Watching God'",
+                "Documented African American folklore",
+                "Harlem Renaissance icon",
+                "Influenced Alice Walker, Toni Morrison"
+            ],
+            "quote": "There are years that ask questions and years that answer."
+        },
+        {
+            "id": "james-baldwin",
+            "name": "James Baldwin",
+            "birth": "1924",
+            "death": "1987",
+            "origin": "United States",
+            "category": "Literature",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/James_Baldwin_37_Allan_Warren_%28cropped%29.jpg/440px-James_Baldwin_37_Allan_Warren_%28cropped%29.jpg",
+            "description": "American writer and activist whose work explored race, sexuality, and class.",
+            "achievements": [
+                "Author of 'Go Tell It on the Mountain'",
+                "National Medal of Arts nominee",
+                "'Notes of a Native Son' influential essay",
+                "Civil rights voice through literature"
+            ],
+            "quote": "Not everything that is faced can be changed, but nothing can be changed until it is faced."
+        },
+        {
+            "id": "alice-walker",
+            "name": "Alice Walker",
+            "birth": "1944",
+            "death": null,
+            "origin": "United States",
+            "category": "Literature",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Alice_Walker.jpg/440px-Alice_Walker.jpg",
+            "description": "American novelist, poet, and activist. Best known for 'The Color Purple'.",
+            "achievements": [
+                "Pulitzer Prize for Fiction",
+                "National Book Award",
+                "'The Color Purple' adapted to film and Broadway",
+                "Coined term 'womanist'"
+            ],
+            "quote": "The most common way people give up their power is by thinking they don't have any."
+        },
+        {
+            "id": "colin-powell",
+            "name": "Colin Powell",
+            "birth": "1937",
+            "death": "2021",
+            "origin": "United States",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colin_Powell_official_Secretary_of_State_photo.jpg/440px-Colin_Powell_official_Secretary_of_State_photo.jpg",
+            "description": "American politician and four-star general. First African American Secretary of State.",
+            "achievements": [
+                "First Black U.S. Secretary of State",
+                "First Black Chairman of Joint Chiefs of Staff",
+                "Presidential Medal of Freedom (twice)",
+                "Bronze Star, Purple Heart recipient"
+            ],
+            "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure."
+        },
+        {
+            "id": "condoleezza-rice",
+            "name": "Condoleezza Rice",
+            "birth": "1954",
+            "death": null,
+            "origin": "United States",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Condoleezza_Rice_cropped.jpg/440px-Condoleezza_Rice_cropped.jpg",
+            "description": "American diplomat and political scientist. First African American female Secretary of State.",
+            "achievements": [
+                "First Black female Secretary of State",
+                "First female National Security Advisor",
+                "Stanford University provost",
+                "Concert pianist"
+            ],
+            "quote": "We need to move beyond the old to embrace the new."
+        },
+        {
+            "id": "thurgood-marshall",
+            "name": "Thurgood Marshall",
+            "birth": "1908",
+            "death": "1993",
+            "origin": "United States",
+            "category": "Civil Rights",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Thurgood_Marshall_official.jpg/440px-Thurgood_Marshall_official.jpg",
+            "description": "American lawyer and civil rights activist. First African American Supreme Court Justice.",
+            "achievements": [
+                "First Black Supreme Court Justice",
+                "Won Brown v. Board of Education",
+                "32 of 32 cases won before Supreme Court",
+                "Presidential Medal of Freedom"
+            ],
+            "quote": "In recognizing the humanity of our fellow beings, we pay ourselves the highest tribute."
+        },
+        {
+            "id": "john-lewis",
+            "name": "John Lewis",
+            "birth": "1940",
+            "death": "2020",
+            "origin": "United States",
+            "category": "Civil Rights",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/John_Lewis_2006_%28cropped%29.jpg/440px-John_Lewis_2006_%28cropped%29.jpg",
+            "description": "American civil rights leader and congressman. One of the 'Big Six' leaders of the civil rights movement.",
+            "achievements": [
+                "Led Selma to Montgomery marches",
+                "Chairman of SNCC",
+                "17-term U.S. Representative",
+                "Presidential Medal of Freedom"
+            ],
+            "quote": "Get in good trouble, necessary trouble."
+        },
+        {
+            "id": "stacey-abrams",
+            "name": "Stacey Abrams",
+            "birth": "1973",
+            "death": null,
+            "origin": "United States",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Stacey_Abrams_2019.jpg/440px-Stacey_Abrams_2019.jpg",
+            "description": "American politician and voting rights activist. Credited with turning Georgia blue in 2020.",
+            "achievements": [
+                "Founded Fair Fight Action",
+                "First Black female major party gubernatorial nominee",
+                "Registered 800,000+ voters",
+                "New York Times bestselling author"
+            ],
+            "quote": "We do not have to win to make a difference."
+        },
+        {
+            "id": "kamala-harris",
+            "name": "Kamala Harris",
+            "birth": "1964",
+            "death": null,
+            "origin": "United States",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Kamala_Harris_Vice_Presidential_Portrait.jpg/440px-Kamala_Harris_Vice_Presidential_Portrait.jpg",
+            "description": "American politician and attorney. First female, Black, and Asian American Vice President.",
+            "achievements": [
+                "First female Vice President of the United States",
+                "First Black and Asian American VP",
+                "First female California Attorney General",
+                "Former U.S. Senator"
+            ],
+            "quote": "While I may be the first woman in this office, I won't be the last."
+        },
+        {
+            "id": "kofi-annan",
+            "name": "Kofi Annan",
+            "birth": "1938",
+            "death": "2018",
+            "origin": "Ghana",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kofi_Annan_2012_%28cropped%29.jpg/440px-Kofi_Annan_2012_%28cropped%29.jpg",
+            "description": "Ghanaian diplomat who served as the seventh Secretary-General of the United Nations.",
+            "achievements": [
+                "Nobel Peace Prize (2001)",
+                "UN Secretary-General (1997-2006)",
+                "Founded Kofi Annan Foundation",
+                "Champion of HIV/AIDS fight globally"
+            ],
+            "quote": "Knowledge is power. Information is liberating."
+        },
+        {
+            "id": "ellen-johnson-sirleaf",
+            "name": "Ellen Johnson Sirleaf",
+            "birth": "1938",
+            "death": null,
+            "origin": "Liberia",
+            "category": "Political Leader",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ellen_Johnson_Sirleaf_detail_071024-D-9880W-027.jpg/440px-Ellen_Johnson_Sirleaf_detail_071024-D-9880W-027.jpg",
+            "description": "Liberian politician who served as the 24th President of Liberia. First elected female head of state in Africa.",
+            "achievements": [
+                "First elected female African head of state",
+                "Nobel Peace Prize (2011)",
+                "Rebuilt Liberia after civil war",
+                "Called 'Iron Lady' of Africa"
+            ],
+            "quote": "If your dreams do not scare you, they are not big enough."
+        },
+        {
+            "id": "w-e-b-dubois",
+            "name": "W.E.B. Du Bois",
+            "birth": "1868",
+            "death": "1963",
+            "origin": "United States",
+            "category": "Civil Rights",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/WEB_DuBois_1918.jpg/440px-WEB_DuBois_1918.jpg",
+            "description": "American sociologist, historian, and civil rights activist. Co-founder of the NAACP.",
+            "achievements": [
+                "Co-founder of NAACP",
+                "First African American Harvard PhD",
+                "Author of 'The Souls of Black Folk'",
+                "Pan-African movement leader"
+            ],
+            "quote": "The cost of liberty is less than the price of repression."
+        },
+        {
+            "id": "frederick-douglass",
+            "name": "Frederick Douglass",
+            "birth": "1817",
+            "death": "1895",
+            "origin": "United States",
+            "category": "Abolitionist",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Frederick_Douglass_%28ca._1879%29.jpg/440px-Frederick_Douglass_%28ca._1879%29.jpg",
+            "description": "American abolitionist, social reformer, writer, and statesman. Escaped slavery to become a national leader.",
+            "achievements": [
+                "Escaped slavery at age 20",
+                "Wrote influential autobiographies",
+                "Advised President Lincoln",
+                "First African American nominated for VP (1872)"
+            ],
+            "quote": "If there is no struggle, there is no progress."
+        },
+        {
+            "id": "sojourner-truth",
+            "name": "Sojourner Truth",
+            "birth": "1797",
+            "death": "1883",
+            "origin": "United States",
+            "category": "Abolitionist",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Sojourner_Truth_c1870.jpg/440px-Sojourner_Truth_c1870.jpg",
+            "description": "American abolitionist and women's rights activist. Born into slavery, became powerful orator.",
+            "achievements": [
+                "'Ain't I a Woman?' famous speech",
+                "Advocated for both abolition and women's rights",
+                "Met President Lincoln",
+                "One of most famous abolitionists"
+            ],
+            "quote": "If women want rights more than they got, why don't they just take them?"
+        },
+        {
+            "id": "booker-t-washington",
+            "name": "Booker T. Washington",
+            "birth": "1856",
+            "death": "1915",
+            "origin": "United States",
+            "category": "Education",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Booker_T_Washington_retouched_flattened-crop.jpg/440px-Booker_T_Washington_retouched_flattened-crop.jpg",
+            "description": "American educator and author. Founder of Tuskegee University.",
+            "achievements": [
+                "Founded Tuskegee University",
+                "Advisor to multiple U.S. Presidents",
+                "First African American on U.S. postage stamp",
+                "'Up From Slavery' autobiography"
+            ],
+            "quote": "Success is to be measured not so much by the position that one has reached in life as by the obstacles which he has overcome."
+        },
+        {
+            "id": "mary-mcleod-bethune",
+            "name": "Mary McLeod Bethune",
+            "birth": "1875",
+            "death": "1955",
+            "origin": "United States",
+            "category": "Education",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Mary_McLeod_Bethune_by_Underwood_%26_Underwood_%28cropped%29.jpg/440px-Mary_McLeod_Bethune_by_Underwood_%26_Underwood_%28cropped%29.jpg",
+            "description": "American educator and civil rights leader. Founded what became Bethune-Cookman University.",
+            "achievements": [
+                "Founded Bethune-Cookman University",
+                "Advisor to President FDR",
+                "Founder of National Council of Negro Women",
+                "First Black woman with statue in D.C. park"
+            ],
+            "quote": "Invest in the human soul. Who knows, it might be a diamond in the rough."
+        },
+        {
+            "id": "george-washington-carver",
+            "name": "George Washington Carver",
+            "birth": "1864",
+            "death": "1943",
+            "origin": "United States",
+            "category": "Scientist",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/George_Washington_Carver_c1910_-_Restoration.jpg/440px-George_Washington_Carver_c1910_-_Restoration.jpg",
+            "description": "American agricultural scientist and inventor who developed hundreds of products using peanuts and sweet potatoes.",
+            "achievements": [
+                "Developed 300+ products from peanuts",
+                "Helped Southern farmers diversify crops",
+                "Spingarn Medal recipient",
+                "Born into slavery, became renowned scientist"
+            ],
+            "quote": "Education is the key to unlock the golden door of freedom."
+        },
+        {
+            "id": "neil-degrasse-tyson",
+            "name": "Neil deGrasse Tyson",
+            "birth": "1958",
+            "death": null,
+            "origin": "United States",
+            "category": "Scientist",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg/440px-Neil_deGrasse_Tyson_in_June_2017_%28cropped%29.jpg",
+            "description": "American astrophysicist, author, and science communicator. Director of Hayden Planetarium.",
+            "achievements": [
+                "Host of 'Cosmos: A Spacetime Odyssey'",
+                "Director of Hayden Planetarium",
+                "NASA Distinguished Service Medal",
+                "Made astrophysics accessible to millions"
+            ],
+            "quote": "The Universe is under no obligation to make sense to you."
+        },
+        {
+            "id": "mae-jemison",
+            "name": "Mae C. Jemison",
+            "birth": "1956",
+            "death": null,
+            "origin": "United States",
+            "category": "Scientist",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Mae_C._Jemison%2C_MD.jpg/440px-Mae_C._Jemison%2C_MD.jpg",
+            "description": "American engineer, physician, and NASA astronaut. First African American woman to travel to space.",
+            "achievements": [
+                "First Black woman in space (1992)",
+                "NASA astronaut and physician",
+                "Founded 100 Year Starship",
+                "National Women's Hall of Fame"
+            ],
+            "quote": "Never be limited by other people's limited imaginations."
+        },
+        {
+            "id": "katherine-johnson",
+            "name": "Katherine Johnson",
+            "birth": "1918",
+            "death": "2020",
+            "origin": "United States",
+            "category": "Scientist",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Katherine_Johnson_at_NASA_in_1966.jpg/440px-Katherine_Johnson_at_NASA_in_1966.jpg",
+            "description": "American mathematician whose calculations were critical to NASA's early space missions.",
+            "achievements": [
+                "Calculated trajectory for Apollo 11",
+                "Presidential Medal of Freedom",
+                "Featured in 'Hidden Figures'",
+                "NASA named building after her"
+            ],
+            "quote": "I counted everything. I counted the steps to the road, the steps up to church, the number of dishes and silverware I washed."
+        },
+        {
+            "id": "daniel-kaluuya",
+            "name": "Daniel Kaluuya",
+            "birth": "1989",
+            "death": null,
+            "origin": "United Kingdom",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Daniel_Kaluuya_Peele.jpg/440px-Daniel_Kaluuya_Peele.jpg",
+            "description": "British actor known for his roles in 'Get Out', 'Black Panther', and 'Judas and the Black Messiah'.",
+            "achievements": [
+                "Academy Award winner (Judas and the Black Messiah)",
+                "BAFTA Rising Star Award",
+                "Get Out breakthrough role",
+                "Black Panther cast member"
+            ],
+            "quote": "You just have to be good. There is no shortcut."
+        },
+        {
+            "id": "john-boyega",
+            "name": "John Boyega",
+            "birth": "1992",
+            "death": null,
+            "origin": "United Kingdom",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/John_Boyega_by_Gage_Skidmore.jpg/440px-John_Boyega_by_Gage_Skidmore.jpg",
+            "description": "British actor known for playing Finn in the Star Wars sequel trilogy.",
+            "achievements": [
+                "Star Wars sequel trilogy lead",
+                "Golden Globe winner (Small Axe)",
+                "BAFTA Rising Star nominee",
+                "Black Lives Matter activist"
+            ],
+            "quote": "I'm a Black man in the world—I don't have the luxury of not being political."
+        },
+        {
+            "id": "letitia-wright",
+            "name": "Letitia Wright",
+            "birth": "1993",
+            "death": null,
+            "origin": "Guyana",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Letitia_Wright_by_Gage_Skidmore.jpg/440px-Letitia_Wright_by_Gage_Skidmore.jpg",
+            "description": "Guyanese-British actress known for playing Shuri in the Marvel Cinematic Universe.",
+            "achievements": [
+                "Plays Shuri in Black Panther films",
+                "BAFTA Rising Star Award",
+                "Screen Actors Guild Award",
+                "Empire Award winner"
+            ],
+            "quote": "I can't take credit for a gift that God has given me."
+        },
+        {
+            "id": "zendaya",
+            "name": "Zendaya",
+            "birth": "1996",
+            "death": null,
+            "origin": "United States",
+            "category": "Actor",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zendaya_-_2019_by_Glenn_Francis.jpg/440px-Zendaya_-_2019_by_Glenn_Francis.jpg",
+            "description": "American actress and singer. One of the most influential young actresses in Hollywood.",
+            "achievements": [
+                "2-time Emmy Award winner (Euphoria)",
+                "Youngest lead actress Emmy winner",
+                "Spider-Man films co-star",
+                "Time 100 Most Influential People"
+            ],
+            "quote": "I'm just trying to make good choices and think about how I affect other people."
+        },
+        {
+            "id": "burna-boy",
+            "name": "Burna Boy",
+            "birth": "1991",
+            "death": null,
+            "origin": "Nigeria",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Burna_Boy_2023.jpg/440px-Burna_Boy_2023.jpg",
+            "description": "Nigerian singer and songwriter. Pioneer of the Afrofusion genre.",
+            "achievements": [
+                "Grammy Award winner",
+                "BET Award winner",
+                "Sold out Madison Square Garden",
+                "Africa's biggest musical export"
+            ],
+            "quote": "I want to represent Africa in everything I do."
+        },
+        {
+            "id": "wizkid",
+            "name": "Wizkid",
+            "birth": "1990",
+            "death": null,
+            "origin": "Nigeria",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Wizkid_performing_2012_%28cropped%29.jpg/440px-Wizkid_performing_2012_%28cropped%29.jpg",
+            "description": "Nigerian singer and songwriter. International Afrobeats superstar.",
+            "achievements": [
+                "Grammy Award winner",
+                "'Essence' global hit single",
+                "Over 10 billion streams",
+                "First African with song in UK top 10"
+            ],
+            "quote": "When you make good music, everything else will follow."
+        },
+        {
+            "id": "davido",
+            "name": "Davido",
+            "birth": "1992",
+            "death": null,
+            "origin": "Nigeria",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Davido_at_Gidi_Culture_Festival_2016.jpg/440px-Davido_at_Gidi_Culture_Festival_2016.jpg",
+            "description": "Nigerian singer and record producer. One of the biggest Afrobeats artists globally.",
+            "achievements": [
+                "BET Award winner",
+                "MTV Europe Music Award winner",
+                "'Fall' highest-charting Nigerian song",
+                "Founded DMW record label"
+            ],
+            "quote": "We Rise by Lifting Others."
+        },
+        {
+            "id": "tiwa-savage",
+            "name": "Tiwa Savage",
+            "birth": "1980",
+            "death": null,
+            "origin": "Nigeria",
+            "category": "Music",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Tiwa_Savage_September_2023.jpg/440px-Tiwa_Savage_September_2023.jpg",
+            "description": "Nigerian singer, songwriter, and actress. Known as the 'Queen of Afrobeats'.",
+            "achievements": [
+                "MTV Europe Music Award winner",
+                "First Nigerian to win at MTV EMAs",
+                "Honorary doctorate",
+                "Roc Nation signee"
+            ],
+            "quote": "I'm a strong believer in speaking up for yourself."
         }
     ]
 }

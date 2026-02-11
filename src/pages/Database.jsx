@@ -147,7 +147,13 @@ export default function Database() {
                 f.description?.toLowerCase().includes(lowerQuery)
             )
 
-            // Then check if it matches the selected figure category (when on figures filter)
+            // If there's a search query, just return search matches (skip category filter)
+            // This allows searching for any person regardless of category
+            if (searchQuery) {
+                return matchesSearch
+            }
+
+            // When NOT searching, apply the figure category filter (only when on figures filter)
             const categoryLabel = figureCategories.find(c => c.id === selectedFigureCategory)?.label?.toLowerCase()
             const matchesCategory = activeFilter !== 'figures' || !categoryLabel ||
                 f.category?.toLowerCase().includes(categoryLabel) ||
@@ -155,7 +161,7 @@ export default function Database() {
                 selectedFigureCategory === 'political_leaders' && (f.category?.toLowerCase().includes('politic') || f.category?.toLowerCase().includes('leader')) ||
                 selectedFigureCategory === 'african_leaders' && (f.origin && !['United States', 'Jamaica', 'Haiti', 'Brazil', 'UK', 'United Kingdom'].includes(f.origin))
 
-            return matchesSearch && matchesCategory
+            return matchesCategory
         }),
         clans: allData.clans.filter(c => {
             if (!searchQuery) return true

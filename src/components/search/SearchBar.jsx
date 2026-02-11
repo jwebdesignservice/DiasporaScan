@@ -137,9 +137,13 @@ export default function SearchBar({ large = false, autoFocus = false }) {
     }, [isOpen, results, selectedIndex])
 
     const handleSelect = (result) => {
-        navigate(`/database?q=${encodeURIComponent(result.name)}&type=${result.type === 'country' ? 'countries' : result.type === 'figure' ? 'figures' : result.type === 'clan' ? 'clans' : 'culture'}`)
-        setQuery('')
+        const searchName = result.name
+        const typeParam = result.type === 'country' ? 'countries' : result.type === 'figure' ? 'figures' : result.type === 'clan' ? 'clans' : 'culture'
         setIsOpen(false)
+        // Navigate with the selected name - don't clear query until after navigation
+        navigate(`/database?q=${encodeURIComponent(searchName)}&type=${typeParam}`)
+        // Clear query after a short delay to allow navigation to complete
+        setTimeout(() => setQuery(''), 100)
     }
 
     const handleSubmit = (e) => {
