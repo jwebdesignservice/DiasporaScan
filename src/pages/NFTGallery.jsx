@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Wallet, Flame, Trophy, Sparkles, Filter, Grid, LayoutGrid } from 'lucide-react'
+import { Wallet, Flame, Trophy, Sparkles, Filter, Grid, LayoutGrid, Lock, Rocket } from 'lucide-react'
 
 import NFTCard from '../components/nft/NFTCard'
 import HeritageCardGenerator from '../components/nft/HeritageCardGenerator'
@@ -10,6 +10,9 @@ import Badge from '../components/ui/Badge'
 import { fetchHistoricalFigures } from '../services/api'
 import countriesData from '../data/countries.json'
 import figuresData from '../data/figures.json'
+
+// Coming Soon Overlay - set to true to show the overlay
+const SHOW_COMING_SOON = true
 
 const filterTabs = [
     { id: 'all', label: 'All NFTs' },
@@ -104,6 +107,187 @@ export default function NFTGallery() {
     }
 
     const totalBurned = mintedNFTs.length * 250 // Simulated burn amount
+
+    // Coming Soon Overlay Component
+    if (SHOW_COMING_SOON) {
+        return (
+            <div className="min-h-screen relative">
+                {/* Background with blur effect */}
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0f] via-[#0f1419] to-[#0a0a0f]" />
+                    
+                    {/* Animated grid background */}
+                    <div 
+                        className="absolute inset-0 opacity-10"
+                        style={{
+                            backgroundImage: `
+                                linear-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(245, 158, 11, 0.1) 1px, transparent 1px)
+                            `,
+                            backgroundSize: '50px 50px',
+                        }}
+                    />
+
+                    {/* Glowing orbs */}
+                    <motion.div
+                        className="absolute top-1/4 left-1/4 w-96 h-96 bg-[var(--color-accent-gold)]/10 rounded-full blur-[128px]"
+                        animate={{
+                            scale: [1, 1.2, 1],
+                            opacity: [0.3, 0.5, 0.3],
+                        }}
+                        transition={{
+                            duration: 4,
+                            repeat: Infinity,
+                            ease: 'easeInOut',
+                        }}
+                    />
+                    <motion.div
+                        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[var(--color-accent-green)]/10 rounded-full blur-[128px]"
+                        animate={{
+                            scale: [1.2, 1, 1.2],
+                            opacity: [0.3, 0.5, 0.3],
+                        }}
+                        transition={{
+                            duration: 4,
+                            repeat: Infinity,
+                            ease: 'easeInOut',
+                            delay: 2,
+                        }}
+                    />
+                </div>
+
+                {/* Main Content */}
+                <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-12">
+                    {/* Lock Icon */}
+                    <motion.div
+                        initial={{ scale: 0, rotate: -180 }}
+                        animate={{ scale: 1, rotate: 0 }}
+                        transition={{ 
+                            type: 'spring',
+                            stiffness: 200,
+                            damping: 20,
+                            delay: 0.2 
+                        }}
+                        className="mb-8"
+                    >
+                        <div className="relative">
+                            <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[var(--color-accent-gold)] to-orange-600 flex items-center justify-center">
+                                <Lock className="w-12 h-12 text-black" />
+                            </div>
+                            {/* Pulse ring */}
+                            <motion.div
+                                className="absolute inset-0 rounded-full border-2 border-[var(--color-accent-gold)]"
+                                animate={{
+                                    scale: [1, 1.5, 1.5],
+                                    opacity: [0.5, 0, 0],
+                                }}
+                                transition={{
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    ease: 'easeOut',
+                                }}
+                            />
+                        </div>
+                    </motion.div>
+
+                    {/* Coming Soon Text */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4 }}
+                        className="text-center mb-8"
+                    >
+                        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                            <span className="bg-gradient-to-r from-[var(--color-accent-gold)] via-orange-400 to-[var(--color-accent-gold)] bg-clip-text text-transparent">
+                                Coming Soon
+                            </span>
+                        </h1>
+                        <p className="text-lg md:text-xl text-[var(--color-text-muted)] max-w-xl mx-auto">
+                            DiasporaScan NFT Collection is being prepared for launch.
+                            Collect, trade, and celebrate African heritage.
+                        </p>
+                    </motion.div>
+
+                    {/* Feature Preview Cards */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.6 }}
+                        className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10"
+                    >
+                        {[
+                            { icon: Flame, title: 'Burn to Mint', desc: 'Burn $DIAS to mint exclusive NFTs' },
+                            { icon: Trophy, title: 'Rarity Tiers', desc: 'Legendary, Epic, Rare & Common' },
+                            { icon: Sparkles, title: 'Heritage Cards', desc: 'Generate your own heritage card' },
+                        ].map((feature, index) => (
+                            <motion.div
+                                key={feature.title}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.8 + index * 0.1 }}
+                                className="bg-[var(--color-bg-secondary)]/50 backdrop-blur-sm border border-[var(--color-border)] p-4 text-center"
+                            >
+                                <feature.icon className="w-8 h-8 text-[var(--color-accent-gold)] mx-auto mb-3" />
+                                <h3 className="font-semibold text-[var(--color-text-primary)] mb-1">{feature.title}</h3>
+                                <p className="text-sm text-[var(--color-text-muted)]">{feature.desc}</p>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+
+                    {/* Stats Preview */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1.1 }}
+                        className="flex flex-wrap justify-center gap-8 mb-10"
+                    >
+                        {[
+                            { value: `${allNFTs.length}+`, label: 'Unique NFTs' },
+                            { value: '4', label: 'Rarity Tiers' },
+                            { value: '$DIAS', label: 'Burn Currency' },
+                        ].map((stat) => (
+                            <div key={stat.label} className="text-center">
+                                <div className="font-mono text-3xl md:text-4xl font-bold text-[var(--color-accent-gold)]">
+                                    {stat.value}
+                                </div>
+                                <div className="text-sm text-[var(--color-text-muted)]">{stat.label}</div>
+                            </div>
+                        ))}
+                    </motion.div>
+
+                    {/* CTA Button */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 1.3 }}
+                    >
+                        <a
+                            href="https://x.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[var(--color-accent-gold)] to-orange-500 text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-[var(--color-accent-gold)]/25 transition-all"
+                        >
+                            <Rocket className="w-5 h-5" />
+                            Follow for Updates
+                        </a>
+                    </motion.div>
+
+                    {/* Countdown or Phase indicator */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 1.5 }}
+                        className="mt-10 text-center"
+                    >
+                        <Badge variant="gold">PHASE 2</Badge>
+                        <p className="text-xs text-[var(--color-text-muted)] mt-2">
+                            NFT minting will be available after token launch
+                        </p>
+                    </motion.div>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <div className="min-h-screen">

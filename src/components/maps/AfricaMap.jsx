@@ -118,8 +118,8 @@ function AfricaMap({ onCountryClick }) {
         }
 
         const mappedName = nameMap[name] || name
-        return countriesData.countries.find(c => 
-            c.name === mappedName || 
+        return countriesData.countries.find(c =>
+            c.name === mappedName ||
             c.name.toLowerCase() === name.toLowerCase() ||
             c.name.toLowerCase().includes(name.toLowerCase()) ||
             name.toLowerCase().includes(c.name.toLowerCase())

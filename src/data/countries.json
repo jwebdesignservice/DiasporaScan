@@ -1,976 +1,1454 @@
 {
-  "countries": [
-    {
-      "id": "algeria",
-      "name": "Algeria",
-      "code": "DZ",
-      "region": "North Africa",
-      "population": 45000000,
-      "diasporaPopulation": 2000000,
-      "capital": "Algiers",
-      "languages": ["Arabic", "Berber", "French"],
-      "facts": [
-        "Largest country in Africa by land area",
-        "Gained independence from France in 1962 after a brutal war",
-        "Home to ancient Roman ruins at Timgad and Djémila",
-        "The Sahara Desert covers over 80% of the country"
-      ],
-      "famousFigures": ["Frantz Fanon", "Albert Camus", "Zinedine Zidane", "Karim Benzema"],
-      "color": "#10b981"
-    },
-    {
-      "id": "angola",
-      "name": "Angola",
-      "code": "AO",
-      "region": "Southern Africa",
-      "population": 34000000,
-      "diasporaPopulation": 800000,
-      "capital": "Luanda",
-      "languages": ["Portuguese", "Umbundu", "Kimbundu"],
-      "facts": [
-        "One of Africa's largest oil producers",
-        "Home to the unique Welwitschia plant that can live over 1000 years",
-        "Capoeira has roots in Angolan martial arts traditions",
-        "The country has recovered remarkably since its civil war ended in 2002"
-      ],
-      "famousFigures": ["Agostinho Neto", "Jonas Savimbi", "Bonga", "José Eduardo dos Santos"],
-      "color": "#10b981"
-    },
-    {
-      "id": "benin",
-      "name": "Benin",
-      "code": "BJ",
-      "region": "West Africa",
-      "population": 13000000,
-      "diasporaPopulation": 400000,
-      "capital": "Porto-Novo",
-      "languages": ["French", "Fon", "Yoruba"],
-      "facts": [
-        "Birthplace of Vodun (Voodoo) religion",
-        "Former Kingdom of Dahomey was known for its female warriors (Amazons)",
-        "Ouidah was a major slave trading port",
-        "The sacred pythons of Ouidah are protected and revered"
-      ],
-      "famousFigures": ["Angélique Kidjo", "Djimon Hounsou", "Nicéphore Soglo", "Lionel Zinsou"],
-      "color": "#10b981"
-    },
-    {
-      "id": "botswana",
-      "name": "Botswana",
-      "code": "BW",
-      "region": "Southern Africa",
-      "population": 2600000,
-      "diasporaPopulation": 100000,
-      "capital": "Gaborone",
-      "languages": ["English", "Setswana"],
-      "facts": [
-        "One of Africa's most stable democracies since independence",
-        "Home to the Okavango Delta, the world's largest inland delta",
-        "Diamonds transformed it from one of the poorest to upper-middle income",
-        "The San people have lived here for over 20,000 years"
-      ],
-      "famousFigures": ["Seretse Khama", "Festus Mogae", "Unity Dow", "Mpule Kwelagobe"],
-      "color": "#10b981"
-    },
-    {
-      "id": "burkina-faso",
-      "name": "Burkina Faso",
-      "code": "BF",
-      "region": "West Africa",
-      "population": 22000000,
-      "diasporaPopulation": 500000,
-      "capital": "Ouagadougou",
-      "languages": ["French", "Mossi", "Dioula"],
-      "facts": [
-        "Name means 'Land of Upright People'",
-        "Thomas Sankara was called 'Africa's Che Guevara'",
-        "FESPACO is Africa's largest film festival",
-        "Known for its rich musical traditions and bronze casting"
-      ],
-      "famousFigures": ["Thomas Sankara", "Blaise Compaoré", "Gaston Kaboré", "Sia Kambou"],
-      "color": "#10b981"
-    },
-    {
-      "id": "burundi",
-      "name": "Burundi",
-      "code": "BI",
-      "region": "East Africa",
-      "population": 12500000,
-      "diasporaPopulation": 500000,
-      "capital": "Gitega",
-      "languages": ["Kirundi", "French", "English"],
-      "facts": [
-        "One of the most densely populated countries in Africa",
-        "Drums are central to Burundian culture and UNESCO protected",
-        "Shares Lake Tanganyika with neighboring countries",
-        "Coffee is the main export crop"
-      ],
-      "famousFigures": ["Pierre Nkurunziza", "Melchior Ndadaye", "Michel Micombero", "Eusébie Jeanine Nininahazwe"],
-      "color": "#10b981"
-    },
-    {
-      "id": "cameroon",
-      "name": "Cameroon",
-      "code": "CM",
-      "region": "Central Africa",
-      "population": 28000000,
-      "diasporaPopulation": 600000,
-      "capital": "Yaoundé",
-      "languages": ["French", "English", "Fulfulde", "Ewondo"],
-      "facts": [
-        "Known as 'Africa in Miniature' for its geographic diversity",
-        "Home to over 200 ethnic groups and languages",
-        "The Indomitable Lions are a legendary football team",
-        "Mount Cameroon is the highest peak in West Africa"
-      ],
-      "famousFigures": ["Samuel Eto'o", "Roger Milla", "Manu Dibango", "Francis Bebey"],
-      "color": "#10b981"
-    },
-    {
-      "id": "cape-verde",
-      "name": "Cape Verde",
-      "code": "CV",
-      "region": "West Africa",
-      "population": 590000,
-      "diasporaPopulation": 700000,
-      "capital": "Praia",
-      "languages": ["Portuguese", "Cape Verdean Creole"],
-      "facts": [
-        "More Cape Verdeans live abroad than in the country",
-        "Birthplace of the Morna music genre",
-        "Uninhabited until Portuguese colonization in 1462",
-        "Strategic location in the Atlantic made it a slave trade hub"
-      ],
-      "famousFigures": ["Cesária Évora", "Amílcar Cabral", "Mayra Andrade", "Nélida Piñon"],
-      "color": "#10b981"
-    },
-    {
-      "id": "central-african-republic",
-      "name": "Central African Republic",
-      "code": "CF",
-      "region": "Central Africa",
-      "population": 5500000,
-      "diasporaPopulation": 200000,
-      "capital": "Bangui",
-      "languages": ["French", "Sango"],
-      "facts": [
-        "Home to the Dzanga-Sangha rainforest with forest elephants and gorillas",
-        "Rich in diamonds and gold deposits",
-        "The Aka pygmies have one of the world's most complex vocal traditions",
-        "Bangui sits on the banks of the Ubangi River"
-      ],
-      "famousFigures": ["Barthélemy Boganda", "Jean-Bedel Bokassa", "André Kolingba", "Faustin-Archange Touadéra"],
-      "color": "#10b981"
-    },
-    {
-      "id": "chad",
-      "name": "Chad",
-      "code": "TD",
-      "region": "Central Africa",
-      "population": 18000000,
-      "diasporaPopulation": 300000,
-      "capital": "N'Djamena",
-      "languages": ["French", "Arabic", "Sara"],
-      "facts": [
-        "Named after Lake Chad, which has shrunk by 90% since 1960",
-        "Toumai fossil found here may be oldest human ancestor (7 million years)",
-        "Where the Sahara Desert meets the Sahel",
-        "Over 200 ethnic groups call Chad home"
-      ],
-      "famousFigures": ["Idriss Déby", "Hissène Habré", "Mahamat Saleh Haroun", "Françoise Claustre"],
-      "color": "#10b981"
-    },
-    {
-      "id": "comoros",
-      "name": "Comoros",
-      "code": "KM",
-      "region": "East Africa",
-      "population": 900000,
-      "diasporaPopulation": 300000,
-      "capital": "Moroni",
-      "languages": ["Comorian", "Arabic", "French"],
-      "facts": [
-        "Archipelago between Mozambique and Madagascar",
-        "World's largest producer of ylang-ylang essential oil",
-        "The coelacanth 'living fossil' fish was rediscovered here",
-        "Mayotte remains a French territory"
-      ],
-      "famousFigures": ["Ahmed Abdallah", "Azali Assoumani", "Said Mohamed Cheikh", "Moroni Comores"],
-      "color": "#10b981"
-    },
-    {
-      "id": "congo",
-      "name": "Republic of the Congo",
-      "code": "CG",
-      "region": "Central Africa",
-      "population": 6000000,
-      "diasporaPopulation": 200000,
-      "capital": "Brazzaville",
-      "languages": ["French", "Lingala", "Kikongo"],
-      "facts": [
-        "Brazzaville and Kinshasa are the closest national capitals in the world",
-        "Rich in oil and tropical rainforests",
-        "The Congo River is the world's deepest river",
-        "Known for the Sapeur fashion movement"
-      ],
-      "famousFigures": ["Denis Sassou Nguesso", "Marien Ngouabi", "Alain Mabanckou", "Sony Labou Tansi"],
-      "color": "#10b981"
-    },
-    {
-      "id": "drc",
-      "name": "Democratic Republic of the Congo",
-      "code": "CD",
-      "region": "Central Africa",
-      "population": 100000000,
-      "diasporaPopulation": 2000000,
-      "capital": "Kinshasa",
-      "languages": ["French", "Lingala", "Swahili", "Tshiluba", "Kikongo"],
-      "facts": [
-        "Second largest country in Africa by area",
-        "Contains 70% of the world's coltan used in electronics",
-        "Kinshasa is the world's largest French-speaking city",
-        "Home to the endangered mountain gorillas in Virunga"
-      ],
-      "famousFigures": ["Patrice Lumumba", "Mobutu Sese Seko", "Fally Ipupa", "Dikembe Mutombo"],
-      "color": "#10b981"
-    },
-    {
-      "id": "djibouti",
-      "name": "Djibouti",
-      "code": "DJ",
-      "region": "East Africa",
-      "population": 1100000,
-      "diasporaPopulation": 100000,
-      "capital": "Djibouti City",
-      "languages": ["French", "Arabic", "Somali", "Afar"],
-      "facts": [
-        "Strategic location at the entrance to the Red Sea",
-        "Hosts military bases from multiple world powers",
-        "Lake Assal is the lowest point in Africa",
-        "Part of the ancient Land of Punt"
-      ],
-      "famousFigures": ["Hassan Gouled Aptidon", "Ismaïl Omar Guelleh", "Abdourahman Waberi", "Aicha Mohamed"],
-      "color": "#10b981"
-    },
-    {
-      "id": "equatorial-guinea",
-      "name": "Equatorial Guinea",
-      "code": "GQ",
-      "region": "Central Africa",
-      "population": 1700000,
-      "diasporaPopulation": 100000,
-      "capital": "Malabo",
-      "languages": ["Spanish", "French", "Portuguese"],
-      "facts": [
-        "Only African country with Spanish as official language",
-        "Oil wealth made it one of Africa's richest per capita",
-        "Bioko Island was a major cocoa producer",
-        "The Fang are the largest ethnic group"
-      ],
-      "famousFigures": ["Teodoro Obiang", "Francisco Macías Nguema", "Juan Tomás Ávila Laurel", "Emile Heskey"],
-      "color": "#10b981"
-    },
-    {
-      "id": "eritrea",
-      "name": "Eritrea",
-      "code": "ER",
-      "region": "East Africa",
-      "population": 3600000,
-      "diasporaPopulation": 800000,
-      "capital": "Asmara",
-      "languages": ["Tigrinya", "Arabic", "English"],
-      "facts": [
-        "Asmara is a UNESCO World Heritage site for its Art Deco architecture",
-        "Gained independence from Ethiopia in 1993",
-        "The Eritrean Railway still uses original Italian steam locomotives",
-        "Known for its long-distance runners"
-      ],
-      "famousFigures": ["Isaias Afwerki", "Ghirmai Ghebreslassie", "Zersenay Tadese", "Elsa Haile"],
-      "color": "#10b981"
-    },
-    {
-      "id": "eswatini",
-      "name": "Eswatini",
-      "code": "SZ",
-      "region": "Southern Africa",
-      "population": 1200000,
-      "diasporaPopulation": 100000,
-      "capital": "Mbabane",
-      "languages": ["Swazi", "English"],
-      "facts": [
-        "One of the world's last absolute monarchies",
-        "Formerly known as Swaziland until 2018",
-        "The Reed Dance ceremony attracts thousands annually",
-        "Known for its traditional crafts and wildlife reserves"
-      ],
-      "famousFigures": ["King Mswati III", "King Sobhuza II", "Sibusiso Barnabas Dlamini", "Ambrose Zwane"],
-      "color": "#10b981"
-    },
-    {
-      "id": "gabon",
-      "name": "Gabon",
-      "code": "GA",
-      "region": "Central Africa",
-      "population": 2400000,
-      "diasporaPopulation": 150000,
-      "capital": "Libreville",
-      "languages": ["French", "Fang", "Myene"],
-      "facts": [
-        "Over 80% covered by rainforest",
-        "Home to forest elephants, gorillas, and mandrills",
-        "Oil wealth has made it one of Africa's most prosperous nations",
-        "Albert Schweitzer's hospital was in Lambaréné"
-      ],
-      "famousFigures": ["Omar Bongo", "Pierre-Emerick Aubameyang", "Ali Bongo", "Patience Dabany"],
-      "color": "#10b981"
-    },
-    {
-      "id": "gambia",
-      "name": "The Gambia",
-      "code": "GM",
-      "region": "West Africa",
-      "population": 2500000,
-      "diasporaPopulation": 200000,
-      "capital": "Banjul",
-      "languages": ["English", "Mandinka", "Wolof", "Fula"],
-      "facts": [
-        "Africa's smallest mainland country",
-        "Kunta Kinte from 'Roots' was from Juffureh, Gambia",
-        "Entirely surrounded by Senegal except for coastline",
-        "The Gambia River runs through the entire country"
-      ],
-      "famousFigures": ["Dawda Jawara", "Yahya Jammeh", "Fatou Bensouda", "Kunta Kinte"],
-      "color": "#10b981"
-    },
-    {
-      "id": "guinea",
-      "name": "Guinea",
-      "code": "GN",
-      "region": "West Africa",
-      "population": 14000000,
-      "diasporaPopulation": 500000,
-      "capital": "Conakry",
-      "languages": ["French", "Pular", "Mandinka", "Susu"],
-      "facts": [
-        "First French African colony to gain independence (1958)",
-        "Holds the world's largest bauxite reserves",
-        "Birthplace of many major West African rivers",
-        "Rich musical heritage including the balafon"
-      ],
-      "famousFigures": ["Sékou Touré", "Miriam Makeba (lived there)", "Alpha Condé", "Mory Kanté"],
-      "color": "#10b981"
-    },
-    {
-      "id": "guinea-bissau",
-      "name": "Guinea-Bissau",
-      "code": "GW",
-      "region": "West Africa",
-      "population": 2100000,
-      "diasporaPopulation": 200000,
-      "capital": "Bissau",
-      "languages": ["Portuguese", "Crioulo"],
-      "facts": [
-        "Archipelago of 88 islands",
-        "Independence war lasted from 1963-1974",
-        "Cashew nuts are the main export",
-        "The Bijagó Islands have unique matriarchal traditions"
-      ],
-      "famousFigures": ["Amílcar Cabral", "Luís Cabral", "Nino Vieira", "Umaro Sissoco Embaló"],
-      "color": "#10b981"
-    },
-    {
-      "id": "ivory-coast",
-      "name": "Côte d'Ivoire",
-      "code": "CI",
-      "region": "West Africa",
-      "population": 28000000,
-      "diasporaPopulation": 800000,
-      "capital": "Yamoussoukro",
-      "languages": ["French", "Dioula", "Baoulé"],
-      "facts": [
-        "World's largest cocoa producer",
-        "Basilica of Our Lady of Peace is the largest church in the world",
-        "Abidjan is the economic capital and largest city",
-        "Over 60 ethnic groups live in the country"
-      ],
-      "famousFigures": ["Félix Houphouët-Boigny", "Didier Drogba", "Alpha Blondy", "Yaya Touré"],
-      "color": "#10b981"
-    },
-    {
-      "id": "lesotho",
-      "name": "Lesotho",
-      "code": "LS",
-      "region": "Southern Africa",
-      "population": 2300000,
-      "diasporaPopulation": 50000,
-      "capital": "Maseru",
-      "languages": ["Sesotho", "English"],
-      "facts": [
-        "Only country entirely above 1,000 meters elevation",
-        "Completely surrounded by South Africa",
-        "Known as the 'Kingdom in the Sky'",
-        "Traditional Basotho blankets are iconic"
-      ],
-      "famousFigures": ["Moshoeshoe I", "Letsie III", "Pakalitha Mosisili", "Bereng Sekhonyana"],
-      "color": "#10b981"
-    },
-    {
-      "id": "liberia",
-      "name": "Liberia",
-      "code": "LR",
-      "region": "West Africa",
-      "population": 5300000,
-      "diasporaPopulation": 500000,
-      "capital": "Monrovia",
-      "languages": ["English", "Kpelle", "Bassa"],
-      "facts": [
-        "Founded by freed American slaves in 1847",
-        "Africa's oldest republic",
-        "Named after 'liberty' for freed slaves",
-        "Flag modeled on the American flag"
-      ],
-      "famousFigures": ["Ellen Johnson Sirleaf", "Joseph Jenkins Roberts", "George Weah", "Leymah Gbowee"],
-      "color": "#10b981"
-    },
-    {
-      "id": "libya",
-      "name": "Libya",
-      "code": "LY",
-      "region": "North Africa",
-      "population": 7000000,
-      "diasporaPopulation": 400000,
-      "capital": "Tripoli",
-      "languages": ["Arabic", "Berber"],
-      "facts": [
-        "Holds Africa's largest proven oil reserves",
-        "90% of the country is desert",
-        "Leptis Magna is one of the best-preserved Roman cities",
-        "The ancient Greeks established colonies here"
-      ],
-      "famousFigures": ["Muammar Gaddafi", "King Idris I", "Omar Mukhtar", "Ibn Battuta (passed through)"],
-      "color": "#10b981"
-    },
-    {
-      "id": "madagascar",
-      "name": "Madagascar",
-      "code": "MG",
-      "region": "East Africa",
-      "population": 30000000,
-      "diasporaPopulation": 200000,
-      "capital": "Antananarivo",
-      "languages": ["Malagasy", "French"],
-      "facts": [
-        "Fourth largest island in the world",
-        "90% of wildlife found nowhere else on Earth",
-        "Home to lemurs, baobab trees, and chameleons",
-        "Settled by Austronesian peoples from Southeast Asia"
-      ],
-      "famousFigures": ["Andry Rajoelina", "Marc Ravalomanana", "Jean Raharimana", "Dama Mahaleo"],
-      "color": "#10b981"
-    },
-    {
-      "id": "malawi",
-      "name": "Malawi",
-      "code": "MW",
-      "region": "Southern Africa",
-      "population": 20000000,
-      "diasporaPopulation": 200000,
-      "capital": "Lilongwe",
-      "languages": ["English", "Chichewa"],
-      "facts": [
-        "Known as the 'Warm Heart of Africa'",
-        "Lake Malawi contains more fish species than any other lake",
-        "David Livingstone called Lake Malawi the 'Lake of Stars'",
-        "Tea and tobacco are major exports"
-      ],
-      "famousFigures": ["Hastings Kamuzu Banda", "Joyce Banda", "Lazarus Chakwera", "Esther Mujuru"],
-      "color": "#10b981"
-    },
-    {
-      "id": "mali",
-      "name": "Mali",
-      "code": "ML",
-      "region": "West Africa",
-      "population": 22000000,
-      "diasporaPopulation": 600000,
-      "capital": "Bamako",
-      "languages": ["French", "Bambara", "Fulfulde"],
-      "facts": [
-        "Home to the ancient city of Timbuktu",
-        "Mansa Musa was the richest person in history",
-        "The Mali Empire was one of the largest in African history",
-        "The Dogon people have unique astronomical knowledge"
-      ],
-      "famousFigures": ["Mansa Musa", "Sundiata Keita", "Salif Keita", "Amadou & Mariam"],
-      "color": "#10b981"
-    },
-    {
-      "id": "mauritania",
-      "name": "Mauritania",
-      "code": "MR",
-      "region": "West Africa",
-      "population": 4800000,
-      "diasporaPopulation": 200000,
-      "capital": "Nouakchott",
-      "languages": ["Arabic", "French", "Pulaar", "Wolof"],
-      "facts": [
-        "Where Arab and sub-Saharan Africa meet",
-        "Chinguetti was a center of Islamic scholarship",
-        "The Eye of the Sahara is a mysterious geological feature",
-        "Iron ore is a major export"
-      ],
-      "famousFigures": ["Moktar Ould Daddah", "Mohamed Ould Ghazouani", "Malouma Mint Moktar Ould Meidah", "Dimi Mint Abba"],
-      "color": "#10b981"
-    },
-    {
-      "id": "mauritius",
-      "name": "Mauritius",
-      "code": "MU",
-      "region": "East Africa",
-      "population": 1300000,
-      "diasporaPopulation": 200000,
-      "capital": "Port Louis",
-      "languages": ["English", "French", "Creole", "Hindi"],
-      "facts": [
-        "Home of the extinct Dodo bird",
-        "One of Africa's most developed economies",
-        "Multi-ethnic society with Indian, African, Chinese, and European heritage",
-        "Known for its beaches and luxury tourism"
-      ],
-      "famousFigures": ["Seewoosagur Ramgoolam", "Anerood Jugnauth", "Navin Ramgoolam", "Kaya"],
-      "color": "#10b981"
-    },
-    {
-      "id": "morocco",
-      "name": "Morocco",
-      "code": "MA",
-      "region": "North Africa",
-      "population": 37000000,
-      "diasporaPopulation": 5000000,
-      "capital": "Rabat",
-      "languages": ["Arabic", "Berber", "French"],
-      "facts": [
-        "Home to the world's oldest university (University of al-Qarawiyyin)",
-        "The medinas of Fez and Marrakech are UNESCO sites",
-        "A major filming location for Hollywood productions",
-        "The Atlas Mountains run through the country"
-      ],
-      "famousFigures": ["King Mohammed VI", "Hakim Ziyech", "Achraf Hakimi", "Ibn Battuta"],
-      "color": "#10b981"
-    },
-    {
-      "id": "mozambique",
-      "name": "Mozambique",
-      "code": "MZ",
-      "region": "Southern Africa",
-      "population": 33000000,
-      "diasporaPopulation": 300000,
-      "capital": "Maputo",
-      "languages": ["Portuguese", "Makhuwa", "Tsonga"],
-      "facts": [
-        "Has the third longest coastline in Africa",
-        "Major gas discoveries could transform the economy",
-        "The island of Mozambique is a UNESCO World Heritage site",
-        "Gorongosa National Park is being restored to its former glory"
-      ],
-      "famousFigures": ["Samora Machel", "Joaquim Chissano", "Mia Couto", "Eusébio"],
-      "color": "#10b981"
-    },
-    {
-      "id": "namibia",
-      "name": "Namibia",
-      "code": "NA",
-      "region": "Southern Africa",
-      "population": 2600000,
-      "diasporaPopulation": 100000,
-      "capital": "Windhoek",
-      "languages": ["English", "Oshiwambo", "Afrikaans", "German"],
-      "facts": [
-        "The Namib Desert is the world's oldest desert",
-        "Skeleton Coast is known for shipwrecks and seals",
-        "One of the least densely populated countries",
-        "The Himba people maintain traditional red ochre customs"
-      ],
-      "famousFigures": ["Sam Nujoma", "Hage Geingob", "Frankie Fredericks", "Behati Prinsloo"],
-      "color": "#10b981"
-    },
-    {
-      "id": "niger",
-      "name": "Niger",
-      "code": "NE",
-      "region": "West Africa",
-      "population": 26000000,
-      "diasporaPopulation": 300000,
-      "capital": "Niamey",
-      "languages": ["French", "Hausa", "Zarma"],
-      "facts": [
-        "Named after the Niger River",
-        "The Sahara covers most of the country",
-        "Has the world's highest fertility rate",
-        "Agadez was a historic crossroads of trans-Saharan trade"
-      ],
-      "famousFigures": ["Hamani Diori", "Seyni Kountché", "Mamoudou Gassama", "Hama Amadou"],
-      "color": "#10b981"
-    },
-    {
-      "id": "nigeria",
-      "name": "Nigeria",
-      "code": "NG",
-      "region": "West Africa",
-      "population": 223000000,
-      "diasporaPopulation": 17000000,
-      "capital": "Abuja",
-      "languages": ["English", "Hausa", "Yoruba", "Igbo"],
-      "facts": [
-        "Nigeria is Africa's most populous country",
-        "Home to over 250 ethnic groups",
-        "Nollywood is the world's second-largest film industry by volume",
-        "The Igbo, Yoruba, and Hausa are the three largest ethnic groups"
-      ],
-      "famousFigures": ["Chinua Achebe", "Wole Soyinka", "Fela Kuti", "Chimamanda Ngozi Adichie"],
-      "color": "#10b981"
-    },
-    {
-      "id": "rwanda",
-      "name": "Rwanda",
-      "code": "RW",
-      "region": "East Africa",
-      "population": 14000000,
-      "diasporaPopulation": 500000,
-      "capital": "Kigali",
-      "languages": ["Kinyarwanda", "English", "French", "Swahili"],
-      "facts": [
-        "Known as the 'Land of a Thousand Hills'",
-        "Kigali is one of Africa's cleanest cities",
-        "Mountain gorillas can be seen in Volcanoes National Park",
-        "Remarkable recovery since the 1994 genocide"
-      ],
-      "famousFigures": ["Paul Kagame", "Habyarimana", "Diane Rwigara", "Immaculée Ilibagiza"],
-      "color": "#10b981"
-    },
-    {
-      "id": "sao-tome",
-      "name": "São Tomé and Príncipe",
-      "code": "ST",
-      "region": "Central Africa",
-      "population": 220000,
-      "diasporaPopulation": 50000,
-      "capital": "São Tomé",
-      "languages": ["Portuguese"],
-      "facts": [
-        "Africa's second smallest country",
-        "Once the world's largest cocoa producer",
-        "The islands were uninhabited before Portuguese arrival",
-        "Rich biodiversity with many endemic species"
-      ],
-      "famousFigures": ["Manuel Pinto da Costa", "Fradique de Menezes", "Carlos Vila Nova", "Conceição Lima"],
-      "color": "#10b981"
-    },
-    {
-      "id": "senegal",
-      "name": "Senegal",
-      "code": "SN",
-      "region": "West Africa",
-      "population": 17000000,
-      "diasporaPopulation": 700000,
-      "capital": "Dakar",
-      "languages": ["French", "Wolof", "Serer", "Pulaar"],
-      "facts": [
-        "Gorée Island was a major slave trading post",
-        "Known for its vibrant music scene, especially Mbalax",
-        "Home to the African Renaissance Monument, the tallest statue in Africa",
-        "Dakar Rally originally ended here"
-      ],
-      "famousFigures": ["Léopold Sédar Senghor", "Youssou N'Dour", "Akon", "Sadio Mané"],
-      "color": "#10b981"
-    },
-    {
-      "id": "seychelles",
-      "name": "Seychelles",
-      "code": "SC",
-      "region": "East Africa",
-      "population": 100000,
-      "diasporaPopulation": 50000,
-      "capital": "Victoria",
-      "languages": ["Seychellois Creole", "English", "French"],
-      "facts": [
-        "Africa's smallest country by population",
-        "115 islands in the Indian Ocean",
-        "Home to the Aldabra giant tortoise",
-        "The Coco de Mer produces the world's largest seed"
-      ],
-      "famousFigures": ["James Mancham", "France-Albert René", "Wavel Ramkalawan", "Danny Faure"],
-      "color": "#10b981"
-    },
-    {
-      "id": "sierra-leone",
-      "name": "Sierra Leone",
-      "code": "SL",
-      "region": "West Africa",
-      "population": 8400000,
-      "diasporaPopulation": 500000,
-      "capital": "Freetown",
-      "languages": ["English", "Krio", "Mende", "Temne"],
-      "facts": [
-        "Freetown was founded for freed slaves from Britain and America",
-        "Has some of the world's most beautiful beaches",
-        "Known for its diamond mines",
-        "The Krio people descend from freed slaves"
-      ],
-      "famousFigures": ["Ahmad Tejan Kabbah", "Siaka Stevens", "Sorious Samura", "Aminata Forna"],
-      "color": "#10b981"
-    },
-    {
-      "id": "somalia",
-      "name": "Somalia",
-      "code": "SO",
-      "region": "East Africa",
-      "population": 18000000,
-      "diasporaPopulation": 2000000,
-      "capital": "Mogadishu",
-      "languages": ["Somali", "Arabic"],
-      "facts": [
-        "Has the longest coastline in mainland Africa",
-        "The ancient Land of Punt traded with Egypt",
-        "Somali culture is rich in poetry and oral traditions",
-        "Camel herding is central to traditional life"
-      ],
-      "famousFigures": ["Iman", "K'naan", "Mo Farah", "Barkhad Abdi"],
-      "color": "#10b981"
-    },
-    {
-      "id": "south-sudan",
-      "name": "South Sudan",
-      "code": "SS",
-      "region": "East Africa",
-      "population": 11000000,
-      "diasporaPopulation": 500000,
-      "capital": "Juba",
-      "languages": ["English", "Arabic", "Dinka", "Nuer"],
-      "facts": [
-        "World's newest country, independent since 2011",
-        "Home to the Sudd, one of the world's largest wetlands",
-        "Rich in oil reserves",
-        "The Dinka and Nuer are the largest ethnic groups"
-      ],
-      "famousFigures": ["Salva Kiir Mayardit", "John Garang", "Riek Machar", "Manute Bol"],
-      "color": "#10b981"
-    },
-    {
-      "id": "sudan",
-      "name": "Sudan",
-      "code": "SD",
-      "region": "North Africa",
-      "population": 46000000,
-      "diasporaPopulation": 1500000,
-      "capital": "Khartoum",
-      "languages": ["Arabic", "English"],
-      "facts": [
-        "More pyramids than Egypt (over 200 ancient pyramids)",
-        "Khartoum sits at the confluence of the Blue and White Nile",
-        "Ancient Nubia was a powerful kingdom here",
-        "Meroe was the capital of the Kingdom of Kush"
-      ],
-      "famousFigures": ["Omar al-Bashir", "Sadiq al-Mahdi", "Mohammed Ahmed (the Mahdi)", "Alek Wek"],
-      "color": "#10b981"
-    },
-    {
-      "id": "tanzania",
-      "name": "Tanzania",
-      "code": "TZ",
-      "region": "East Africa",
-      "population": 65000000,
-      "diasporaPopulation": 500000,
-      "capital": "Dodoma",
-      "languages": ["Swahili", "English"],
-      "facts": [
-        "Mount Kilimanjaro is Africa's highest peak",
-        "Serengeti migration is one of the world's greatest wildlife spectacles",
-        "Zanzibar was a major trading hub and Freddie Mercury's birthplace",
-        "Olduvai Gorge holds key human evolution fossils"
-      ],
-      "famousFigures": ["Julius Nyerere", "Jakaya Kikwete", "Samia Suluhu Hassan", "Freddie Mercury"],
-      "color": "#10b981"
-    },
-    {
-      "id": "togo",
-      "name": "Togo",
-      "code": "TG",
-      "region": "West Africa",
-      "population": 8600000,
-      "diasporaPopulation": 300000,
-      "capital": "Lomé",
-      "languages": ["French", "Ewe", "Kabye"],
-      "facts": [
-        "One of the smallest countries in Africa",
-        "Voodoo is widely practiced and celebrated",
-        "Known for the colorful Akodessawa Fetish Market",
-        "Lomé's port is a major regional hub"
-      ],
-      "famousFigures": ["Gnassingbé Eyadéma", "Faure Gnassingbé", "Emmanuel Adebayor", "Bella Bellow"],
-      "color": "#10b981"
-    },
-    {
-      "id": "tunisia",
-      "name": "Tunisia",
-      "code": "TN",
-      "region": "North Africa",
-      "population": 12000000,
-      "diasporaPopulation": 1500000,
-      "capital": "Tunis",
-      "languages": ["Arabic", "French"],
-      "facts": [
-        "Site of ancient Carthage, rival to Rome",
-        "The Arab Spring began here in 2010",
-        "Star Wars was filmed in the desert here",
-        "Renowned for its olive oil production"
-      ],
-      "famousFigures": ["Habib Bourguiba", "Zine El Abidine Ben Ali", "Hannibal Barca", "Claudia Cardinale"],
-      "color": "#10b981"
-    },
-    {
-      "id": "uganda",
-      "name": "Uganda",
-      "code": "UG",
-      "region": "East Africa",
-      "population": 48000000,
-      "diasporaPopulation": 400000,
-      "capital": "Kampala",
-      "languages": ["English", "Swahili", "Luganda"],
-      "facts": [
-        "Churchill called it 'the Pearl of Africa'",
-        "Source of the Nile River is at Lake Victoria",
-        "Half of the world's mountain gorillas live here",
-        "Known for its diverse wildlife and national parks"
-      ],
-      "famousFigures": ["Idi Amin", "Yoweri Museveni", "Milton Obote", "Phiona Mutesi"],
-      "color": "#10b981"
-    },
-    {
-      "id": "zambia",
-      "name": "Zambia",
-      "code": "ZM",
-      "region": "Southern Africa",
-      "population": 20000000,
-      "diasporaPopulation": 200000,
-      "capital": "Lusaka",
-      "languages": ["English", "Bemba", "Nyanja", "Tonga"],
-      "facts": [
-        "Victoria Falls (Mosi-oa-Tunya) is shared with Zimbabwe",
-        "One of the world's largest copper producers",
-        "The South Luangwa is known for walking safaris",
-        "Peaceful democracy since independence"
-      ],
-      "famousFigures": ["Kenneth Kaunda", "Levy Mwanawasa", "Hakainde Hichilema", "Dambisa Moyo"],
-      "color": "#10b981"
-    },
-    {
-      "id": "zimbabwe",
-      "name": "Zimbabwe",
-      "code": "ZW",
-      "region": "Southern Africa",
-      "population": 16000000,
-      "diasporaPopulation": 1500000,
-      "capital": "Harare",
-      "languages": ["English", "Shona", "Ndebele"],
-      "facts": [
-        "Great Zimbabwe ruins are a UNESCO World Heritage site",
-        "Victoria Falls is one of the Seven Natural Wonders",
-        "Once known as the 'breadbasket of Africa'",
-        "Rich in mineral resources including gold and diamonds"
-      ],
-      "famousFigures": ["Robert Mugabe", "Emmerson Mnangagwa", "Joshua Nkomo", "Peter Godwin"],
-      "color": "#10b981"
-    },
-    {
-      "id": "jamaica",
-      "name": "Jamaica",
-      "code": "JM",
-      "region": "Caribbean (Diaspora)",
-      "population": 2800000,
-      "diasporaPopulation": 3000000,
-      "capital": "Kingston",
-      "languages": ["English", "Jamaican Patois"],
-      "facts": [
-        "Birthplace of reggae music and Bob Marley",
-        "Home to the fastest humans on Earth (Usain Bolt)",
-        "Rastafari movement originated here",
-        "One of the highest number of churches per square mile"
-      ],
-      "famousFigures": ["Bob Marley", "Usain Bolt", "Marcus Garvey", "Louise Bennett-Coverley"],
-      "color": "#f59e0b"
-    },
-    {
-      "id": "brazil",
-      "name": "Brazil",
-      "code": "BR",
-      "region": "South America (Diaspora)",
-      "population": 215000000,
-      "diasporaPopulation": 97000000,
-      "capital": "Brasília",
-      "languages": ["Portuguese"],
-      "facts": [
-        "Largest African diaspora population outside Africa",
-        "Salvador, Bahia has the largest Black population of any city outside Africa",
-        "Capoeira is an Afro-Brazilian martial art developed by enslaved Africans",
-        "Samba and many Brazilian cultural elements have African roots"
-      ],
-      "famousFigures": ["Pelé", "Machado de Assis", "Gilberto Gil", "Marta"],
-      "color": "#f59e0b"
-    },
-    {
-      "id": "usa",
-      "name": "United States",
-      "code": "US",
-      "region": "North America (Diaspora)",
-      "population": 330000000,
-      "diasporaPopulation": 47000000,
-      "capital": "Washington, D.C.",
-      "languages": ["English"],
-      "facts": [
-        "African Americans have shaped every aspect of American culture",
-        "The Civil Rights Movement transformed American society",
-        "Black History Month was established in 1976",
-        "Historically Black Colleges and Universities (HBCUs) are cultural institutions"
-      ],
-      "famousFigures": ["Martin Luther King Jr.", "Harriet Tubman", "Barack Obama", "Maya Angelou"],
-      "color": "#f59e0b"
-    },
-    {
-      "id": "uk",
-      "name": "United Kingdom",
-      "code": "GB",
-      "region": "Europe (Diaspora)",
-      "population": 67000000,
-      "diasporaPopulation": 2000000,
-      "capital": "London",
-      "languages": ["English"],
-      "facts": [
-        "Windrush generation arrived from the Caribbean starting in 1948",
-        "Notting Hill Carnival is Europe's largest street festival",
-        "Black Britons have contributed significantly to music, arts, and sports",
-        "Brixton and Peckham are known for their vibrant Afro-Caribbean communities"
-      ],
-      "famousFigures": ["Mary Seacole", "Stormzy", "Idris Elba", "Naomi Campbell"],
-      "color": "#f59e0b"
-    },
-    {
-      "id": "haiti",
-      "name": "Haiti",
-      "code": "HT",
-      "region": "Caribbean (Diaspora)",
-      "population": 11000000,
-      "diasporaPopulation": 2000000,
-      "capital": "Port-au-Prince",
-      "languages": ["French", "Haitian Creole"],
-      "facts": [
-        "First free Black republic in the world (1804)",
-        "Only successful slave revolution in history",
-        "Vodou originated from West African spiritual traditions",
-        "Paid 'reparations' to France until 1947 for their freedom"
-      ],
-      "famousFigures": ["Toussaint Louverture", "Jean-Jacques Dessalines", "Wyclef Jean", "Edwidge Danticat"],
-      "color": "#f59e0b"
-    }
-  ]
+    "countries": [
+        {
+            "id": "algeria",
+            "name": "Algeria",
+            "code": "DZ",
+            "region": "North Africa",
+            "population": 45000000,
+            "diasporaPopulation": 2000000,
+            "capital": "Algiers",
+            "languages": [
+                "Arabic",
+                "Berber",
+                "French"
+            ],
+            "facts": [
+                "Largest country in Africa by land area",
+                "Gained independence from France in 1962 after a brutal war",
+                "Home to ancient Roman ruins at Timgad and Djémila",
+                "The Sahara Desert covers over 80% of the country"
+            ],
+            "famousFigures": [
+                "Frantz Fanon",
+                "Albert Camus",
+                "Zinedine Zidane",
+                "Karim Benzema"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "angola",
+            "name": "Angola",
+            "code": "AO",
+            "region": "Southern Africa",
+            "population": 34000000,
+            "diasporaPopulation": 800000,
+            "capital": "Luanda",
+            "languages": [
+                "Portuguese",
+                "Umbundu",
+                "Kimbundu"
+            ],
+            "facts": [
+                "One of Africa's largest oil producers",
+                "Home to the unique Welwitschia plant that can live over 1000 years",
+                "Capoeira has roots in Angolan martial arts traditions",
+                "The country has recovered remarkably since its civil war ended in 2002"
+            ],
+            "famousFigures": [
+                "Agostinho Neto",
+                "Jonas Savimbi",
+                "Bonga",
+                "José Eduardo dos Santos"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "benin",
+            "name": "Benin",
+            "code": "BJ",
+            "region": "West Africa",
+            "population": 13000000,
+            "diasporaPopulation": 400000,
+            "capital": "Porto-Novo",
+            "languages": [
+                "French",
+                "Fon",
+                "Yoruba"
+            ],
+            "facts": [
+                "Birthplace of Vodun (Voodoo) religion",
+                "Former Kingdom of Dahomey was known for its female warriors (Amazons)",
+                "Ouidah was a major slave trading port",
+                "The sacred pythons of Ouidah are protected and revered"
+            ],
+            "famousFigures": [
+                "Angélique Kidjo",
+                "Djimon Hounsou",
+                "Nicéphore Soglo",
+                "Lionel Zinsou"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "botswana",
+            "name": "Botswana",
+            "code": "BW",
+            "region": "Southern Africa",
+            "population": 2600000,
+            "diasporaPopulation": 100000,
+            "capital": "Gaborone",
+            "languages": [
+                "English",
+                "Setswana"
+            ],
+            "facts": [
+                "One of Africa's most stable democracies since independence",
+                "Home to the Okavango Delta, the world's largest inland delta",
+                "Diamonds transformed it from one of the poorest to upper-middle income",
+                "The San people have lived here for over 20,000 years"
+            ],
+            "famousFigures": [
+                "Seretse Khama",
+                "Festus Mogae",
+                "Unity Dow",
+                "Mpule Kwelagobe"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "burkina-faso",
+            "name": "Burkina Faso",
+            "code": "BF",
+            "region": "West Africa",
+            "population": 22000000,
+            "diasporaPopulation": 500000,
+            "capital": "Ouagadougou",
+            "languages": [
+                "French",
+                "Mossi",
+                "Dioula"
+            ],
+            "facts": [
+                "Name means 'Land of Upright People'",
+                "Thomas Sankara was called 'Africa's Che Guevara'",
+                "FESPACO is Africa's largest film festival",
+                "Known for its rich musical traditions and bronze casting"
+            ],
+            "famousFigures": [
+                "Thomas Sankara",
+                "Blaise Compaoré",
+                "Gaston Kaboré",
+                "Sia Kambou"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "burundi",
+            "name": "Burundi",
+            "code": "BI",
+            "region": "East Africa",
+            "population": 12500000,
+            "diasporaPopulation": 500000,
+            "capital": "Gitega",
+            "languages": [
+                "Kirundi",
+                "French",
+                "English"
+            ],
+            "facts": [
+                "One of the most densely populated countries in Africa",
+                "Drums are central to Burundian culture and UNESCO protected",
+                "Shares Lake Tanganyika with neighboring countries",
+                "Coffee is the main export crop"
+            ],
+            "famousFigures": [
+                "Pierre Nkurunziza",
+                "Melchior Ndadaye",
+                "Michel Micombero",
+                "Eusébie Jeanine Nininahazwe"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "cameroon",
+            "name": "Cameroon",
+            "code": "CM",
+            "region": "Central Africa",
+            "population": 28000000,
+            "diasporaPopulation": 600000,
+            "capital": "Yaoundé",
+            "languages": [
+                "French",
+                "English",
+                "Fulfulde",
+                "Ewondo"
+            ],
+            "facts": [
+                "Known as 'Africa in Miniature' for its geographic diversity",
+                "Home to over 200 ethnic groups and languages",
+                "The Indomitable Lions are a legendary football team",
+                "Mount Cameroon is the highest peak in West Africa"
+            ],
+            "famousFigures": [
+                "Samuel Eto'o",
+                "Roger Milla",
+                "Manu Dibango",
+                "Francis Bebey"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "cape-verde",
+            "name": "Cape Verde",
+            "code": "CV",
+            "region": "West Africa",
+            "population": 590000,
+            "diasporaPopulation": 700000,
+            "capital": "Praia",
+            "languages": [
+                "Portuguese",
+                "Cape Verdean Creole"
+            ],
+            "facts": [
+                "More Cape Verdeans live abroad than in the country",
+                "Birthplace of the Morna music genre",
+                "Uninhabited until Portuguese colonization in 1462",
+                "Strategic location in the Atlantic made it a slave trade hub"
+            ],
+            "famousFigures": [
+                "Cesária Évora",
+                "Amílcar Cabral",
+                "Mayra Andrade",
+                "Nélida Piñon"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "central-african-republic",
+            "name": "Central African Republic",
+            "code": "CF",
+            "region": "Central Africa",
+            "population": 5500000,
+            "diasporaPopulation": 200000,
+            "capital": "Bangui",
+            "languages": [
+                "French",
+                "Sango"
+            ],
+            "facts": [
+                "Home to the Dzanga-Sangha rainforest with forest elephants and gorillas",
+                "Rich in diamonds and gold deposits",
+                "The Aka pygmies have one of the world's most complex vocal traditions",
+                "Bangui sits on the banks of the Ubangi River"
+            ],
+            "famousFigures": [
+                "Barthélemy Boganda",
+                "Jean-Bedel Bokassa",
+                "André Kolingba",
+                "Faustin-Archange Touadéra"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "chad",
+            "name": "Chad",
+            "code": "TD",
+            "region": "Central Africa",
+            "population": 18000000,
+            "diasporaPopulation": 300000,
+            "capital": "N'Djamena",
+            "languages": [
+                "French",
+                "Arabic",
+                "Sara"
+            ],
+            "facts": [
+                "Named after Lake Chad, which has shrunk by 90% since 1960",
+                "Toumai fossil found here may be oldest human ancestor (7 million years)",
+                "Where the Sahara Desert meets the Sahel",
+                "Over 200 ethnic groups call Chad home"
+            ],
+            "famousFigures": [
+                "Idriss Déby",
+                "Hissène Habré",
+                "Mahamat Saleh Haroun",
+                "Françoise Claustre"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "comoros",
+            "name": "Comoros",
+            "code": "KM",
+            "region": "East Africa",
+            "population": 900000,
+            "diasporaPopulation": 300000,
+            "capital": "Moroni",
+            "languages": [
+                "Comorian",
+                "Arabic",
+                "French"
+            ],
+            "facts": [
+                "Archipelago between Mozambique and Madagascar",
+                "World's largest producer of ylang-ylang essential oil",
+                "The coelacanth 'living fossil' fish was rediscovered here",
+                "Mayotte remains a French territory"
+            ],
+            "famousFigures": [
+                "Ahmed Abdallah",
+                "Azali Assoumani",
+                "Said Mohamed Cheikh",
+                "Moroni Comores"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "congo",
+            "name": "Republic of the Congo",
+            "code": "CG",
+            "region": "Central Africa",
+            "population": 6000000,
+            "diasporaPopulation": 200000,
+            "capital": "Brazzaville",
+            "languages": [
+                "French",
+                "Lingala",
+                "Kikongo"
+            ],
+            "facts": [
+                "Brazzaville and Kinshasa are the closest national capitals in the world",
+                "Rich in oil and tropical rainforests",
+                "The Congo River is the world's deepest river",
+                "Known for the Sapeur fashion movement"
+            ],
+            "famousFigures": [
+                "Denis Sassou Nguesso",
+                "Marien Ngouabi",
+                "Alain Mabanckou",
+                "Sony Labou Tansi"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "drc",
+            "name": "Democratic Republic of the Congo",
+            "code": "CD",
+            "region": "Central Africa",
+            "population": 100000000,
+            "diasporaPopulation": 2000000,
+            "capital": "Kinshasa",
+            "languages": [
+                "French",
+                "Lingala",
+                "Swahili",
+                "Tshiluba",
+                "Kikongo"
+            ],
+            "facts": [
+                "Second largest country in Africa by area",
+                "Contains 70% of the world's coltan used in electronics",
+                "Kinshasa is the world's largest French-speaking city",
+                "Home to the endangered mountain gorillas in Virunga"
+            ],
+            "famousFigures": [
+                "Patrice Lumumba",
+                "Mobutu Sese Seko",
+                "Fally Ipupa",
+                "Dikembe Mutombo"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "djibouti",
+            "name": "Djibouti",
+            "code": "DJ",
+            "region": "East Africa",
+            "population": 1100000,
+            "diasporaPopulation": 100000,
+            "capital": "Djibouti City",
+            "languages": [
+                "French",
+                "Arabic",
+                "Somali",
+                "Afar"
+            ],
+            "facts": [
+                "Strategic location at the entrance to the Red Sea",
+                "Hosts military bases from multiple world powers",
+                "Lake Assal is the lowest point in Africa",
+                "Part of the ancient Land of Punt"
+            ],
+            "famousFigures": [
+                "Hassan Gouled Aptidon",
+                "Ismaïl Omar Guelleh",
+                "Abdourahman Waberi",
+                "Aicha Mohamed"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "equatorial-guinea",
+            "name": "Equatorial Guinea",
+            "code": "GQ",
+            "region": "Central Africa",
+            "population": 1700000,
+            "diasporaPopulation": 100000,
+            "capital": "Malabo",
+            "languages": [
+                "Spanish",
+                "French",
+                "Portuguese"
+            ],
+            "facts": [
+                "Only African country with Spanish as official language",
+                "Oil wealth made it one of Africa's richest per capita",
+                "Bioko Island was a major cocoa producer",
+                "The Fang are the largest ethnic group"
+            ],
+            "famousFigures": [
+                "Teodoro Obiang",
+                "Francisco Macías Nguema",
+                "Juan Tomás Ávila Laurel",
+                "Emile Heskey"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "eritrea",
+            "name": "Eritrea",
+            "code": "ER",
+            "region": "East Africa",
+            "population": 3600000,
+            "diasporaPopulation": 800000,
+            "capital": "Asmara",
+            "languages": [
+                "Tigrinya",
+                "Arabic",
+                "English"
+            ],
+            "facts": [
+                "Asmara is a UNESCO World Heritage site for its Art Deco architecture",
+                "Gained independence from Ethiopia in 1993",
+                "The Eritrean Railway still uses original Italian steam locomotives",
+                "Known for its long-distance runners"
+            ],
+            "famousFigures": [
+                "Isaias Afwerki",
+                "Ghirmai Ghebreslassie",
+                "Zersenay Tadese",
+                "Elsa Haile"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "eswatini",
+            "name": "Eswatini",
+            "code": "SZ",
+            "region": "Southern Africa",
+            "population": 1200000,
+            "diasporaPopulation": 100000,
+            "capital": "Mbabane",
+            "languages": [
+                "Swazi",
+                "English"
+            ],
+            "facts": [
+                "One of the world's last absolute monarchies",
+                "Formerly known as Swaziland until 2018",
+                "The Reed Dance ceremony attracts thousands annually",
+                "Known for its traditional crafts and wildlife reserves"
+            ],
+            "famousFigures": [
+                "King Mswati III",
+                "King Sobhuza II",
+                "Sibusiso Barnabas Dlamini",
+                "Ambrose Zwane"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "gabon",
+            "name": "Gabon",
+            "code": "GA",
+            "region": "Central Africa",
+            "population": 2400000,
+            "diasporaPopulation": 150000,
+            "capital": "Libreville",
+            "languages": [
+                "French",
+                "Fang",
+                "Myene"
+            ],
+            "facts": [
+                "Over 80% covered by rainforest",
+                "Home to forest elephants, gorillas, and mandrills",
+                "Oil wealth has made it one of Africa's most prosperous nations",
+                "Albert Schweitzer's hospital was in Lambaréné"
+            ],
+            "famousFigures": [
+                "Omar Bongo",
+                "Pierre-Emerick Aubameyang",
+                "Ali Bongo",
+                "Patience Dabany"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "gambia",
+            "name": "The Gambia",
+            "code": "GM",
+            "region": "West Africa",
+            "population": 2500000,
+            "diasporaPopulation": 200000,
+            "capital": "Banjul",
+            "languages": [
+                "English",
+                "Mandinka",
+                "Wolof",
+                "Fula"
+            ],
+            "facts": [
+                "Africa's smallest mainland country",
+                "Kunta Kinte from 'Roots' was from Juffureh, Gambia",
+                "Entirely surrounded by Senegal except for coastline",
+                "The Gambia River runs through the entire country"
+            ],
+            "famousFigures": [
+                "Dawda Jawara",
+                "Yahya Jammeh",
+                "Fatou Bensouda",
+                "Kunta Kinte"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "guinea",
+            "name": "Guinea",
+            "code": "GN",
+            "region": "West Africa",
+            "population": 14000000,
+            "diasporaPopulation": 500000,
+            "capital": "Conakry",
+            "languages": [
+                "French",
+                "Pular",
+                "Mandinka",
+                "Susu"
+            ],
+            "facts": [
+                "First French African colony to gain independence (1958)",
+                "Holds the world's largest bauxite reserves",
+                "Birthplace of many major West African rivers",
+                "Rich musical heritage including the balafon"
+            ],
+            "famousFigures": [
+                "Sékou Touré",
+                "Miriam Makeba (lived there)",
+                "Alpha Condé",
+                "Mory Kanté"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "guinea-bissau",
+            "name": "Guinea-Bissau",
+            "code": "GW",
+            "region": "West Africa",
+            "population": 2100000,
+            "diasporaPopulation": 200000,
+            "capital": "Bissau",
+            "languages": [
+                "Portuguese",
+                "Crioulo"
+            ],
+            "facts": [
+                "Archipelago of 88 islands",
+                "Independence war lasted from 1963-1974",
+                "Cashew nuts are the main export",
+                "The Bijagó Islands have unique matriarchal traditions"
+            ],
+            "famousFigures": [
+                "Amílcar Cabral",
+                "Luís Cabral",
+                "Nino Vieira",
+                "Umaro Sissoco Embaló"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "ivory-coast",
+            "name": "Côte d'Ivoire",
+            "code": "CI",
+            "region": "West Africa",
+            "population": 28000000,
+            "diasporaPopulation": 800000,
+            "capital": "Yamoussoukro",
+            "languages": [
+                "French",
+                "Dioula",
+                "Baoulé"
+            ],
+            "facts": [
+                "World's largest cocoa producer",
+                "Basilica of Our Lady of Peace is the largest church in the world",
+                "Abidjan is the economic capital and largest city",
+                "Over 60 ethnic groups live in the country"
+            ],
+            "famousFigures": [
+                "Félix Houphouët-Boigny",
+                "Didier Drogba",
+                "Alpha Blondy",
+                "Yaya Touré"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "lesotho",
+            "name": "Lesotho",
+            "code": "LS",
+            "region": "Southern Africa",
+            "population": 2300000,
+            "diasporaPopulation": 50000,
+            "capital": "Maseru",
+            "languages": [
+                "Sesotho",
+                "English"
+            ],
+            "facts": [
+                "Only country entirely above 1,000 meters elevation",
+                "Completely surrounded by South Africa",
+                "Known as the 'Kingdom in the Sky'",
+                "Traditional Basotho blankets are iconic"
+            ],
+            "famousFigures": [
+                "Moshoeshoe I",
+                "Letsie III",
+                "Pakalitha Mosisili",
+                "Bereng Sekhonyana"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "liberia",
+            "name": "Liberia",
+            "code": "LR",
+            "region": "West Africa",
+            "population": 5300000,
+            "diasporaPopulation": 500000,
+            "capital": "Monrovia",
+            "languages": [
+                "English",
+                "Kpelle",
+                "Bassa"
+            ],
+            "facts": [
+                "Founded by freed American slaves in 1847",
+                "Africa's oldest republic",
+                "Named after 'liberty' for freed slaves",
+                "Flag modeled on the American flag"
+            ],
+            "famousFigures": [
+                "Ellen Johnson Sirleaf",
+                "Joseph Jenkins Roberts",
+                "George Weah",
+                "Leymah Gbowee"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "libya",
+            "name": "Libya",
+            "code": "LY",
+            "region": "North Africa",
+            "population": 7000000,
+            "diasporaPopulation": 400000,
+            "capital": "Tripoli",
+            "languages": [
+                "Arabic",
+                "Berber"
+            ],
+            "facts": [
+                "Holds Africa's largest proven oil reserves",
+                "90% of the country is desert",
+                "Leptis Magna is one of the best-preserved Roman cities",
+                "The ancient Greeks established colonies here"
+            ],
+            "famousFigures": [
+                "Muammar Gaddafi",
+                "King Idris I",
+                "Omar Mukhtar",
+                "Ibn Battuta (passed through)"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "madagascar",
+            "name": "Madagascar",
+            "code": "MG",
+            "region": "East Africa",
+            "population": 30000000,
+            "diasporaPopulation": 200000,
+            "capital": "Antananarivo",
+            "languages": [
+                "Malagasy",
+                "French"
+            ],
+            "facts": [
+                "Fourth largest island in the world",
+                "90% of wildlife found nowhere else on Earth",
+                "Home to lemurs, baobab trees, and chameleons",
+                "Settled by Austronesian peoples from Southeast Asia"
+            ],
+            "famousFigures": [
+                "Andry Rajoelina",
+                "Marc Ravalomanana",
+                "Jean Raharimana",
+                "Dama Mahaleo"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "malawi",
+            "name": "Malawi",
+            "code": "MW",
+            "region": "Southern Africa",
+            "population": 20000000,
+            "diasporaPopulation": 200000,
+            "capital": "Lilongwe",
+            "languages": [
+                "English",
+                "Chichewa"
+            ],
+            "facts": [
+                "Known as the 'Warm Heart of Africa'",
+                "Lake Malawi contains more fish species than any other lake",
+                "David Livingstone called Lake Malawi the 'Lake of Stars'",
+                "Tea and tobacco are major exports"
+            ],
+            "famousFigures": [
+                "Hastings Kamuzu Banda",
+                "Joyce Banda",
+                "Lazarus Chakwera",
+                "Esther Mujuru"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "mali",
+            "name": "Mali",
+            "code": "ML",
+            "region": "West Africa",
+            "population": 22000000,
+            "diasporaPopulation": 600000,
+            "capital": "Bamako",
+            "languages": [
+                "French",
+                "Bambara",
+                "Fulfulde"
+            ],
+            "facts": [
+                "Home to the ancient city of Timbuktu",
+                "Mansa Musa was the richest person in history",
+                "The Mali Empire was one of the largest in African history",
+                "The Dogon people have unique astronomical knowledge"
+            ],
+            "famousFigures": [
+                "Mansa Musa",
+                "Sundiata Keita",
+                "Salif Keita",
+                "Amadou & Mariam"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "mauritania",
+            "name": "Mauritania",
+            "code": "MR",
+            "region": "West Africa",
+            "population": 4800000,
+            "diasporaPopulation": 200000,
+            "capital": "Nouakchott",
+            "languages": [
+                "Arabic",
+                "French",
+                "Pulaar",
+                "Wolof"
+            ],
+            "facts": [
+                "Where Arab and sub-Saharan Africa meet",
+                "Chinguetti was a center of Islamic scholarship",
+                "The Eye of the Sahara is a mysterious geological feature",
+                "Iron ore is a major export"
+            ],
+            "famousFigures": [
+                "Moktar Ould Daddah",
+                "Mohamed Ould Ghazouani",
+                "Malouma Mint Moktar Ould Meidah",
+                "Dimi Mint Abba"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "mauritius",
+            "name": "Mauritius",
+            "code": "MU",
+            "region": "East Africa",
+            "population": 1300000,
+            "diasporaPopulation": 200000,
+            "capital": "Port Louis",
+            "languages": [
+                "English",
+                "French",
+                "Creole",
+                "Hindi"
+            ],
+            "facts": [
+                "Home of the extinct Dodo bird",
+                "One of Africa's most developed economies",
+                "Multi-ethnic society with Indian, African, Chinese, and European heritage",
+                "Known for its beaches and luxury tourism"
+            ],
+            "famousFigures": [
+                "Seewoosagur Ramgoolam",
+                "Anerood Jugnauth",
+                "Navin Ramgoolam",
+                "Kaya"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "morocco",
+            "name": "Morocco",
+            "code": "MA",
+            "region": "North Africa",
+            "population": 37000000,
+            "diasporaPopulation": 5000000,
+            "capital": "Rabat",
+            "languages": [
+                "Arabic",
+                "Berber",
+                "French"
+            ],
+            "facts": [
+                "Home to the world's oldest university (University of al-Qarawiyyin)",
+                "The medinas of Fez and Marrakech are UNESCO sites",
+                "A major filming location for Hollywood productions",
+                "The Atlas Mountains run through the country"
+            ],
+            "famousFigures": [
+                "King Mohammed VI",
+                "Hakim Ziyech",
+                "Achraf Hakimi",
+                "Ibn Battuta"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "mozambique",
+            "name": "Mozambique",
+            "code": "MZ",
+            "region": "Southern Africa",
+            "population": 33000000,
+            "diasporaPopulation": 300000,
+            "capital": "Maputo",
+            "languages": [
+                "Portuguese",
+                "Makhuwa",
+                "Tsonga"
+            ],
+            "facts": [
+                "Has the third longest coastline in Africa",
+                "Major gas discoveries could transform the economy",
+                "The island of Mozambique is a UNESCO World Heritage site",
+                "Gorongosa National Park is being restored to its former glory"
+            ],
+            "famousFigures": [
+                "Samora Machel",
+                "Joaquim Chissano",
+                "Mia Couto",
+                "Eusébio"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "namibia",
+            "name": "Namibia",
+            "code": "NA",
+            "region": "Southern Africa",
+            "population": 2600000,
+            "diasporaPopulation": 100000,
+            "capital": "Windhoek",
+            "languages": [
+                "English",
+                "Oshiwambo",
+                "Afrikaans",
+                "German"
+            ],
+            "facts": [
+                "The Namib Desert is the world's oldest desert",
+                "Skeleton Coast is known for shipwrecks and seals",
+                "One of the least densely populated countries",
+                "The Himba people maintain traditional red ochre customs"
+            ],
+            "famousFigures": [
+                "Sam Nujoma",
+                "Hage Geingob",
+                "Frankie Fredericks",
+                "Behati Prinsloo"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "niger",
+            "name": "Niger",
+            "code": "NE",
+            "region": "West Africa",
+            "population": 26000000,
+            "diasporaPopulation": 300000,
+            "capital": "Niamey",
+            "languages": [
+                "French",
+                "Hausa",
+                "Zarma"
+            ],
+            "facts": [
+                "Named after the Niger River",
+                "The Sahara covers most of the country",
+                "Has the world's highest fertility rate",
+                "Agadez was a historic crossroads of trans-Saharan trade"
+            ],
+            "famousFigures": [
+                "Hamani Diori",
+                "Seyni Kountché",
+                "Mamoudou Gassama",
+                "Hama Amadou"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "nigeria",
+            "name": "Nigeria",
+            "code": "NG",
+            "region": "West Africa",
+            "population": 223000000,
+            "diasporaPopulation": 17000000,
+            "capital": "Abuja",
+            "languages": [
+                "English",
+                "Hausa",
+                "Yoruba",
+                "Igbo"
+            ],
+            "facts": [
+                "Nigeria is Africa's most populous country",
+                "Home to over 250 ethnic groups",
+                "Nollywood is the world's second-largest film industry by volume",
+                "The Igbo, Yoruba, and Hausa are the three largest ethnic groups"
+            ],
+            "famousFigures": [
+                "Chinua Achebe",
+                "Wole Soyinka",
+                "Fela Kuti",
+                "Chimamanda Ngozi Adichie"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "rwanda",
+            "name": "Rwanda",
+            "code": "RW",
+            "region": "East Africa",
+            "population": 14000000,
+            "diasporaPopulation": 500000,
+            "capital": "Kigali",
+            "languages": [
+                "Kinyarwanda",
+                "English",
+                "French",
+                "Swahili"
+            ],
+            "facts": [
+                "Known as the 'Land of a Thousand Hills'",
+                "Kigali is one of Africa's cleanest cities",
+                "Mountain gorillas can be seen in Volcanoes National Park",
+                "Remarkable recovery since the 1994 genocide"
+            ],
+            "famousFigures": [
+                "Paul Kagame",
+                "Habyarimana",
+                "Diane Rwigara",
+                "Immaculée Ilibagiza"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "sao-tome",
+            "name": "São Tomé and Príncipe",
+            "code": "ST",
+            "region": "Central Africa",
+            "population": 220000,
+            "diasporaPopulation": 50000,
+            "capital": "São Tomé",
+            "languages": [
+                "Portuguese"
+            ],
+            "facts": [
+                "Africa's second smallest country",
+                "Once the world's largest cocoa producer",
+                "The islands were uninhabited before Portuguese arrival",
+                "Rich biodiversity with many endemic species"
+            ],
+            "famousFigures": [
+                "Manuel Pinto da Costa",
+                "Fradique de Menezes",
+                "Carlos Vila Nova",
+                "Conceição Lima"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "senegal",
+            "name": "Senegal",
+            "code": "SN",
+            "region": "West Africa",
+            "population": 17000000,
+            "diasporaPopulation": 700000,
+            "capital": "Dakar",
+            "languages": [
+                "French",
+                "Wolof",
+                "Serer",
+                "Pulaar"
+            ],
+            "facts": [
+                "Gorée Island was a major slave trading post",
+                "Known for its vibrant music scene, especially Mbalax",
+                "Home to the African Renaissance Monument, the tallest statue in Africa",
+                "Dakar Rally originally ended here"
+            ],
+            "famousFigures": [
+                "Léopold Sédar Senghor",
+                "Youssou N'Dour",
+                "Akon",
+                "Sadio Mané"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "seychelles",
+            "name": "Seychelles",
+            "code": "SC",
+            "region": "East Africa",
+            "population": 100000,
+            "diasporaPopulation": 50000,
+            "capital": "Victoria",
+            "languages": [
+                "Seychellois Creole",
+                "English",
+                "French"
+            ],
+            "facts": [
+                "Africa's smallest country by population",
+                "115 islands in the Indian Ocean",
+                "Home to the Aldabra giant tortoise",
+                "The Coco de Mer produces the world's largest seed"
+            ],
+            "famousFigures": [
+                "James Mancham",
+                "France-Albert René",
+                "Wavel Ramkalawan",
+                "Danny Faure"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "sierra-leone",
+            "name": "Sierra Leone",
+            "code": "SL",
+            "region": "West Africa",
+            "population": 8400000,
+            "diasporaPopulation": 500000,
+            "capital": "Freetown",
+            "languages": [
+                "English",
+                "Krio",
+                "Mende",
+                "Temne"
+            ],
+            "facts": [
+                "Freetown was founded for freed slaves from Britain and America",
+                "Has some of the world's most beautiful beaches",
+                "Known for its diamond mines",
+                "The Krio people descend from freed slaves"
+            ],
+            "famousFigures": [
+                "Ahmad Tejan Kabbah",
+                "Siaka Stevens",
+                "Sorious Samura",
+                "Aminata Forna"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "somalia",
+            "name": "Somalia",
+            "code": "SO",
+            "region": "East Africa",
+            "population": 18000000,
+            "diasporaPopulation": 2000000,
+            "capital": "Mogadishu",
+            "languages": [
+                "Somali",
+                "Arabic"
+            ],
+            "facts": [
+                "Has the longest coastline in mainland Africa",
+                "The ancient Land of Punt traded with Egypt",
+                "Somali culture is rich in poetry and oral traditions",
+                "Camel herding is central to traditional life"
+            ],
+            "famousFigures": [
+                "Iman",
+                "K'naan",
+                "Mo Farah",
+                "Barkhad Abdi"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "south-sudan",
+            "name": "South Sudan",
+            "code": "SS",
+            "region": "East Africa",
+            "population": 11000000,
+            "diasporaPopulation": 500000,
+            "capital": "Juba",
+            "languages": [
+                "English",
+                "Arabic",
+                "Dinka",
+                "Nuer"
+            ],
+            "facts": [
+                "World's newest country, independent since 2011",
+                "Home to the Sudd, one of the world's largest wetlands",
+                "Rich in oil reserves",
+                "The Dinka and Nuer are the largest ethnic groups"
+            ],
+            "famousFigures": [
+                "Salva Kiir Mayardit",
+                "John Garang",
+                "Riek Machar",
+                "Manute Bol"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "sudan",
+            "name": "Sudan",
+            "code": "SD",
+            "region": "North Africa",
+            "population": 46000000,
+            "diasporaPopulation": 1500000,
+            "capital": "Khartoum",
+            "languages": [
+                "Arabic",
+                "English"
+            ],
+            "facts": [
+                "More pyramids than Egypt (over 200 ancient pyramids)",
+                "Khartoum sits at the confluence of the Blue and White Nile",
+                "Ancient Nubia was a powerful kingdom here",
+                "Meroe was the capital of the Kingdom of Kush"
+            ],
+            "famousFigures": [
+                "Omar al-Bashir",
+                "Sadiq al-Mahdi",
+                "Mohammed Ahmed (the Mahdi)",
+                "Alek Wek"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "tanzania",
+            "name": "Tanzania",
+            "code": "TZ",
+            "region": "East Africa",
+            "population": 65000000,
+            "diasporaPopulation": 500000,
+            "capital": "Dodoma",
+            "languages": [
+                "Swahili",
+                "English"
+            ],
+            "facts": [
+                "Mount Kilimanjaro is Africa's highest peak",
+                "Serengeti migration is one of the world's greatest wildlife spectacles",
+                "Zanzibar was a major trading hub and Freddie Mercury's birthplace",
+                "Olduvai Gorge holds key human evolution fossils"
+            ],
+            "famousFigures": [
+                "Julius Nyerere",
+                "Jakaya Kikwete",
+                "Samia Suluhu Hassan",
+                "Freddie Mercury"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "togo",
+            "name": "Togo",
+            "code": "TG",
+            "region": "West Africa",
+            "population": 8600000,
+            "diasporaPopulation": 300000,
+            "capital": "Lomé",
+            "languages": [
+                "French",
+                "Ewe",
+                "Kabye"
+            ],
+            "facts": [
+                "One of the smallest countries in Africa",
+                "Voodoo is widely practiced and celebrated",
+                "Known for the colorful Akodessawa Fetish Market",
+                "Lomé's port is a major regional hub"
+            ],
+            "famousFigures": [
+                "Gnassingbé Eyadéma",
+                "Faure Gnassingbé",
+                "Emmanuel Adebayor",
+                "Bella Bellow"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "tunisia",
+            "name": "Tunisia",
+            "code": "TN",
+            "region": "North Africa",
+            "population": 12000000,
+            "diasporaPopulation": 1500000,
+            "capital": "Tunis",
+            "languages": [
+                "Arabic",
+                "French"
+            ],
+            "facts": [
+                "Site of ancient Carthage, rival to Rome",
+                "The Arab Spring began here in 2010",
+                "Star Wars was filmed in the desert here",
+                "Renowned for its olive oil production"
+            ],
+            "famousFigures": [
+                "Habib Bourguiba",
+                "Zine El Abidine Ben Ali",
+                "Hannibal Barca",
+                "Claudia Cardinale"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "uganda",
+            "name": "Uganda",
+            "code": "UG",
+            "region": "East Africa",
+            "population": 48000000,
+            "diasporaPopulation": 400000,
+            "capital": "Kampala",
+            "languages": [
+                "English",
+                "Swahili",
+                "Luganda"
+            ],
+            "facts": [
+                "Churchill called it 'the Pearl of Africa'",
+                "Source of the Nile River is at Lake Victoria",
+                "Half of the world's mountain gorillas live here",
+                "Known for its diverse wildlife and national parks"
+            ],
+            "famousFigures": [
+                "Idi Amin",
+                "Yoweri Museveni",
+                "Milton Obote",
+                "Phiona Mutesi"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "zambia",
+            "name": "Zambia",
+            "code": "ZM",
+            "region": "Southern Africa",
+            "population": 20000000,
+            "diasporaPopulation": 200000,
+            "capital": "Lusaka",
+            "languages": [
+                "English",
+                "Bemba",
+                "Nyanja",
+                "Tonga"
+            ],
+            "facts": [
+                "Victoria Falls (Mosi-oa-Tunya) is shared with Zimbabwe",
+                "One of the world's largest copper producers",
+                "The South Luangwa is known for walking safaris",
+                "Peaceful democracy since independence"
+            ],
+            "famousFigures": [
+                "Kenneth Kaunda",
+                "Levy Mwanawasa",
+                "Hakainde Hichilema",
+                "Dambisa Moyo"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "zimbabwe",
+            "name": "Zimbabwe",
+            "code": "ZW",
+            "region": "Southern Africa",
+            "population": 16000000,
+            "diasporaPopulation": 1500000,
+            "capital": "Harare",
+            "languages": [
+                "English",
+                "Shona",
+                "Ndebele"
+            ],
+            "facts": [
+                "Great Zimbabwe ruins are a UNESCO World Heritage site",
+                "Victoria Falls is one of the Seven Natural Wonders",
+                "Once known as the 'breadbasket of Africa'",
+                "Rich in mineral resources including gold and diamonds"
+            ],
+            "famousFigures": [
+                "Robert Mugabe",
+                "Emmerson Mnangagwa",
+                "Joshua Nkomo",
+                "Peter Godwin"
+            ],
+            "color": "#10b981"
+        },
+        {
+            "id": "jamaica",
+            "name": "Jamaica",
+            "code": "JM",
+            "region": "Caribbean (Diaspora)",
+            "population": 2800000,
+            "diasporaPopulation": 3000000,
+            "capital": "Kingston",
+            "languages": [
+                "English",
+                "Jamaican Patois"
+            ],
+            "facts": [
+                "Birthplace of reggae music and Bob Marley",
+                "Home to the fastest humans on Earth (Usain Bolt)",
+                "Rastafari movement originated here",
+                "One of the highest number of churches per square mile"
+            ],
+            "famousFigures": [
+                "Bob Marley",
+                "Usain Bolt",
+                "Marcus Garvey",
+                "Louise Bennett-Coverley"
+            ],
+            "color": "#f59e0b"
+        },
+        {
+            "id": "brazil",
+            "name": "Brazil",
+            "code": "BR",
+            "region": "South America (Diaspora)",
+            "population": 215000000,
+            "diasporaPopulation": 97000000,
+            "capital": "Brasília",
+            "languages": [
+                "Portuguese"
+            ],
+            "facts": [
+                "Largest African diaspora population outside Africa",
+                "Salvador, Bahia has the largest Black population of any city outside Africa",
+                "Capoeira is an Afro-Brazilian martial art developed by enslaved Africans",
+                "Samba and many Brazilian cultural elements have African roots"
+            ],
+            "famousFigures": [
+                "Pelé",
+                "Machado de Assis",
+                "Gilberto Gil",
+                "Marta"
+            ],
+            "color": "#f59e0b"
+        },
+        {
+            "id": "usa",
+            "name": "United States",
+            "code": "US",
+            "region": "North America (Diaspora)",
+            "population": 330000000,
+            "diasporaPopulation": 47000000,
+            "capital": "Washington, D.C.",
+            "languages": [
+                "English"
+            ],
+            "facts": [
+                "African Americans have shaped every aspect of American culture",
+                "The Civil Rights Movement transformed American society",
+                "Black History Month was established in 1976",
+                "Historically Black Colleges and Universities (HBCUs) are cultural institutions"
+            ],
+            "famousFigures": [
+                "Martin Luther King Jr.",
+                "Harriet Tubman",
+                "Barack Obama",
+                "Maya Angelou"
+            ],
+            "color": "#f59e0b"
+        },
+        {
+            "id": "uk",
+            "name": "United Kingdom",
+            "code": "GB",
+            "region": "Europe (Diaspora)",
+            "population": 67000000,
+            "diasporaPopulation": 2000000,
+            "capital": "London",
+            "languages": [
+                "English"
+            ],
+            "facts": [
+                "Windrush generation arrived from the Caribbean starting in 1948",
+                "Notting Hill Carnival is Europe's largest street festival",
+                "Black Britons have contributed significantly to music, arts, and sports",
+                "Brixton and Peckham are known for their vibrant Afro-Caribbean communities"
+            ],
+            "famousFigures": [
+                "Mary Seacole",
+                "Stormzy",
+                "Idris Elba",
+                "Naomi Campbell"
+            ],
+            "color": "#f59e0b"
+        },
+        {
+            "id": "haiti",
+            "name": "Haiti",
+            "code": "HT",
+            "region": "Caribbean (Diaspora)",
+            "population": 11000000,
+            "diasporaPopulation": 2000000,
+            "capital": "Port-au-Prince",
+            "languages": [
+                "French",
+                "Haitian Creole"
+            ],
+            "facts": [
+                "First free Black republic in the world (1804)",
+                "Only successful slave revolution in history",
+                "Vodou originated from West African spiritual traditions",
+                "Paid 'reparations' to France until 1947 for their freedom"
+            ],
+            "famousFigures": [
+                "Toussaint Louverture",
+                "Jean-Jacques Dessalines",
+                "Wyclef Jean",
+                "Edwidge Danticat"
+            ],
+            "color": "#f59e0b"
+        }
+    ]
 }
